@@ -1,59 +1,97 @@
 import './style.css'
-import fitquestMockup from './assets/fitquest_mockup.png'
-import meditoMockup from './assets/medito_mockup.png'
-import spendwiseMockup from './assets/spendwise_mockup.png'
+import veltrimMockup from './assets/veltrim_mockup.png'
+import qrmakerMockup from './assets/qrmaker_mockup.png'
+import rollivaMockup from './assets/rolliva_mockup.png'
+import piramitMockup from './assets/piramit_mockup.png'
+import randomjourneyMockup from './assets/randomjourney_mockup.png'
 
 // Apps Dataset
 const appsData = {
-  fitquest: {
-    name: "FitQuest",
-    category: "Sağlık & Spor",
-    icon: "🔥",
-    description: "Kullanıcıların spor yapma alışkanlıklarını oyunlaştırma (gamification) elementleri ile eğlenceli hale getiren, kişiselleştirilmiş antrenman programları sunan fitness uygulaması. Seviye atlama, günlük görevler ve sosyal liderlik tabloları ile antrenman motivasyonunuzu her zaman en yüksek seviyede tutar.",
-    tags: ["Flutter", "Firebase", "Riverpod", "NoSQL"],
+  veltrim: {
+    name: "Veltrim: Smart Clipboard",
+    category: "Verimlilik",
+    icon: "📋",
+    description: "iOS için panonuzu (clipboard) akıllıca yöneten, kopyalanan metin, link ve görsel geçmişini otomatik olarak kaydedip organize eden gelişmiş pano yöneticisi. Özelleştirilebilir hızlı erişim widget'ları ve klavye entegrasyonu ile kopyalama işlemlerini hızlandırır.",
+    tags: ["SwiftUI", "CoreData", "WidgetKit", "iOS"],
     features: [
-      "Kişiselleştirilmiş günlük egzersiz ve beslenme görevleri",
-      "Oyunlaştırılmış XP, seviye atlama ve başarı rozetleri",
-      "Firebase Firestore ile gerçek zamanlı arkadaş liderlik tabloları",
-      "Gelişmiş grafikler ile haftalık/aylık kalori analizi"
+      "Metin, link ve resim kopyalama geçmişini otomatik kaydetme",
+      "Klavye uzantısı (custom keyboard) ile her uygulamadan panoya erişim",
+      "CoreData ile tüm verileri cihazınızda yerel ve şifreli saklama",
+      "iOS 17+ kilit ekranı ve ana ekran widget desteği"
     ],
-    screenshots: [fitquestMockup],
+    screenshots: [veltrimMockup],
     links: {
       ios: "#",
       github: "https://github.com"
     }
   },
-  medito: {
-    name: "Medito",
-    category: "Yaşam Tarzı",
-    icon: "🧘‍♂️",
-    description: "Günün stresinden uzaklaşmanızı sağlayan, sesli meditasyon rehberleri, uyku hikayeleri ve odaklanma müzikleri barındıran minimalist tasarımlı zihinsel sağlık asistanı. Rahatlatıcı arayüzü ve çevrimdışı dinleme desteği ile her an yanınızda huzur bulmanıza yardımcı olur.",
-    tags: ["SwiftUI", "AVFoundation", "CoreData", "iOS"],
+  qrmaker: {
+    name: "QRMaker&Scanner",
+    category: "Araçlar",
+    icon: "🔍",
+    description: "Hızlı ve güvenli bir şekilde QR kodları tarayan, özel renklerde, desenlerde ve logolu QR kodları üreten gelişmiş tarayıcı ve oluşturucu uygulaması. Geçmiş tarama kayıtlarını tutarak ihtiyaç duyduğunuzda eski QR içeriklerine hızlıca erişmenizi sağlar.",
+    tags: ["Swift", "AVFoundation", "CoreImage", "iOS"],
     features: [
-      "50'den fazla uzman onaylı sesli meditasyon seansı",
-      "Doğal seslerle uyku hikayeleri ve rahatlatıcı müzikler",
-      "CoreData ile yerel günlük ruh hali ve gelişim takibi",
-      "Widget desteği ile kilit ekranından hızlı erişim"
+      "AVFoundation ile ultra hızlı ve karanlıkta bile kararlı tarama",
+      "Özel renk, logo ve gradyanlara sahip QR kodlar oluşturabilme",
+      "CoreImage filtreleri ile yüksek çözünürlüklü tarama çıktıları",
+      "Yerel tarama geçmişi ve favorilere ekleme özelliği"
     ],
-    screenshots: [meditoMockup],
+    screenshots: [qrmakerMockup],
     links: {
       ios: "#",
       github: "https://github.com"
     }
   },
-  spendwise: {
-    name: "SpendWise",
-    category: "Finans",
-    icon: "💰",
-    description: "Gelir ve giderlerinizi kategorize ederek bütçe takibi yapmanızı sağlayan, detaylı grafik analizleri ve aylık raporlamalar sunan modern finansal takip aracı. SQLite veritabanı ile verileriniz internete ihtiyaç duymadan cihazınızda tamamen güvenle saklanır.",
-    tags: ["Flutter", "SQLite", "FL Chart", "Dart"],
+  rolliva: {
+    name: "Rolliva",
+    category: "Eğlence",
+    icon: "🎲",
+    description: "Masa oyunları, grup aktiviteleri veya karar anları için özelleştirilebilir 3D zarlar, karar çarkları, yazı-tura ve rastgele sayı seçim araçları sunan modern bir eğlence asistanı. Pürüzsüz fizik tabanlı animasyonları ve şık tasarımıyla kararsız kaldığınız her an yanınızda.",
+    tags: ["Flutter", "Dart", "Rive", "iOS"],
     features: [
-      "Hızlı gelir/gider ekleme ve özel kategori tanımlama",
-      "FL Chart ile etkileşimli ve detaylı harcama grafikleri",
-      "SQLite yerel veritabanı ile %100 çevrimdışı ve güvenli çalışma",
-      "PDF formatında aylık ve yıllık finansal rapor çıktıları"
+      "Fizik motoru destekli, gerçekçi 3D zar atma simülasyonu",
+      "Tamamen kişiselleştirilebilir karar çarkları ve renk paletleri",
+      "Gelişmiş Rive animasyonları ile pürüzsüz micro-interactions",
+      "Özel sayı aralıklarında rastgele seçim motoru"
     ],
-    screenshots: [spendwiseMockup],
+    screenshots: [rollivaMockup],
+    links: {
+      ios: "#",
+      github: "https://github.com"
+    }
+  },
+  piramit: {
+    name: "Piramit Bulmaca",
+    category: "Oyun",
+    icon: "🧩",
+    description: "Matematiksel zeka ve sayısal mantığı birleştiren, her seviyede piramidin zirvesine ulaşmak için doğru sayı kombinasyonlarını bulmaya çalıştığınız zihin egzersizi bulmaca oyunu. Sade arayüzü ve progresif zorluk seviyeleriyle beyin jimnastiği yapmanızı sağlar.",
+    tags: ["Flutter", "Dart", "Bloc", "iOS"],
+    features: [
+      "Yüzlerce farklı zorluk seviyesine sahip progresif seviye tasarımı",
+      "Flutter BLoC mimarisi ile kararlı ve hızlı oyun döngüsü",
+      "Günlük zeka egzersizleri ve başarı rozetleri (achievements)",
+      "İnternetsiz (çevrimdışı) çalışabilme özelliği"
+    ],
+    screenshots: [piramitMockup],
+    links: {
+      ios: "#",
+      github: "https://github.com"
+    }
+  },
+  randomjourney: {
+    name: "RandomJourney",
+    category: "Seyahat",
+    icon: "🗺️",
+    description: "Kararsız seyahat severler için harita üzerinde rastgele koordinatlar ve gizli rotalar seçen, keşfedilmemiş yerleri keşfetmenize yardımcı olan macera ve rota planlayıcı. iOS konum servisleriyle entegre çalışarak en yakın macera noktasını belirler.",
+    tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
+    features: [
+      "MapKit entegrasyonu ile dinamik ve etkileşimli macera haritası",
+      "CoreLocation ile kullanıcı konumuna yakın rastgele rotalar çizme",
+      "Kendi seyahat günlüklerinizi ve fotoğraflarınızı kaydetme paneli",
+      "iOS Paylaşım menüsü ile maceraları arkadaşlara gönderebilme"
+    ],
+    screenshots: [randomjourneyMockup],
     links: {
       ios: "#",
       github: "https://github.com"
