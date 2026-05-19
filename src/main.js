@@ -12,7 +12,6 @@ import piramitIcon from './assets/piramit_icon.JPG'
 import randomjourneyIcon from './assets/randomjourney_icon.png'
 
 import appleIcon from './assets/apple.png'
-import githubIcon from './assets/github.png'
 
 
 // Apps Dataset
@@ -185,10 +184,6 @@ function openModal(appKey) {
       ${app.links.ios ? `
         <a href="${app.links.ios}" class="btn btn-primary" target="_blank">
           <img src="${appleIcon}" alt="App Store" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; object-fit: contain;" />App Store
-        </a>` : ''}
-      ${app.links.github ? `
-        <a href="${app.links.github}" class="btn btn-secondary" target="_blank">
-          <img src="${githubIcon}" alt="GitHub" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; object-fit: contain;" />GitHub
         </a>` : ''}
     </div>
   `;
