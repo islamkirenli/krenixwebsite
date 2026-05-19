@@ -20,7 +20,6 @@ const appsData = {
     screenshots: [fitquestMockup],
     links: {
       ios: "#",
-      android: "#",
       github: "https://github.com"
     }
   },
@@ -57,7 +56,6 @@ const appsData = {
     screenshots: [spendwiseMockup],
     links: {
       ios: "#",
-      android: "#",
       github: "https://github.com"
     }
   }
