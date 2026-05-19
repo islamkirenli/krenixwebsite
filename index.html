@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>İslam Kirenli | Mobil Uygulama Portfolyosu</title>
+    <meta name="description" content="Flutter ve yerel mobil dillerle geliştirilmiş modern, kullanıcı dostu ve yenilikçi mobil uygulamaların sergilendiği profesyonel geliştirici portfolyosu." />
+    <meta name="keywords" content="Flutter, Android, iOS, Mobil Uygulama, Geliştirici, Portfolyo, App Developer, Dart, SwiftUI, Kotlin" />
+    <meta name="author" content="İslam Kirenli" />
+    
+    <!-- CSS Entry Point -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Background Animated Blobs -->
+    <div class="bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+      <div class="nav-container">
+        <a href="#hero" class="logo" id="logo-link">Krenix Studios</a>
+        <nav>
+          <ul class="nav-menu" id="nav-menu-list">
+            <li><a href="#hero" class="nav-link" id="nav-link-hero">Ana Sayfa</a></li>
+            <li><a href="#apps" class="nav-link" id="nav-link-apps">Uygulamalarım</a></li>
+            <li><a href="#about" class="nav-link" id="nav-link-about">Hakkımda</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-link-contact">İletişim</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" id="nav-menu-toggle" aria-label="Menüyü Aç/Kapat">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-badge">Mobil Geliştirici & Tasarımcı</div>
+        <h1 class="hero-title">Fikirleri <span>Mobil Dünyada</span> Hayata Geçiriyorum</h1>
+        <p class="hero-description">
+          Flutter, Dart, SwiftUI ve modern mobil uygulama geliştirme teknolojileri ile hem iOS hem de Android için yüksek performanslı, estetik ve kullanıcı odaklı mobil uygulamalar üretiyorum.
+        </p>
+        <div class="hero-buttons">
+          <a href="#apps" class="btn btn-primary" id="btn-hero-showcase">Uygulamaları Keşfet</a>
+          <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">İletişime Geç</a>
+        </div>
+      </section>
+
+      <!-- Apps Showcase Section -->
+      <section id="apps">
+        <h2 class="section-title">Mobil <span>Uygulamalarım</span></h2>
+        <p class="section-subtitle">Geliştirdiğim en son projeler, kullanılan teknolojiler ve mağaza bağlantıları.</p>
+        
+        <div class="app-grid" id="applications-grid">
+          <!-- App Card 1: FitQuest -->
+          <article class="app-card" data-app-id="fitquest">
+            <div class="app-header">
+              <div class="app-icon">🔥</div>
+              <div class="app-meta">
+                <h3 class="app-name">FitQuest</h3>
+                <span class="app-category">Sağlık & Spor</span>
+              </div>
+            </div>
+            <p class="app-description">
+              Kullanıcıların spor yapma alışkanlıklarını oyunlaştırma (gamification) elementleri ile eğlenceli hale getiren, kişiselleştirilmiş antrenman programları sunan fitness uygulaması.
+            </p>
+            <div class="app-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Riverpod</span>
+              <span class="tag">NoSQL</span>
+            </div>
+            <div class="app-footer">
+              <div class="app-links">
+                <span class="app-link-btn" title="iOS App Store">🍎</span>
+                <span class="app-link-btn" title="Google Play Store">🤖</span>
+              </div>
+              <button class="btn-detail" data-app="fitquest">Detayları Gör <span>→</span></button>
+            </div>
+          </article>
+
+          <!-- App Card 2: Medito -->
+          <article class="app-card" data-app-id="medito">
+            <div class="app-header">
+              <div class="app-icon">🧘‍♂️</div>
+              <div class="app-meta">
+                <h3 class="app-name">Medito</h3>
+                <span class="app-category">Yaşam Tarzı</span>
+              </div>
+            </div>
+            <p class="app-description">
+              Günün stresinden uzaklaşmanızı sağlayan, sesli meditasyon rehberleri, uyku hikayeleri ve odaklanma müzikleri barındıran minimalist tasarımlı zihinsel sağlık asistanı.
+            </p>
+            <div class="app-tags">
+              <span class="tag">SwiftUI</span>
+              <span class="tag">AVFoundation</span>
+              <span class="tag">CoreData</span>
+              <span class="tag">iOS</span>
+            </div>
+            <div class="app-footer">
+              <div class="app-links">
+                <span class="app-link-btn" title="iOS App Store">🍎</span>
+              </div>
+              <button class="btn-detail" data-app="medito">Detayları Gör <span>→</span></button>
+            </div>
+          </article>
+
+          <!-- App Card 3: SpendWise -->
+          <article class="app-card" data-app-id="spendwise">
+            <div class="app-header">
+              <div class="app-icon">💰</div>
+              <div class="app-meta">
+                <h3 class="app-name">SpendWise</h3>
+                <span class="app-category">Finans</span>
+              </div>
+            </div>
+            <p class="app-description">
+              Gelir ve giderlerinizi kategorize ederek bütçe takibi yapmanızı sağlayan, detaylı grafik analizleri ve aylık raporlamalar sunan modern finansal takip aracı.
+            </p>
+            <div class="app-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">FL Chart</span>
+              <span class="tag">Dart</span>
+            </div>
+            <div class="app-footer">
+              <div class="app-links">
+                <span class="app-link-btn" title="iOS App Store">🍎</span>
+                <span class="app-link-btn" title="Google Play Store">🤖</span>
+              </div>
+              <button class="btn-detail" data-app="spendwise">Detayları Gör <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-content">
+          <div class="about-visual">
+            <div class="about-card">
+              <div class="about-photo-placeholder">👨‍💻</div>
+              <h3>İslam Kirenli</h3>
+              <p>Mobile App Developer</p>
+            </div>
+            <div class="about-glow"></div>
+          </div>
+          <div class="about-text">
+            <h2 class="section-title" style="text-align:left; margin-bottom: 20px;">Ben <span>Kimi?</span></h2>
+            <p>
+              Uzun süredir mobil uygulama ekosisteminde aktif olarak yer alıyorum. Kullanıcıların günlük hayatını kolaylaştıran, performansı yüksek ve görsel olarak doyurucu mobil çözümler üretmek benim en büyük motivasyonum.
+            </p>
+            <p>
+              Uygulamalarımı geliştirirken kod kalitesi (clean code), sürdürülebilir mimari (architecture) ve pürüzsüz animasyonlar (micro-interactions) konularına maksimum özen gösteriyorum.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Tamamlanan Proje</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Yıl Deneyim</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">Ort. Mağaza Puanı</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="section-title">İletişime <span>Geç</span></h2>
+        <p class="section-subtitle">Yeni bir proje fikriniz mi var ya da sadece sohbet etmek mi istiyorsunuz? Bana yazın!</p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">📧</div>
+              <div class="info-text">
+                <h4>E-posta</h4>
+                <p>iletisim@islamkirenli.com</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <h4>Konum</h4>
+                <p>İstanbul, Türkiye</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Adınız Soyadınız</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Adınızı girin" required />
+              </div>
+              <div class="form-group">
+                <label for="form-email">E-posta Adresiniz</label>
+                <input type="email" id="form-email" class="form-control" placeholder="E-postanızı girin" required />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Mesajınız</label>
+                <textarea id="form-message" class="form-control" placeholder="Mesajınızı buraya yazın..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;">Gönder</button>
+              <div class="form-message" id="form-feedback-message"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-text">
+          &copy; 2026 İslam Kirenli. Tüm hakları saklıdır.
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" class="social-btn" id="social-link-github" aria-label="GitHub">🐙</a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn" id="social-link-linkedin" aria-label="LinkedIn">🔗</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- App Details Modal Overlay -->
+    <div class="modal-overlay" id="app-modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button class="modal-close" id="btn-close-modal" aria-label="Kapat">&times;</button>
+        
+        <div class="modal-grid">
+          <!-- Left: Screenshot Slider -->
+          <div class="modal-carousel" id="modal-carousel-container">
+            <!-- Slides dynamically injected by JS -->
+            <button class="carousel-btn carousel-prev" id="btn-prev-slide" aria-label="Önceki Görsel">&#10094;</button>
+            <button class="carousel-btn carousel-next" id="btn-next-slide" aria-label="Sonraki Görsel">&#10095;</button>
+            <div class="carousel-dots" id="carousel-dots-container"></div>
+          </div>
+
+          <!-- Right: App Details -->
+          <div class="modal-info-panel" id="modal-details-container">
+            <!-- Title, Stack, Description, Features dynamically injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Module Entry Point -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
