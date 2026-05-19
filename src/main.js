@@ -31,7 +31,7 @@ const appsData = {
     ],
     screenshots: [veltrimMockup],
     links: {
-      ios: "#",
+      ios: "https://apps.apple.com/tr/app/veltrim-smart-clipboard/id6766660936?l=tr",
       github: "https://github.com"
     }
   },
@@ -49,7 +49,7 @@ const appsData = {
     ],
     screenshots: [qrmakerMockup],
     links: {
-      ios: "#",
+      ios: "https://apps.apple.com/tr/app/qrmaker-scanner/id6504368000?l=tr",
       github: "https://github.com"
     }
   },
@@ -67,7 +67,7 @@ const appsData = {
     ],
     screenshots: [rollivaMockup],
     links: {
-      ios: "#",
+      ios: "https://apps.apple.com/tr/app/rolliva-zar-%C3%A7ark/id6765519968?l=tr",
       github: "https://github.com"
     }
   },
@@ -85,7 +85,7 @@ const appsData = {
     ],
     screenshots: [piramitMockup],
     links: {
-      ios: "#",
+      ios: "https://apps.apple.com/tr/app/piramit-bulmaca/id6743098390?l=tr",
       github: "https://github.com"
     }
   },
@@ -103,7 +103,7 @@ const appsData = {
     ],
     screenshots: [randomjourneyMockup],
     links: {
-      ios: "#",
+      ios: "https://apps.apple.com/tr/app/randomjourney/id6737148094?l=tr",
       github: "https://github.com"
     }
   }
