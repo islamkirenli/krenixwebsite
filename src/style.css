@@ -487,10 +487,9 @@ section {
 
 /* About Section */
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 50px;
-  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about-visual {
@@ -571,6 +570,8 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  max-width: 600px;
+  margin: 40px auto 0;
 }
 
 .stat-item {
@@ -1031,14 +1032,6 @@ footer {
   }
   .modal-carousel {
     height: 380px;
-  }
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    text-align: center;
-  }
-  .about-visual {
-    order: -1;
   }
   .about-stats {
     margin-top: 20px;
