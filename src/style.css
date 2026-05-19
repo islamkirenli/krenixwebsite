@@ -463,10 +463,22 @@ section {
   font-size: 18px;
   transition: var(--transition-smooth);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-link-btn:hover {
   color: var(--accent-cyan);
+  transform: scale(1.15);
+}
+
+.app-link-btn img,
+.app-link-btn svg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
 }
 
 .btn-detail {
@@ -774,6 +786,14 @@ footer {
   background: var(--bg-surface-hover);
   border-color: var(--accent-cyan);
   transform: translateY(-3px);
+}
+
+.social-btn img,
+.social-btn svg {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
 }
 
 /* App Details Modal Overlay */
