@@ -5,12 +5,18 @@ import rollivaMockup from './assets/rolliva_mockup.png'
 import piramitMockup from './assets/piramit_mockup.png'
 import randomjourneyMockup from './assets/randomjourney_mockup.png'
 
+import veltrimIcon from './assets/veltrim_icon.png'
+import qrmakerIcon from './assets/qrmaker_icon.png'
+import rollivaIcon from './assets/rolliva_icon.png'
+import piramitIcon from './assets/piramit_icon.JPG'
+import randomjourneyIcon from './assets/randomjourney_icon.png'
+
 // Apps Dataset
 const appsData = {
   veltrim: {
     name: "Veltrim: Smart Clipboard",
     category: "Verimlilik",
-    icon: "📋",
+    icon: veltrimIcon,
     description: "iOS için panonuzu (clipboard) akıllıca yöneten, kopyalanan metin, link ve görsel geçmişini otomatik olarak kaydedip organize eden gelişmiş pano yöneticisi. Özelleştirilebilir hızlı erişim widget'ları ve klavye entegrasyonu ile kopyalama işlemlerini hızlandırır.",
     tags: ["SwiftUI", "CoreData", "WidgetKit", "iOS"],
     features: [
@@ -28,7 +34,7 @@ const appsData = {
   qrmaker: {
     name: "QRMaker&Scanner",
     category: "Araçlar",
-    icon: "🔍",
+    icon: qrmakerIcon,
     description: "Hızlı ve güvenli bir şekilde QR kodları tarayan, özel renklerde, desenlerde ve logolu QR kodları üreten gelişmiş tarayıcı ve oluşturucu uygulaması. Geçmiş tarama kayıtlarını tutarak ihtiyaç duyduğunuzda eski QR içeriklerine hızlıca erişmenizi sağlar.",
     tags: ["Swift", "AVFoundation", "CoreImage", "iOS"],
     features: [
@@ -46,7 +52,7 @@ const appsData = {
   rolliva: {
     name: "Rolliva",
     category: "Eğlence",
-    icon: "🎲",
+    icon: rollivaIcon,
     description: "Masa oyunları, grup aktiviteleri veya karar anları için özelleştirilebilir 3D zarlar, karar çarkları, yazı-tura ve rastgele sayı seçim araçları sunan modern bir eğlence asistanı. Pürüzsüz fizik tabanlı animasyonları ve şık tasarımıyla kararsız kaldığınız her an yanınızda.",
     tags: ["Flutter", "Dart", "Rive", "iOS"],
     features: [
@@ -64,7 +70,7 @@ const appsData = {
   piramit: {
     name: "Piramit Bulmaca",
     category: "Oyun",
-    icon: "🧩",
+    icon: piramitIcon,
     description: "Matematiksel zeka ve sayısal mantığı birleştiren, her seviyede piramidin zirvesine ulaşmak için doğru sayı kombinasyonlarını bulmaya çalıştığınız zihin egzersizi bulmaca oyunu. Sade arayüzü ve progresif zorluk seviyeleriyle beyin jimnastiği yapmanızı sağlar.",
     tags: ["Flutter", "Dart", "Bloc", "iOS"],
     features: [
@@ -82,7 +88,7 @@ const appsData = {
   randomjourney: {
     name: "RandomJourney",
     category: "Seyahat",
-    icon: "🗺️",
+    icon: randomjourneyIcon,
     description: "Kararsız seyahat severler için harita üzerinde rastgele koordinatlar ve gizli rotalar seçen, keşfedilmemiş yerleri keşfetmenize yardımcı olan macera ve rota planlayıcı. iOS konum servisleriyle entegre çalışarak en yakın macera noktasını belirler.",
     tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
     features: [
@@ -151,7 +157,9 @@ function openModal(appKey) {
   // Render Info Panel
   detailsContainer.innerHTML = `
     <div class="modal-header-section">
-      <div class="modal-app-icon">${app.icon}</div>
+      <div class="modal-app-icon">
+        <img src="${app.icon}" alt="${app.name} Icon" />
+      </div>
       <div class="modal-title-box">
         <h3>${app.name}</h3>
         <span class="modal-category">${app.category}</span>
