@@ -18,7 +18,7 @@ import appleIcon from './assets/apple.png'
 const appsData = {
   veltrim: {
     name: "Veltrim: Smart Clipboard",
-    category: "Verimlilik",
+    category: "Üretkenlik",
     icon: veltrimIcon,
     description: "iOS için panonuzu (clipboard) akıllıca yöneten, kopyalanan metin, link ve görsel geçmişini otomatik olarak kaydedip organize eden gelişmiş pano yöneticisi. Özelleştirilebilir hızlı erişim widget'ları ve klavye entegrasyonu ile kopyalama işlemlerini hızlandırır.",
     tags: ["SwiftUI", "CoreData", "WidgetKit", "iOS"],
@@ -36,7 +36,7 @@ const appsData = {
   },
   qrmaker: {
     name: "QRMaker&Scanner",
-    category: "Araçlar",
+    category: "Yardımcılar",
     icon: qrmakerIcon,
     description: "Hızlı ve güvenli bir şekilde QR kodları tarayan, özel renklerde, desenlerde ve logolu QR kodları üreten gelişmiş tarayıcı ve oluşturucu uygulaması. Geçmiş tarama kayıtlarını tutarak ihtiyaç duyduğunuzda eski QR içeriklerine hızlıca erişmenizi sağlar.",
     tags: ["Swift", "AVFoundation", "CoreImage", "iOS"],
@@ -54,7 +54,7 @@ const appsData = {
   },
   rolliva: {
     name: "Rolliva",
-    category: "Eğlence",
+    category: "Yardımcılar",
     icon: rollivaIcon,
     description: "Masa oyunları, grup aktiviteleri veya karar anları için özelleştirilebilir 3D zarlar, karar çarkları, yazı-tura ve rastgele sayı seçim araçları sunan modern bir eğlence asistanı. Pürüzsüz fizik tabanlı animasyonları ve şık tasarımıyla kararsız kaldığınız her an yanınızda.",
     tags: ["Flutter", "Dart", "Rive", "iOS"],
@@ -72,7 +72,7 @@ const appsData = {
   },
   piramit: {
     name: "Piramit Bulmaca",
-    category: "Oyun",
+    category: "Kelime",
     icon: piramitIcon,
     description: "Matematiksel zeka ve sayısal mantığı birleştiren, her seviyede piramidin zirvesine ulaşmak için doğru sayı kombinasyonlarını bulmaya çalıştığınız zihin egzersizi bulmaca oyunu. Sade arayüzü ve progresif zorluk seviyeleriyle beyin jimnastiği yapmanızı sağlar.",
     tags: ["Flutter", "Dart", "Bloc", "iOS"],
