@@ -65,9 +65,16 @@
       <h2 class="section-title">Mobil <span>Uygulamalarım</span></h2>
       <p class="section-subtitle">Geliştirdiğim en son projeler, kullanılan teknolojiler ve mağaza bağlantıları.</p>
 
+      <!-- Apps Tab Navigation -->
+      <div class="apps-tabs" id="apps-tabs-container">
+        <button class="tab-btn active" data-tab="all">Tümü</button>
+        <button class="tab-btn" data-tab="app">Uygulamalar</button>
+        <button class="tab-btn" data-tab="game">Oyunlar</button>
+      </div>
+
       <div class="app-grid" id="applications-grid">
         <!-- App Card 1: Veltrim -->
-        <article class="app-card" data-app-id="veltrim">
+        <article class="app-card" data-app-id="veltrim" data-app-type="app">
           <div class="app-header">
             <div class="app-icon">
               <img src="./src/assets/veltrim_icon.png" alt="Veltrim Icon" />
@@ -97,7 +104,7 @@
         </article>
 
         <!-- App Card 2: QRMaker&Scanner -->
-        <article class="app-card" data-app-id="qrmaker">
+        <article class="app-card" data-app-id="qrmaker" data-app-type="app">
           <div class="app-header">
             <div class="app-icon">
               <img src="./src/assets/qrmaker_icon.png" alt="QRMaker&Scanner Icon" />
@@ -127,7 +134,7 @@
         </article>
 
         <!-- App Card 3: Rolliva -->
-        <article class="app-card" data-app-id="rolliva">
+        <article class="app-card" data-app-id="rolliva" data-app-type="app">
           <div class="app-header">
             <div class="app-icon">
               <img src="./src/assets/rolliva_icon.png" alt="Rolliva Icon" />
@@ -157,7 +164,7 @@
         </article>
 
         <!-- App Card 4: Piramit Bulmaca -->
-        <article class="app-card" data-app-id="piramit">
+        <article class="app-card" data-app-id="piramit" data-app-type="game">
           <div class="app-header">
             <div class="app-icon">
               <img src="./src/assets/piramit_icon.JPG" alt="Piramit Bulmaca Icon" />
@@ -187,7 +194,7 @@
         </article>
 
         <!-- App Card 5: RandomJourney -->
-        <article class="app-card" data-app-id="randomjourney">
+        <article class="app-card" data-app-id="randomjourney" data-app-type="app">
           <div class="app-header">
             <div class="app-icon">
               <img src="./src/assets/randomjourney_icon.png" alt="RandomJourney Icon" />

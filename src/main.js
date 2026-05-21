@@ -318,3 +318,27 @@ contactForm.addEventListener('submit', (e) => {
     }, 5000);
   }, 1200);
 });
+
+// Apps Tab Filtering Handler
+const tabButtons = document.querySelectorAll('.tab-btn');
+const appCards = document.querySelectorAll('.app-card');
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Switch active tab class
+    tabButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const selectedTab = btn.getAttribute('data-tab');
+
+    // Filter app cards
+    appCards.forEach(card => {
+      const cardType = card.getAttribute('data-app-type');
+      if (selectedTab === 'all' || cardType === selectedTab) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
