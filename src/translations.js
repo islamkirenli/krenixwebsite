@@ -1,6 +1,6 @@
 export const translations = {
   tr: {
-    doc_title: "İslam Kirenli | Mobil Uygulama Portfolyosu",
+    doc_title: "Krenix Studios",
     nav_hero: "Ana Sayfa",
     nav_apps: "Uygulamalarım",
     nav_about: "Hakkımda",
@@ -46,7 +46,7 @@ export const translations = {
     modal_btn_appstore: "App Store"
   },
   en: {
-    doc_title: "İslam Kirenli | Mobile App Portfolio",
+    doc_title: "Krenix Studios",
     nav_hero: "Home",
     nav_apps: "My Apps",
     nav_about: "About Me",
