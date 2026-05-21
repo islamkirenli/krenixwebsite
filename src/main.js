@@ -20,13 +20,13 @@ const appsData = {
     name: "Veltrim: Smart Clipboard",
     category: "Üretkenlik",
     icon: veltrimIcon,
-    description: "iOS için panonuzu (clipboard) akıllıca yöneten, kopyalanan metin, link ve görsel geçmişini otomatik olarak kaydedip organize eden gelişmiş pano yöneticisi. Özelleştirilebilir hızlı erişim widget'ları ve klavye entegrasyonu ile kopyalama işlemlerini hızlandırır.",
+    description: "Pano Yönetiminde Kontrolü Elinize Alın: Düzenli, Hızlı ve Profesyonel. Önemli bilgileri kopyalayıp kaybetmeye son verin. İster bir yazılımcı olun, ister bir içerik üreticisi; bu gelişmiş Pano Yöneticisi, dijital iş akışınızı karmaşadan arındırıp düzenli bir çalışma alanına dönüştürmek için tasarlandı.",
     tags: ["Flutter", "Dart", "Hive", "iOS"],
     features: [
-      "Metin, link ve resim kopyalama geçmişini otomatik kaydetme",
-      "Klavye entegrasyonu ve hızlı erişim özellikleri ile panoya kolay erişim",
-      "Hive yerel veritabanı ile tüm verileri cihazınızda yerel ve şifreli saklama",
-      "Kilit ekranı ve ana ekran widget entegrasyonu"
+      "Otomatik Pano Takibi: Kopyalanan her metin veya bağlantıyı otomatik olarak kaydetme",
+      "Gelişmiş Organizasyon: Özel klasörler ve etiketler kullanarak içerikleri kategorize etme",
+      "Akıllı Arama: Hızlı ve sezgisel arama çubuğu ile pano geçmişine saniyeler içinde ulaşma",
+      "Gizlilik Odaklı Tasarım: Verilerinizin cihazınızda yerel ve güvenle saklanması"
     ],
     screenshots: [veltrimMockup],
     links: {
@@ -38,13 +38,13 @@ const appsData = {
     name: "QRMaker&Scanner",
     category: "Yardımcılar",
     icon: qrmakerIcon,
-    description: "Hızlı ve güvenli bir şekilde QR kodları tarayan, özel renklerde, desenlerde ve logolu QR kodları üreten gelişmiş tarayıcı ve oluşturucu uygulaması. Geçmiş tarama kayıtlarını tutarak ihtiyaç duyduğunuzda eski QR içeriklerine hızlıca erişmenizi sağlar.",
+    description: "QR Kod Oluşturucu ve Tarayıcı ile hayatınızı kolaylaştırın! QR kodlarını zahmetsizce oluşturun ve tarayın. Güvenli, hızlı ve kullanıcı dostu uygulamamızla QR kod dünyasına adım atın.",
     tags: ["Flutter", "Dart", "Mobile Scanner", "iOS"],
     features: [
-      "Mobil tarayıcı motoru ile ultra hızlı ve karanlıkta bile kararlı tarama",
-      "Özel renk, logo ve gradyanlara sahip QR kodlar oluşturabilme",
-      "Görüntü işleme kütüphaneleri ile yüksek çözünürlüklü tarama çıktıları",
-      "Yerel tarama geçmişi ve favorilere ekleme özelliği"
+      "Hızlı QR Kod Oluşturma: Metinler, URL'ler, e-postalar ve Wi-Fi bilgileri için anında üretim",
+      "Kolay Tarama: Kameranızı kullanarak QR kodlarını hızla tarayın ve bilgilere anında erişin",
+      "Gelişmiş Özelleştirme: QR kodlarınızı özel renkler, logolar ve tasarımlarla kişiselleştirin",
+      "Geçmiş ve Güvenlik: Oluşturduğunuz ve taradığınız kodları güvenle cihazınızda yerel kaydedin"
     ],
     screenshots: [qrmakerMockup],
     links: {
@@ -56,13 +56,13 @@ const appsData = {
     name: "Rolliva",
     category: "Yardımcılar",
     icon: rollivaIcon,
-    description: "Masa oyunları, grup aktiviteleri veya karar anları için özelleştirilebilir 3D zarlar, karar çarkları, yazı-tura ve rastgele sayı seçim araçları sunan modern bir eğlence asistanı. Pürüzsüz fizik tabanlı animasyonları ve şık tasarımıyla kararsız kaldığınız her an yanınızda.",
+    description: "Kararsız mı kaldınız? Arkadaşlarınızla halı saha maçı yaparken adil takımlar mı kurmak istiyorsunuz? Ya da sadece şansınızı denemek için bir zar veya yazı turaya mı ihtiyacınız var? Rolliva, tüm bu ihtiyaçlarınızı tek bir şık ve modern arayüzde birleştiriyor!",
     tags: ["Flutter", "Dart", "Rive", "iOS"],
     features: [
-      "Fizik motoru destekli, gerçekçi 3D zar atma simülasyonu",
-      "Tamamen kişiselleştirilebilir karar çarkları ve renk paletleri",
-      "Gelişmiş Rive animasyonları ile pürüzsüz micro-interactions",
-      "Özel sayı aralıklarında rastgele seçim motoru"
+      "Zar Atma ve Yazı Tura: Gerçekçi fizik motoru destekli 3D zarlar atın ve yazı tura ile hızlı kararlar verin",
+      "Özelleştirilebilir Karar Çarkı: Kendi seçeneklerinizi ekleyin, çarkı çevirin ve kaderinizi çarka bırakın",
+      "Adil Takım Oluşturucu: Arkadaş gruplarınızda dengeli ve adil takımları saniyeler içinde dağıtın",
+      "Kullanıcı Dostu ve Rive Animasyonları: Modern, temiz tasarım ve pürüzsüz micro-interactions desteği"
     ],
     screenshots: [rollivaMockup],
     links: {
@@ -74,13 +74,13 @@ const appsData = {
     name: "Piramit Bulmaca",
     category: "Kelime",
     icon: piramitIcon,
-    description: "Matematiksel zeka ve sayısal mantığı birleştiren, her seviyede piramidin zirvesine ulaşmak için doğru sayı kombinasyonlarını bulmaya çalıştığınız zihin egzersizi bulmaca oyunu. Sade arayüzü ve progresif zorluk seviyeleriyle beyin jimnastiği yapmanızı sağlar.",
+    description: "Piramit Bulmaca: Antik Piramitlerin Sırrını Çöz, Kelimelerle Yüksel! Antik piramitlerin mistik atmosferinde geçen ve kelime bilginizi, stratejik düşünme yeteneğinizi sınayan yenilikçi bir bulmaca oyunudur. Antik medeniyetlerin büyüleyici dünyasında kaybolacak ve bulmacaları çözerken heyecan dolu bir macera yaşayacaksınız.",
     tags: ["Flutter", "Dart", "Bloc", "iOS"],
     features: [
-      "Yüzlerce farklı zorluk seviyesine sahip progresif seviye tasarımı",
-      "Flutter BLoC mimarisi ile kararlı ve hızlı oyun döngüsü",
-      "Günlük zeka egzersizleri ve başarı rozetleri (achievements)",
-      "İnternetsiz (çevrimdışı) çalışabilme özelliği"
+      "Benzersiz Piramit Yapısı: En alt basamaktan başlayarak her üst seviyede bir harf eksiltme mantığıyla ilerleyen kelime bulmacaları",
+      "İpucu Desteği: Her bölüm için özel sunulan ipucu metinleri ile doğru kelimeyi bulma kolaylığı",
+      "Ödüller ve Avantajlar: Doğru tahminlerle kazanılan ipucu hakları, ekstra canlar ve oyun içi ödüller",
+      "Antik Atmosfer: Mistik piramit temasını yansıtan özenle hazırlanmış görseller ve etkileyici müzikler"
     ],
     screenshots: [piramitMockup],
     links: {
@@ -92,13 +92,13 @@ const appsData = {
     name: "RandomJourney",
     category: "Seyahat",
     icon: randomjourneyIcon,
-    description: "Kararsız seyahat severler için harita üzerinde rastgele koordinatlar ve gizli rotalar seçen, keşfedilmemiş yerleri keşfetmenize yardımcı olan macera ve rota planlayıcı. iOS konum servisleriyle entegre çalışarak en yakın macera noktasını belirler.",
+    description: "Macera arayanlar için tasarlanan bu uygulama, kullanıcılara seçtikleri bölgeden rastgele koordinatlar sunarak onları heyecan dolu bir yolculuğa çıkarıyor. İster günlük hayatın sıradanlığından kaçmak ister gizli kalmış güzellikleri keşfetmek isteyin, bu uygulama yeni yerleri daha önce hiç olmadığı gibi keşfetmenizi sağlar.",
     tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
     features: [
-      "MapKit entegrasyonu ile dinamik ve etkileşimli macera haritası",
-      "CoreLocation ile kullanıcı konumuna yakın rastgele rotalar çizme",
-      "Kendi seyahat günlüklerinizi ve fotoğraflarınızı kaydetme paneli",
-      "iOS Paylaşım menüsü ile maceraları arkadaşlara gönderebilme"
+      "Rastgele Koordinat Üretimi: Seçtiğiniz bölgede keşfedilmemiş heyecan dolu yeni noktalara ulaşın",
+      "Kolay Kullanım: Bölgenizi seçin, koordinatları alın ve maceranızı hemen başlatın",
+      "Doğa ve Şehir Keşfi: İster doğa tutkunu olun ister şehir kaşifi, her gezi yeni bir maceraya dönüşür",
+      "Gizli Hazineler: Harita üzerinde gezinirken sizi bekleyen gizli rotaları ve yerleri keşfedin"
     ],
     screenshots: [randomjourneyMockup],
     links: {
