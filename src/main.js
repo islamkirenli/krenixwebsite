@@ -124,6 +124,9 @@ const appsData = {
   }
 };
 
+// Target email address for FormSubmit submissions
+const TARGET_EMAIL = 'ismailkirenli0@gmail.com';
+
 // Global DOM Elements
 const header = document.getElementById('main-header');
 const navToggle = document.getElementById('nav-menu-toggle');
@@ -303,20 +306,46 @@ document.querySelectorAll('.btn-detail').forEach(btn => {
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const name = document.getElementById('form-name').value;
+  const email = document.getElementById('form-email').value;
+  const message = document.getElementById('form-message').value;
 
   feedbackMsg.style.display = 'block';
   feedbackMsg.className = 'form-message';
   feedbackMsg.textContent = 'Mesajınız gönderiliyor...';
 
-  setTimeout(() => {
+  fetch(`https://formsubmit.co/ajax/${TARGET_EMAIL}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      message: message
+    })
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Gönderim başarısız.');
+  })
+  .then(data => {
     feedbackMsg.className = 'form-message success';
     feedbackMsg.textContent = `Teşekkürler ${name}! Mesajınız başarıyla iletildi. En kısa sürede dönüş yapacağım.`;
     contactForm.reset();
-
+  })
+  .catch(error => {
+    console.error('İletişim formu hatası:', error);
+    feedbackMsg.className = 'form-message error';
+    feedbackMsg.textContent = 'Mesajınız gönderilirken bir hata oluştu. Lütfen doğrudan e-posta göndermeyi deneyin.';
+  })
+  .finally(() => {
     setTimeout(() => {
       feedbackMsg.style.display = 'none';
     }, 5000);
-  }, 1200);
+  });
 });
 
 // Apps Tab Filtering Handler

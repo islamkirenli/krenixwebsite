@@ -644,6 +644,24 @@ section {
   gap: 16px;
   backdrop-filter: blur(10px);
   box-shadow: var(--card-shadow);
+  transition: var(--transition-smooth);
+}
+
+.info-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-card-link:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-color-hover);
+  box-shadow: 0 10px 30px rgba(0, 245, 212, 0.08);
+}
+
+.info-card-link:hover .info-icon {
+  background: rgba(0, 245, 212, 0.15);
+  border-color: rgba(0, 245, 212, 0.3);
+  transform: scale(1.05);
 }
 
 .info-icon {
@@ -657,6 +675,7 @@ section {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 245, 212, 0.1);
+  transition: var(--transition-smooth);
 }
 
 .info-text h4 {
