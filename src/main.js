@@ -35,7 +35,7 @@ import appleIcon from './assets/apple.png'
 let currentLang = localStorage.getItem('preferredLang') || 'tr';
 
 // Target email address for FormSubmit submissions
-const TARGET_EMAIL = 'ismailkirenli0@gmail.com';
+const TARGET_EMAIL = 'support@krenixstudios.com';
 
 // Apps Dataset structured with both TR and EN translations
 const appsData = {
