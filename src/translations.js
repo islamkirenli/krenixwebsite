@@ -34,6 +34,7 @@ export const translations = {
     form_message_placeholder: "Mesajınızı buraya yazın...",
     form_btn_send: "Gönder",
     footer_text: "&copy; 2026 İslam Kirenli. Tüm hakları saklıdır.",
+    footer_privacy: "Gizlilik Politikası",
     
     // Form geri bildirimleri
     feedback_sending: "Mesajınız gönderiliyor...",
@@ -79,6 +80,7 @@ export const translations = {
     form_message_placeholder: "Write your message here...",
     form_btn_send: "Send",
     footer_text: "&copy; 2026 İslam Kirenli. All rights reserved.",
+    footer_privacy: "Privacy Policy",
     
     // Form feedback messages
     feedback_sending: "Sending your message...",

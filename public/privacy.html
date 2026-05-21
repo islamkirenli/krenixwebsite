@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası | Privacy Policy - Krenix Studios</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #080710;
+      --bg-surface: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --text-primary: #ffffff;
+      --text-secondary: #ccd6f6;
+      --text-muted: #8892b0;
+      --accent-cyan: #00f5d4;
+      --accent-pink: #ff007f;
+      --font-sans: 'Outfit', sans-serif;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --neon-glow-cyan: 0 0 15px rgba(0, 245, 212, 0.3);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      font-family: var(--font-sans);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Background Blobs */
+    .bg-blobs {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.12;
+    }
+
+    .blob-1 {
+      top: -10%;
+      left: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: var(--accent-cyan);
+    }
+
+    .blob-2 {
+      bottom: -10%;
+      right: -10%;
+      width: 45vw;
+      height: 45vw;
+      background: var(--accent-pink);
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    /* Header & Navigation */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo-link {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-link span {
+      color: var(--accent-cyan);
+    }
+
+    .logo-link:hover {
+      color: var(--accent-cyan);
+      text-shadow: var(--neon-glow-cyan);
+    }
+
+    /* Language Switcher */
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      padding: 4px 8px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: 12px;
+      transition: var(--transition-smooth);
+    }
+
+    .lang-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .lang-btn.active {
+      color: var(--accent-cyan);
+      background: rgba(0, 245, 212, 0.1);
+      box-shadow: 0 0 10px rgba(0, 245, 212, 0.05);
+    }
+
+    .lang-divider {
+      color: rgba(255, 255, 255, 0.15);
+      font-size: 12px;
+      user-select: none;
+    }
+
+    /* Policy Card Container */
+    .policy-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 50px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: var(--text-primary);
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    h1 span {
+      color: var(--accent-cyan);
+      text-shadow: var(--neon-glow-cyan);
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    h2 {
+      color: var(--text-primary);
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-left: 3px solid var(--accent-cyan);
+      padding-left: 12px;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: var(--text-primary);
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+    }
+
+    a.inline-link {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    a.inline-link:hover {
+      text-decoration: underline;
+      text-shadow: var(--neon-glow-cyan);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 30px auto;
+        padding: 0 16px;
+      }
+
+      .policy-card {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Animated Background Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo-link">Krenix <span>Studios</span></a>
+      <div class="lang-selector">
+        <button class="lang-btn active" id="btn-tr">TR</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn" id="btn-en">EN</button>
+      </div>
+    </header>
+
+    <!-- Main Content Card -->
+    <main class="policy-card">
+      
+      <!-- TURKISH CONTENT -->
+      <article id="content-tr">
+        <h1>Gizlilik <span>Politikası</span></h1>
+        <span class="last-updated">Son Güncelleme: 22 Mayıs 2026</span>
+
+        <p>Krenix Studios olarak, geliştirdiğimiz mobil uygulamalarda kullanıcılarımızın gizliliğine ve veri güvenliğine en yüksek düzeyde önem veriyoruz. Bu gizlilik politikası, mobil uygulamalarımızı ve web sitemizi kullanırken hangi verilerin nasıl işlendiğini açıklamaktadır.</p>
+
+        <h2>1. Toplanan Bilgiler ve Veri Güvenliği</h2>
+        <p>Geliştirdiğimiz uygulamaların büyük bir çoğunluğu <strong>"Gizlilik Odaklı" (Privacy-First)</strong> olarak tasarlanmıştır. Bu kapsamda sunduğumuz uygulamalarımızdaki veri işleme prensipleri şu şekildedir:</p>
+        
+        <ul>
+          <li><strong>Veltrim (Akıllı Pano Yöneticisi):</strong> Kopyaladığınız panolar, metinler veya bağlantılar tamamen cihazınızın yerel veri tabanında (Hive) şifrelenmiş olarak saklanır. Bu veriler hiçbir şekilde Krenix Studios sunucularına veya üçüncü taraflara gönderilmez, tamamen sizin kontrolünüzdedir.</li>
+          <li><strong>QRMaker & Scanner:</strong> Oluşturduğunuz ve taradığınız QR kodların geçmişi, yedekleme ve cihazlar arası senkronizasyon amacıyla güvenli bir şekilde bulut tabanlı Google Firebase altyapısında saklanır. Kamera erişimi sadece kodları taramak için anlık olarak kullanılır, kamera görüntüleri veya kişisel bilgileriniz kaydedilmez.</li>
+          <li><strong>Rolliva:</strong> Oluşturduğunuz çarklar, takım dağıtımları ve zar ayarları sadece yerel cihazınızda tutulur.</li>
+          <li><strong>Piramit Bulmaca:</strong> Oyun içi skorlarınız, bölümlerdeki ilerlemeleriniz ve kazanımlarınız sadece yerel cihazınız üzerinde saklanır.</li>
+          <li><strong>RandomJourney:</strong> Keşfettiğiniz rotalar, seyahat geçmişiniz ve kullanıcı verileriniz güvenli bir şekilde Google Firebase bulut veritabanı üzerinde saklanır. Konum servisleri sadece size yakın noktaları belirlemek amacıyla anlık kullanılır ve konum koordinatlarınız bulut veritabanında şifreli olarak muhafaza edilir.</li>
+        </ul>
+
+        <h2>2. Web Sitesi İletişim Formu</h2>
+        <p>Web sitemiz üzerinden bizimle iletişime geçmek için kullandığınız iletişim formunda girdiğiniz ad, soyad ve e-posta adresiniz sadece size yanıt verebilmek ve destek taleplerinizi çözebilmek amacıyla kullanılır. Bu bilgiler hiçbir pazarlama faaliyeti için kullanılmaz ve üçüncü taraflarla paylaşılmaz.</p>
+
+        <h2>3. Üçüncü Taraf Hizmetler</h2>
+        <p>Uygulamalarımız Apple App Store üzerinden dağıtılmaktadır. Apple, uygulamaların kullanımı ve çökme raporları (crash logs) hakkında anonim istatistiki veriler toplayabilir. Bu veriler sadece uygulamalarımızın performansını artırmak amacıyla kullanılmakta olup Apple'ın kendi gizlilik politikasına tabidir.</p>
+
+        <h2>4. Çocukların Gizliliği</h2>
+        <p>Uygulamalarımız 13 yaşın altındaki çocuklardan doğrudan herhangi bir kişisel veri toplamaz ve işlemeyiz. Eğer bir ebeveyn olarak çocuğunuzun bize kişisel veri ilettiğini fark ederseniz lütfen bizimle iletişime geçin; bu verileri derhal sistemlerimizden sileceğiz.</p>
+
+        <h2>5. İletişim</h2>
+        <p>Gizlilik politikamız hakkında sorularınız, görüşleriniz veya talepleriniz için bizimle doğrudan iletişime geçebilirsiniz:</p>
+        <p><strong>E-posta:</strong> <a href="mailto:support@krenixstudios.com" class="inline-link">support@krenixstudios.com</a></p>
+      </article>
+
+      <!-- ENGLISH CONTENT -->
+      <article id="content-en" style="display: none;">
+        <h1>Privacy <span>Policy</span></h1>
+        <span class="last-updated">Last Updated: May 22, 2026</span>
+
+        <p>At Krenix Studios, we attach the highest level of importance to the privacy and data security of our users in the mobile applications we develop. This privacy policy explains how data is processed when you use our mobile applications and web site.</p>
+
+        <h2>1. Information Collected and Data Security</h2>
+        <p>Most of the applications we develop are designed as <strong>"Privacy-First"</strong>. In this context, the data processing principles of our apps are as follows:</p>
+        
+        <ul>
+          <li><strong>Veltrim (Smart Clipboard):</strong> The clipboards, texts, or links you copy are stored fully encrypted in your device's local database (Hive). This data is never sent to Krenix Studios servers or third parties; it is completely under your control.</li>
+          <li><strong>QRMaker & Scanner:</strong> Data for your generated and scanned QR codes is stored securely in cloud-based Google Firebase infrastructure for backup and device synchronization. Camera access is only used temporarily to scan codes; no camera feed images or personal data are stored or shared on servers.</li>
+          <li><strong>Rolliva:</strong> The wheels, team layouts, and dice settings you create are stored only locally on your device.</li>
+          <li><strong>Piramit Bulmaca (Pyramid Puzzle):</strong> Your in-game scores, levels, progress, and achievements are stored solely on your local device.</li>
+          <li><strong>RandomJourney:</strong> Discovered routes, travel history, and user progress are stored securely in Google Firebase cloud database. Location services are used to identify nearby points in real-time, and location coordinates are securely maintained in the cloud.</li>
+        </ul>
+
+        <h2>2. Web Site Contact Form</h2>
+        <p>Your name, surname, and email address entered in the contact form used to contact us via our website are processed only to reply to you and resolve your support inquiries. This information is never used for marketing activities and is not shared with third parties.</p>
+
+        <h2>3. Third-Party Services</h2>
+        <p>Our applications are distributed through the Apple App Store. Apple may collect anonymous statistics regarding application usage and crash logs. This data is only used to improve the performance of our applications and is subject to Apple's own privacy policy.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>Our applications do not collect or process personal data from children under the age of 13. If you, as a parent or guardian, notice that your child has provided us with personal data, please contact us; we will delete this data from our systems immediately.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>For any questions, feedback, or inquiries regarding our privacy policy, you can contact us directly:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@krenixstudios.com" class="inline-link">support@krenixstudios.com</a></p>
+      </article>
+
+    </main>
+  </div>
+
+  <script>
+    const btnTr = document.getElementById('btn-tr');
+    const btnEn = document.getElementById('btn-en');
+    const contentTr = document.getElementById('content-tr');
+    const contentEn = document.getElementById('content-en');
+
+    // Switch to Turkish
+    btnTr.addEventListener('click', () => {
+      btnTr.classList.add('active');
+      btnEn.classList.remove('active');
+      contentTr.style.display = 'block';
+      contentEn.style.display = 'none';
+      document.documentElement.lang = 'tr';
+    });
+
+    // Switch to English
+    btnEn.addEventListener('click', () => {
+      btnEn.classList.add('active');
+      btnTr.classList.remove('active');
+      contentEn.style.display = 'block';
+      contentTr.style.display = 'none';
+      document.documentElement.lang = 'en';
+    });
+
+    // Auto-detect browser language or localStorage preference
+    const preferredLang = localStorage.getItem('preferredLang') || (navigator.language.startsWith('en') ? 'en' : 'tr');
+    if (preferredLang === 'en') {
+      btnEn.click();
+    } else {
+      btnTr.click();
+    }
+  </script>
+</body>
+
+</html>

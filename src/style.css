@@ -778,6 +778,26 @@ footer {
 .footer-text {
   color: var(--text-muted);
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-link-divider {
+  color: rgba(255, 255, 255, 0.15);
+  user-select: none;
+}
+
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-link:hover {
+  color: var(--accent-cyan);
+  text-shadow: var(--neon-glow-cyan);
 }
 
 .footer-socials {
