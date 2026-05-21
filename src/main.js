@@ -21,12 +21,12 @@ const appsData = {
     category: "Üretkenlik",
     icon: veltrimIcon,
     description: "iOS için panonuzu (clipboard) akıllıca yöneten, kopyalanan metin, link ve görsel geçmişini otomatik olarak kaydedip organize eden gelişmiş pano yöneticisi. Özelleştirilebilir hızlı erişim widget'ları ve klavye entegrasyonu ile kopyalama işlemlerini hızlandırır.",
-    tags: ["SwiftUI", "CoreData", "WidgetKit", "iOS"],
+    tags: ["Flutter", "Dart", "Hive", "iOS"],
     features: [
       "Metin, link ve resim kopyalama geçmişini otomatik kaydetme",
-      "Klavye uzantısı (custom keyboard) ile her uygulamadan panoya erişim",
-      "CoreData ile tüm verileri cihazınızda yerel ve şifreli saklama",
-      "iOS 17+ kilit ekranı ve ana ekran widget desteği"
+      "Klavye entegrasyonu ve hızlı erişim özellikleri ile panoya kolay erişim",
+      "Hive yerel veritabanı ile tüm verileri cihazınızda yerel ve şifreli saklama",
+      "Kilit ekranı ve ana ekran widget entegrasyonu"
     ],
     screenshots: [veltrimMockup],
     links: {
@@ -39,11 +39,11 @@ const appsData = {
     category: "Yardımcılar",
     icon: qrmakerIcon,
     description: "Hızlı ve güvenli bir şekilde QR kodları tarayan, özel renklerde, desenlerde ve logolu QR kodları üreten gelişmiş tarayıcı ve oluşturucu uygulaması. Geçmiş tarama kayıtlarını tutarak ihtiyaç duyduğunuzda eski QR içeriklerine hızlıca erişmenizi sağlar.",
-    tags: ["Swift", "AVFoundation", "CoreImage", "iOS"],
+    tags: ["Flutter", "Dart", "Mobile Scanner", "iOS"],
     features: [
-      "AVFoundation ile ultra hızlı ve karanlıkta bile kararlı tarama",
+      "Mobil tarayıcı motoru ile ultra hızlı ve karanlıkta bile kararlı tarama",
       "Özel renk, logo ve gradyanlara sahip QR kodlar oluşturabilme",
-      "CoreImage filtreleri ile yüksek çözünürlüklü tarama çıktıları",
+      "Görüntü işleme kütüphaneleri ile yüksek çözünürlüklü tarama çıktıları",
       "Yerel tarama geçmişi ve favorilere ekleme özelliği"
     ],
     screenshots: [qrmakerMockup],
