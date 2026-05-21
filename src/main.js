@@ -1,9 +1,25 @@
 import './style.css'
-import veltrimMockup from './assets/veltrim_mockup.png'
-import qrmakerMockup from './assets/qrmaker_mockup.png'
-import rollivaMockup from './assets/rolliva_mockup.png'
-import piramitMockup from './assets/piramit_mockup.png'
-import randomjourneyMockup from './assets/randomjourney_mockup.png'
+import veltrim1 from './assets/veltrim/1.png'
+import veltrim2 from './assets/veltrim/2.png'
+import veltrim3 from './assets/veltrim/3.png'
+
+import qrmaker1 from './assets/qrmaker/1.png'
+import qrmaker2 from './assets/qrmaker/2.png'
+import qrmaker3 from './assets/qrmaker/3.png'
+import qrmaker4 from './assets/qrmaker/4.png'
+
+import rolliva1 from './assets/rolliva/1.png'
+import rolliva2 from './assets/rolliva/2.png'
+import rolliva3 from './assets/rolliva/3.png'
+import rolliva4 from './assets/rolliva/4.png'
+
+import piramit1 from './assets/piramit/1.png'
+import piramit2 from './assets/piramit/2.png'
+import piramit3 from './assets/piramit/3.png'
+import piramit4 from './assets/piramit/4.png'
+
+import randomjourney1 from './assets/randomjourney/1.png'
+import randomjourney2 from './assets/randomjourney/2.png'
 
 import veltrimIcon from './assets/veltrim_icon.png'
 import qrmakerIcon from './assets/qrmaker_icon.png'
@@ -28,7 +44,7 @@ const appsData = {
       "Akıllı Arama: Hızlı ve sezgisel arama çubuğu ile pano geçmişine saniyeler içinde ulaşma",
       "Gizlilik Odaklı Tasarım: Verilerinizin cihazınızda yerel ve güvenle saklanması"
     ],
-    screenshots: [veltrimMockup],
+    screenshots: [veltrim1, veltrim2, veltrim3],
     links: {
       ios: "https://apps.apple.com/tr/app/veltrim-smart-clipboard/id6766660936?l=tr",
       github: "https://github.com"
@@ -46,7 +62,7 @@ const appsData = {
       "Gelişmiş Özelleştirme: QR kodlarınızı özel renkler, logolar ve tasarımlarla kişiselleştirin",
       "Geçmiş ve Güvenlik: Oluşturduğunuz ve taradığınız kodları güvenle cihazınızda yerel kaydedin"
     ],
-    screenshots: [qrmakerMockup],
+    screenshots: [qrmaker1, qrmaker2, qrmaker3, qrmaker4],
     links: {
       ios: "https://apps.apple.com/tr/app/qrmaker-scanner/id6504368000?l=tr",
       github: "https://github.com"
@@ -64,7 +80,7 @@ const appsData = {
       "Adil Takım Oluşturucu: Arkadaş gruplarınızda dengeli ve adil takımları saniyeler içinde dağıtın",
       "Kullanıcı Dostu ve Rive Animasyonları: Modern, temiz tasarım ve pürüzsüz micro-interactions desteği"
     ],
-    screenshots: [rollivaMockup],
+    screenshots: [rolliva1, rolliva2, rolliva3, rolliva4],
     links: {
       ios: "https://apps.apple.com/tr/app/rolliva-zar-%C3%A7ark/id6765519968?l=tr",
       github: "https://github.com"
@@ -82,7 +98,7 @@ const appsData = {
       "Ödüller ve Avantajlar: Doğru tahminlerle kazanılan ipucu hakları, ekstra canlar ve oyun içi ödüller",
       "Antik Atmosfer: Mistik piramit temasını yansıtan özenle hazırlanmış görseller ve etkileyici müzikler"
     ],
-    screenshots: [piramitMockup],
+    screenshots: [piramit1, piramit2, piramit3, piramit4],
     links: {
       ios: "https://apps.apple.com/tr/app/piramit-bulmaca/id6743098390?l=tr",
       github: "https://github.com"
@@ -100,7 +116,7 @@ const appsData = {
       "Doğa ve Şehir Keşfi: İster doğa tutkunu olun ister şehir kaşifi, her gezi yeni bir maceraya dönüşür",
       "Gizli Hazineler: Harita üzerinde gezinirken sizi bekleyen gizli rotaları ve yerleri keşfedin"
     ],
-    screenshots: [randomjourneyMockup],
+    screenshots: [randomjourney1, randomjourney2],
     links: {
       ios: "https://apps.apple.com/tr/app/randomjourney/id6737148094?l=tr",
       github: "https://github.com"
