@@ -32,12 +32,17 @@
       <a href="#hero" class="logo" id="logo-link">Krenix Studios</a>
       <nav>
         <ul class="nav-menu" id="nav-menu-list">
-          <li><a href="#hero" class="nav-link" id="nav-link-hero">Ana Sayfa</a></li>
-          <li><a href="#apps" class="nav-link" id="nav-link-apps">Uygulamalarım</a></li>
-          <li><a href="#about" class="nav-link" id="nav-link-about">Hakkımda</a></li>
-          <li><a href="#contact" class="nav-link" id="nav-link-contact">İletişim</a></li>
+          <li><a href="#hero" class="nav-link" id="nav-link-hero" data-i18n="nav_hero">Ana Sayfa</a></li>
+          <li><a href="#apps" class="nav-link" id="nav-link-apps" data-i18n="nav_apps">Uygulamalarım</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about" data-i18n="nav_about">Hakkımda</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact" data-i18n="nav_contact">İletişim</a></li>
         </ul>
       </nav>
+      <div class="lang-selector">
+        <button class="lang-btn active" id="lang-btn-tr" data-lang="tr">TR</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn" id="lang-btn-en" data-lang="en">EN</button>
+      </div>
       <button class="nav-toggle" id="nav-menu-toggle" aria-label="Menüyü Aç/Kapat">
         ☰
       </button>
@@ -48,180 +53,32 @@
   <main>
     <!-- Hero Section -->
     <section id="hero">
-      <div class="hero-badge">Mobil Geliştirici & Tasarımcı</div>
-      <h1 class="hero-title">Fikirleri <span>Mobil Dünyada</span> Hayata Geçiriyorum</h1>
-      <p class="hero-description">
+      <div class="hero-badge" data-i18n="hero_badge">Mobil Geliştirici & Tasarımcı</div>
+      <h1 class="hero-title" data-i18n="hero_title">Fikirleri <span>Mobil Dünyada</span> Hayata Geçiriyorum</h1>
+      <p class="hero-description" data-i18n="hero_description">
         Swift, SwiftUI, Flutter ve modern Apple teknolojileri ile iOS platformuna özel yüksek performanslı, estetik ve
         kullanıcı odaklı mobil uygulamalar geliştiriyorum.
       </p>
       <div class="hero-buttons">
-        <a href="#apps" class="btn btn-primary" id="btn-hero-showcase">Uygulamaları Keşfet</a>
-        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">İletişime Geç</a>
+        <a href="#apps" class="btn btn-primary" id="btn-hero-showcase" data-i18n="hero_btn_explore">Uygulamaları Keşfet</a>
+        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact" data-i18n="hero_btn_contact">İletişime Geç</a>
       </div>
     </section>
 
     <!-- Apps Showcase Section -->
     <section id="apps">
-      <h2 class="section-title">Mobil <span>Uygulamalarım</span></h2>
-      <p class="section-subtitle">Geliştirdiğim en son projeler, kullanılan teknolojiler ve mağaza bağlantıları.</p>
+      <h2 class="section-title" data-i18n="apps_section_title">Mobil <span>Uygulamalarım</span></h2>
+      <p class="section-subtitle" data-i18n="apps_section_subtitle">Geliştirdiğim en son projeler, kullanılan teknolojiler ve mağaza bağlantıları.</p>
 
       <!-- Apps Tab Navigation -->
       <div class="apps-tabs" id="apps-tabs-container">
-        <button class="tab-btn active" data-tab="all">Tümü</button>
-        <button class="tab-btn" data-tab="app">Uygulamalar</button>
-        <button class="tab-btn" data-tab="game">Oyunlar</button>
+        <button class="tab-btn active" data-tab="all" data-i18n="tab_all">Tümü</button>
+        <button class="tab-btn" data-tab="app" data-i18n="tab_apps">Uygulamalar</button>
+        <button class="tab-btn" data-tab="game" data-i18n="tab_games">Oyunlar</button>
       </div>
 
       <div class="app-grid" id="applications-grid">
-        <!-- App Card 1: Veltrim -->
-        <article class="app-card" data-app-id="veltrim" data-app-type="app">
-          <div class="app-header">
-            <div class="app-icon">
-              <img src="./src/assets/veltrim_icon.png" alt="Veltrim Icon" />
-            </div>
-            <div class="app-meta">
-              <h3 class="app-name">Veltrim: Smart Clipboard</h3>
-              <span class="app-category">Üretkenlik</span>
-            </div>
-          </div>
-          <p class="app-description">
-            Önemli bilgileri kopyalayıp kaybetmeye son veren, dijital iş akışınızı klasörler ve etiketlerle organize eden gelişmiş, hızlı ve güvenli pano yöneticisi.
-          </p>
-          <div class="app-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Hive</span>
-            <span class="tag">iOS</span>
-          </div>
-          <div class="app-footer">
-            <div class="app-links">
-              <a href="https://apps.apple.com/tr/app/veltrim-smart-clipboard/id6766660936?l=tr" class="app-link-btn" title="iOS App Store" target="_blank">
-                <img src="./src/assets/apple.png" alt="App Store" />
-              </a>
-            </div>
-            <button class="btn-detail" data-app="veltrim">Detayları Gör <span>→</span></button>
-          </div>
-        </article>
-
-        <!-- App Card 2: QRMaker&Scanner -->
-        <article class="app-card" data-app-id="qrmaker" data-app-type="app">
-          <div class="app-header">
-            <div class="app-icon">
-              <img src="./src/assets/qrmaker_icon.png" alt="QRMaker&Scanner Icon" />
-            </div>
-            <div class="app-meta">
-              <h3 class="app-name">QRMaker&Scanner</h3>
-              <span class="app-category">Yardımcılar</span>
-            </div>
-          </div>
-          <p class="app-description">
-            QR kodlarını zahmetsizce oluşturan ve tarayan; özel renk, logo ve tasarımlarla kişiselleştirme imkanı sunan güvenli ve hızlı QR asistanı.
-          </p>
-          <div class="app-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Mobile Scanner</span>
-            <span class="tag">iOS</span>
-          </div>
-          <div class="app-footer">
-            <div class="app-links">
-              <a href="https://apps.apple.com/tr/app/qrmaker-scanner/id6504368000?l=tr" class="app-link-btn" title="iOS App Store" target="_blank">
-                <img src="./src/assets/apple.png" alt="App Store" />
-              </a>
-            </div>
-            <button class="btn-detail" data-app="qrmaker">Detayları Gör <span>→</span></button>
-          </div>
-        </article>
-
-        <!-- App Card 3: Rolliva -->
-        <article class="app-card" data-app-id="rolliva" data-app-type="app">
-          <div class="app-header">
-            <div class="app-icon">
-              <img src="./src/assets/rolliva_icon.png" alt="Rolliva Icon" />
-            </div>
-            <div class="app-meta">
-              <h3 class="app-name">Rolliva</h3>
-              <span class="app-category">Yardımcılar</span>
-            </div>
-          </div>
-          <p class="app-description">
-            Zar atma, yazı-tura, karar çarkı ve adil takım oluşturucu gibi şans ve grup araçlarını modern bir arayüzde birleştiren eğlenceli karar asistanı.
-          </p>
-          <div class="app-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Rive</span>
-            <span class="tag">iOS</span>
-          </div>
-          <div class="app-footer">
-            <div class="app-links">
-              <a href="https://apps.apple.com/tr/app/rolliva-zar-%C3%A7ark/id6765519968?l=tr" class="app-link-btn" title="iOS App Store" target="_blank">
-                <img src="./src/assets/apple.png" alt="App Store" />
-              </a>
-            </div>
-            <button class="btn-detail" data-app="rolliva">Detayları Gör <span>→</span></button>
-          </div>
-        </article>
-
-        <!-- App Card 4: Piramit Bulmaca -->
-        <article class="app-card" data-app-id="piramit" data-app-type="game">
-          <div class="app-header">
-            <div class="app-icon">
-              <img src="./src/assets/piramit_icon.JPG" alt="Piramit Bulmaca Icon" />
-            </div>
-            <div class="app-meta">
-              <h3 class="app-name">Piramit Bulmaca</h3>
-              <span class="app-category">Kelime</span>
-            </div>
-          </div>
-          <p class="app-description">
-            Antik piramitlerin mistik atmosferinde kelime bilginizi ve stratejik düşünme yeteneğinizi sınayan, kelimelerle yukarı tırmandığınız yenilikçi bulmaca oyunu.
-          </p>
-          <div class="app-tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Bloc</span>
-            <span class="tag">iOS</span>
-          </div>
-          <div class="app-footer">
-            <div class="app-links">
-              <a href="https://apps.apple.com/tr/app/piramit-bulmaca/id6743098390?l=tr" class="app-link-btn" title="iOS App Store" target="_blank">
-                <img src="./src/assets/apple.png" alt="App Store" />
-              </a>
-            </div>
-            <button class="btn-detail" data-app="piramit">Detayları Gör <span>→</span></button>
-          </div>
-        </article>
-
-        <!-- App Card 5: RandomJourney -->
-        <article class="app-card" data-app-id="randomjourney" data-app-type="app">
-          <div class="app-header">
-            <div class="app-icon">
-              <img src="./src/assets/randomjourney_icon.png" alt="RandomJourney Icon" />
-            </div>
-            <div class="app-meta">
-              <h3 class="app-name">RandomJourney</h3>
-              <span class="app-category">Seyahat</span>
-            </div>
-          </div>
-          <p class="app-description">
-            Macera arayanlar için seçtikleri bölgelerden rastgele koordinatlar sunarak gizli yerleri ve rotaları keşfetmelerini sağlayan heyecan dolu bir seyahat asistanı.
-          </p>
-          <div class="app-tags">
-            <span class="tag">SwiftUI</span>
-            <span class="tag">MapKit</span>
-            <span class="tag">CoreLocation</span>
-            <span class="tag">iOS</span>
-          </div>
-          <div class="app-footer">
-            <div class="app-links">
-              <a href="https://apps.apple.com/tr/app/randomjourney/id6737148094?l=tr" class="app-link-btn" title="iOS App Store" target="_blank">
-                <img src="./src/assets/apple.png" alt="App Store" />
-              </a>
-            </div>
-            <button class="btn-detail" data-app="randomjourney">Detayları Gör <span>→</span></button>
-          </div>
-        </article>
+        <!-- Dynamically rendered by main.js -->
       </div>
     </section>
 
@@ -229,28 +86,28 @@
     <section id="about">
       <div class="about-content">
         <div class="about-text">
-          <h2 class="section-title" style="text-align:center; margin-bottom: 20px;">Ben <span>Kimim?</span></h2>
-          <p>
+          <h2 class="section-title" style="text-align:center; margin-bottom: 20px;" data-i18n="about_section_title">Ben <span>Kimim?</span></h2>
+          <p data-i18n="about_p1">
             Uzun süredir iOS uygulama geliştirme ekosisteminde aktif olarak yer alıyorum. Swift, SwiftUI ve Flutter
             teknolojilerini kullanarak kullanıcıların günlük hayatını kolaylaştıran, performansı yüksek ve Apple tasarım
             standartlarına uygun mobil çözümler üretmek benim en büyük motivasyonum.
           </p>
-          <p>
+          <p data-i18n="about_p2">
             Uygulamalarımı geliştirirken kod kalitesi (clean code), Apple standartlarına uygun mimari (MVVM, Clean
             Architecture) ve pürüzsüz animasyonlar (micro-interactions) konularına maksimum özen gösteriyorum.
           </p>
           <div class="about-stats">
             <div class="stat-item">
               <span class="stat-number">5</span>
-              <span class="stat-label">Yayınlanan Uygulama</span>
+              <span class="stat-label" data-i18n="about_stat1_label">Yayınlanan Uygulama</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">2+</span>
-              <span class="stat-label">Yıl Deneyim</span>
+              <span class="stat-label" data-i18n="about_stat2_label">Yıl Deneyim</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">4.9</span>
-              <span class="stat-label">Ort. Mağaza Puanı</span>
+              <span class="stat-label" data-i18n="about_stat3_label">Ort. Mağaza Puanı</span>
             </div>
           </div>
         </div>
@@ -259,8 +116,8 @@
 
     <!-- Contact Section -->
     <section id="contact">
-      <h2 class="section-title">İletişime <span>Geç</span></h2>
-      <p class="section-subtitle">Yeni bir proje fikriniz mi var ya da sadece sohbet etmek mi istiyorsunuz? Bana yazın!
+      <h2 class="section-title" data-i18n="contact_section_title">İletişime <span>Geç</span></h2>
+      <p class="section-subtitle" data-i18n="contact_section_subtitle">Yeni bir proje fikriniz mi var ya da sadece sohbet etmek mi istiyorsunuz? Bana yazın!
       </p>
 
       <div class="contact-container">
@@ -268,15 +125,15 @@
           <a href="mailto:support@krenixstudios.com" class="info-card info-card-link">
             <div class="info-icon">📧</div>
             <div class="info-text">
-              <h4>E-posta</h4>
+              <h4 data-i18n="contact_email_title">E-posta</h4>
               <p>support@krenixstudios.com</p>
             </div>
           </a>
           <a href="https://maps.google.com/?q=Istanbul,Turkey" target="_blank" rel="noopener noreferrer" class="info-card info-card-link">
             <div class="info-icon">📍</div>
             <div class="info-text">
-              <h4>Konum</h4>
-              <p>İstanbul, Türkiye</p>
+              <h4 data-i18n="contact_location_title">Konum</h4>
+              <p data-i18n="contact_location_val">İstanbul, Türkiye</p>
             </div>
           </a>
         </div>
@@ -284,19 +141,19 @@
         <div class="contact-form-container">
           <form id="contact-form">
             <div class="form-group">
-              <label for="form-name">Adınız Soyadınız</label>
-              <input type="text" id="form-name" class="form-control" placeholder="Adınızı girin" required />
+              <label for="form-name" data-i18n="form_name_label">Adınız Soyadınız</label>
+              <input type="text" id="form-name" class="form-control" data-i18n-placeholder="form_name_placeholder" placeholder="Adınızı girin" required />
             </div>
             <div class="form-group">
-              <label for="form-email">E-posta Adresiniz</label>
-              <input type="email" id="form-email" class="form-control" placeholder="E-postanızı girin" required />
+              <label for="form-email" data-i18n="form_email_label">E-posta Adresiniz</label>
+              <input type="email" id="form-email" class="form-control" data-i18n-placeholder="form_email_placeholder" placeholder="E-postanızı girin" required />
             </div>
             <div class="form-group">
-              <label for="form-message">Mesajınız</label>
-              <textarea id="form-message" class="form-control" placeholder="Mesajınızı buraya yazın..."
+              <label for="form-message" data-i18n="form_message_label">Mesajınız</label>
+              <textarea id="form-message" class="form-control" data-i18n-placeholder="form_message_placeholder" placeholder="Mesajınızı buraya yazın..."
                 required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;">Gönder</button>
+            <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;" data-i18n="form_btn_send">Gönder</button>
             <div class="form-message" id="form-feedback-message"></div>
           </form>
         </div>
@@ -307,7 +164,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-container">
-      <div class="footer-text">
+      <div class="footer-text" data-i18n="footer_text">
         &copy; 2026 İslam Kirenli. Tüm hakları saklıdır.
       </div>
       <div class="footer-socials">

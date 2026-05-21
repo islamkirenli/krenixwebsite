@@ -1,4 +1,6 @@
 import './style.css'
+import { translations, appsTranslations } from './translations.js'
+
 import veltrim1 from './assets/veltrim/1.png'
 import veltrim2 from './assets/veltrim/2.png'
 import veltrim3 from './assets/veltrim/3.png'
@@ -29,103 +31,80 @@ import randomjourneyIcon from './assets/randomjourney_icon.png'
 
 import appleIcon from './assets/apple.png'
 
+// State for Language selection
+let currentLang = localStorage.getItem('preferredLang') || 'tr';
 
-// Apps Dataset
+// Target email address for FormSubmit submissions
+const TARGET_EMAIL = 'ismailkirenli0@gmail.com';
+
+// Apps Dataset structured with both TR and EN translations
 const appsData = {
   veltrim: {
     name: "Veltrim: Smart Clipboard",
-    category: "Üretkenlik",
+    type: "app",
     icon: veltrimIcon,
-    description: "Pano Yönetiminde Kontrolü Elinize Alın: Düzenli, Hızlı ve Profesyonel. Önemli bilgileri kopyalayıp kaybetmeye son verin. İster bir yazılımcı olun, ister bir içerik üreticisi; bu gelişmiş Pano Yöneticisi, dijital iş akışınızı karmaşadan arındırıp düzenli bir çalışma alanına dönüştürmek için tasarlandı.",
-    tags: ["Flutter", "Dart", "Hive", "iOS"],
-    features: [
-      "Otomatik Pano Takibi: Kopyalanan her metin veya bağlantıyı otomatik olarak kaydetme",
-      "Gelişmiş Organizasyon: Özel klasörler ve etiketler kullanarak içerikleri kategorize etme",
-      "Akıllı Arama: Hızlı ve sezgisel arama çubuğu ile pano geçmişine saniyeler içinde ulaşma",
-      "Gizlilik Odaklı Tasarım: Verilerinizin cihazınızda yerel ve güvenle saklanması"
-    ],
     screenshots: [veltrim1, veltrim2, veltrim3],
     links: {
       ios: "https://apps.apple.com/tr/app/veltrim-smart-clipboard/id6766660936?l=tr",
       github: "https://github.com"
-    }
+    },
+    tags: ["Flutter", "Dart", "Hive", "iOS"],
+    tr: appsTranslations.veltrim.tr,
+    en: appsTranslations.veltrim.en
   },
   qrmaker: {
     name: "QRMaker&Scanner",
-    category: "Yardımcılar",
+    type: "app",
     icon: qrmakerIcon,
-    description: "QR Kod Oluşturucu ve Tarayıcı ile hayatınızı kolaylaştırın! QR kodlarını zahmetsizce oluşturun ve tarayın. Güvenli, hızlı ve kullanıcı dostu uygulamamızla QR kod dünyasına adım atın.",
-    tags: ["Flutter", "Dart", "Mobile Scanner", "iOS"],
-    features: [
-      "Hızlı QR Kod Oluşturma: Metinler, URL'ler, e-postalar ve Wi-Fi bilgileri için anında üretim",
-      "Kolay Tarama: Kameranızı kullanarak QR kodlarını hızla tarayın ve bilgilere anında erişin",
-      "Gelişmiş Özelleştirme: QR kodlarınızı özel renkler, logolar ve tasarımlarla kişiselleştirin",
-      "Geçmiş ve Güvenlik: Oluşturduğunuz ve taradığınız kodları güvenle cihazınızda yerel kaydedin"
-    ],
     screenshots: [qrmaker1, qrmaker2, qrmaker3, qrmaker4],
     links: {
       ios: "https://apps.apple.com/tr/app/qrmaker-scanner/id6504368000?l=tr",
       github: "https://github.com"
-    }
+    },
+    tags: ["Flutter", "Dart", "Mobile Scanner", "iOS"],
+    tr: appsTranslations.qrmaker.tr,
+    en: appsTranslations.qrmaker.en
   },
   rolliva: {
     name: "Rolliva",
-    category: "Yardımcılar",
+    type: "app",
     icon: rollivaIcon,
-    description: "Kararsız mı kaldınız? Arkadaşlarınızla halı saha maçı yaparken adil takımlar mı kurmak istiyorsunuz? Ya da sadece şansınızı denemek için bir zar veya yazı turaya mı ihtiyacınız var? Rolliva, tüm bu ihtiyaçlarınızı tek bir şık ve modern arayüzde birleştiriyor!",
-    tags: ["Flutter", "Dart", "Rive", "iOS"],
-    features: [
-      "Zar Atma ve Yazı Tura: Gerçekçi fizik motoru destekli 3D zarlar atın ve yazı tura ile hızlı kararlar verin",
-      "Özelleştirilebilir Karar Çarkı: Kendi seçeneklerinizi ekleyin, çarkı çevirin ve kaderinizi çarka bırakın",
-      "Adil Takım Oluşturucu: Arkadaş gruplarınızda dengeli ve adil takımları saniyeler içinde dağıtın",
-      "Kullanıcı Dostu ve Rive Animasyonları: Modern, temiz tasarım ve pürüzsüz micro-interactions desteği"
-    ],
     screenshots: [rolliva1, rolliva2, rolliva3, rolliva4],
     links: {
       ios: "https://apps.apple.com/tr/app/rolliva-zar-%C3%A7ark/id6765519968?l=tr",
       github: "https://github.com"
-    }
+    },
+    tags: ["Flutter", "Dart", "Rive", "iOS"],
+    tr: appsTranslations.rolliva.tr,
+    en: appsTranslations.rolliva.en
   },
   piramit: {
     name: "Piramit Bulmaca",
-    category: "Kelime",
+    type: "game",
     icon: piramitIcon,
-    description: "Piramit Bulmaca: Antik Piramitlerin Sırrını Çöz, Kelimelerle Yüksel! Antik piramitlerin mistik atmosferinde geçen ve kelime bilginizi, stratejik düşünme yeteneğinizi sınayan yenilikçi bir bulmaca oyunudur. Antik medeniyetlerin büyüleyici dünyasında kaybolacak ve bulmacaları çözerken heyecan dolu bir macera yaşayacaksınız.",
-    tags: ["Flutter", "Dart", "Bloc", "iOS"],
-    features: [
-      "Benzersiz Piramit Yapısı: En alt basamaktan başlayarak her üst seviyede bir harf eksiltme mantığıyla ilerleyen kelime bulmacaları",
-      "İpucu Desteği: Her bölüm için özel sunulan ipucu metinleri ile doğru kelimeyi bulma kolaylığı",
-      "Ödüller ve Avantajlar: Doğru tahminlerle kazanılan ipucu hakları, ekstra canlar ve oyun içi ödüller",
-      "Antik Atmosfer: Mistik piramit temasını yansıtan özenle hazırlanmış görseller ve etkileyici müzikler"
-    ],
     screenshots: [piramit1, piramit2, piramit3, piramit4],
     links: {
       ios: "https://apps.apple.com/tr/app/piramit-bulmaca/id6743098390?l=tr",
       github: "https://github.com"
-    }
+    },
+    tags: ["Flutter", "Dart", "Bloc", "iOS"],
+    tr: appsTranslations.piramit.tr,
+    en: appsTranslations.piramit.en
   },
   randomjourney: {
     name: "RandomJourney",
-    category: "Seyahat",
+    type: "app",
     icon: randomjourneyIcon,
-    description: "Macera arayanlar için tasarlanan bu uygulama, kullanıcılara seçtikleri bölgeden rastgele koordinatlar sunarak onları heyecan dolu bir yolculuğa çıkarıyor. İster günlük hayatın sıradanlığından kaçmak ister gizli kalmış güzellikleri keşfetmek isteyin, bu uygulama yeni yerleri daha önce hiç olmadığı gibi keşfetmenizi sağlar.",
-    tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
-    features: [
-      "Rastgele Koordinat Üretimi: Seçtiğiniz bölgede keşfedilmemiş heyecan dolu yeni noktalara ulaşın",
-      "Kolay Kullanım: Bölgenizi seçin, koordinatları alın ve maceranızı hemen başlatın",
-      "Doğa ve Şehir Keşfi: İster doğa tutkunu olun ister şehir kaşifi, her gezi yeni bir maceraya dönüşür",
-      "Gizli Hazineler: Harita üzerinde gezinirken sizi bekleyen gizli rotaları ve yerleri keşfedin"
-    ],
     screenshots: [randomjourney1, randomjourney2],
     links: {
       ios: "https://apps.apple.com/tr/app/randomjourney/id6737148094?l=tr",
       github: "https://github.com"
-    }
+    },
+    tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
+    tr: appsTranslations.randomjourney.tr,
+    en: appsTranslations.randomjourney.en
   }
 };
-
-// Target email address for FormSubmit submissions
-const TARGET_EMAIL = 'ismailkirenli0@gmail.com';
 
 // Global DOM Elements
 const header = document.getElementById('main-header');
@@ -169,6 +148,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 function openModal(appKey) {
   const app = appsData[appKey];
   if (!app) return;
+  const local = app[currentLang];
 
   currentAppScreenshots = app.screenshots;
   currentSlideIndex = 0;
@@ -184,7 +164,7 @@ function openModal(appKey) {
       </div>
       <div class="modal-title-box">
         <h3>${app.name}</h3>
-        <span class="modal-category">${app.category}</span>
+        <span class="modal-category">${local.category}</span>
       </div>
     </div>
     
@@ -192,17 +172,17 @@ function openModal(appKey) {
       ${app.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
     </div>
     
-    <p class="modal-description">${app.description}</p>
+    <p class="modal-description">${local.description}</p>
     
-    <h4 class="modal-features-title">Öne Çıkan Özellikler</h4>
+    <h4 class="modal-features-title">${translations[currentLang].modal_features_title}</h4>
     <ul class="modal-features-list">
-      ${app.features.map(feat => `<li>${feat}</li>`).join('')}
+      ${local.features.map(feat => `<li>${feat}</li>`).join('')}
     </ul>
     
     <div class="modal-buttons">
       ${app.links.ios ? `
         <a href="${app.links.ios}" class="btn btn-primary" target="_blank">
-          <img src="${appleIcon}" alt="App Store" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; object-fit: contain;" />App Store
+          <img src="${appleIcon}" alt="App Store" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; object-fit: contain;" />${translations[currentLang].modal_btn_appstore}
         </a>` : ''}
     </div>
   `;
@@ -294,14 +274,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Wire Event Listeners to Showcase Cards
-document.querySelectorAll('.btn-detail').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const appKey = btn.getAttribute('data-app');
-    openModal(appKey);
-  });
-});
-
 // Contact Form Handler
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -311,7 +283,7 @@ contactForm.addEventListener('submit', (e) => {
 
   feedbackMsg.style.display = 'block';
   feedbackMsg.className = 'form-message';
-  feedbackMsg.textContent = 'Mesajınız gönderiliyor...';
+  feedbackMsg.textContent = translations[currentLang].feedback_sending;
 
   fetch(`https://formsubmit.co/ajax/${TARGET_EMAIL}`, {
     method: 'POST',
@@ -333,13 +305,13 @@ contactForm.addEventListener('submit', (e) => {
   })
   .then(data => {
     feedbackMsg.className = 'form-message success';
-    feedbackMsg.textContent = `Teşekkürler ${name}! Mesajınız başarıyla iletildi. En kısa sürede dönüş yapacağım.`;
+    feedbackMsg.textContent = translations[currentLang].feedback_success.replace('{name}', name);
     contactForm.reset();
   })
   .catch(error => {
     console.error('İletişim formu hatası:', error);
     feedbackMsg.className = 'form-message error';
-    feedbackMsg.textContent = 'Mesajınız gönderilirken bir hata oluştu. Lütfen doğrudan e-posta göndermeyi deneyin.';
+    feedbackMsg.textContent = translations[currentLang].feedback_error;
   })
   .finally(() => {
     setTimeout(() => {
@@ -350,7 +322,6 @@ contactForm.addEventListener('submit', (e) => {
 
 // Apps Tab Filtering Handler
 const tabButtons = document.querySelectorAll('.tab-btn');
-const appCards = document.querySelectorAll('.app-card');
 
 tabButtons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -360,7 +331,8 @@ tabButtons.forEach(btn => {
 
     const selectedTab = btn.getAttribute('data-tab');
 
-    // Filter app cards
+    // Filter dynamically rendered app cards in the DOM
+    const appCards = document.querySelectorAll('.app-card');
     appCards.forEach(card => {
       const cardType = card.getAttribute('data-app-type');
       if (selectedTab === 'all' || cardType === selectedTab) {
@@ -371,3 +343,106 @@ tabButtons.forEach(btn => {
     });
   });
 });
+
+// Dynamically Render App Cards Based on Current Language
+function renderAppCards() {
+  const grid = document.getElementById('applications-grid');
+  grid.innerHTML = '';
+
+  Object.keys(appsData).forEach(key => {
+    const app = appsData[key];
+    const local = app[currentLang];
+
+    const card = document.createElement('article');
+    card.className = 'app-card';
+    card.setAttribute('data-app-id', key);
+    card.setAttribute('data-app-type', app.type);
+
+    // Apply active tab filter immediately if any card is added/redrawn
+    const activeTab = document.querySelector('.tab-btn.active')?.getAttribute('data-tab') || 'all';
+    if (activeTab !== 'all' && app.type !== activeTab) {
+      card.classList.add('hidden');
+    }
+
+    card.innerHTML = `
+      <div class="app-header">
+        <div class="app-icon">
+          <img src="${app.icon}" alt="${app.name} Icon" />
+        </div>
+        <div class="app-meta">
+          <h3 class="app-name">${app.name}</h3>
+          <span class="app-category">${local.category}</span>
+        </div>
+      </div>
+      <p class="app-description">${local.cardDescription}</p>
+      <div class="app-tags">
+        ${app.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+      </div>
+      <div class="app-footer">
+        <div class="app-links">
+          ${app.links.ios ? `
+            <a href="${app.links.ios}" class="app-link-btn" title="iOS App Store" target="_blank">
+              <img src="${appleIcon}" alt="App Store" />
+            </a>` : ''}
+        </div>
+        <button class="btn-detail" data-app="${key}">
+          ${currentLang === 'tr' ? 'Detayları Gör' : 'View Details'} <span>→</span>
+        </button>
+      </div>
+    `;
+
+    // Wire detail click event
+    card.querySelector('.btn-detail').addEventListener('click', () => {
+      openModal(key);
+    });
+
+    grid.appendChild(card);
+  });
+}
+
+// Update Static Elements with Translations
+function updateStaticTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = translations[currentLang][key];
+    if (translation) {
+      el.innerHTML = translation;
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const translation = translations[currentLang][key];
+    if (translation) {
+      el.setAttribute('placeholder', translation);
+    }
+  });
+
+  // Update document metadata
+  document.title = translations[currentLang].doc_title;
+  document.documentElement.lang = currentLang;
+
+  // Toggle active class on language selection buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+  });
+}
+
+// Set Language Handler
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('preferredLang', lang);
+  updateStaticTranslations();
+  renderAppCards();
+}
+
+// Language buttons event listeners
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.getAttribute('data-lang');
+    setLanguage(lang);
+  });
+});
+
+// Initialize Page in Saved Language on Load
+setLanguage(currentLang);
