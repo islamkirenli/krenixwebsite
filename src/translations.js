@@ -213,5 +213,62 @@ export const appsTranslations = {
         "Hidden Treasures: Discover hidden routes and places waiting for you while navigating the map"
       ]
     }
+  },
+  timeflow: {
+    tr: {
+      name: "TimeFlow: Geri ve İleri Sayım",
+      category: "Üretkenlik",
+      cardDescription: "Hayatınızdaki en önemli ve özel anları takip etmenin en şık, en kolay ve en kişisel yolu! Geri Sayım & Gün Sayacı ile yaklaşan etkinlikleriniz için gün sayın veya geçmişten bugüne geçen süreyi anlık takip edin.",
+      description: "Hayatınızdaki en önemli ve özel anları takip etmenin en şık, en kolay ve en kişisel yolu! Geri Sayım & Gün Sayacı uygulaması ile yaklaşan etkinlikleriniz için heyecanla gün sayabilir ya da geçmişte bıraktığınız önemli adımlardan bu yana ne kadar zaman geçtiğini anlık olarak takip edebilirsiniz. Sınavlara, tatillere, doğum günlerine kaç gün kaldığını öğrenmek ya da sigarayı bırakalı veya sevgilinizle tanışalı kaç gün geçtiğini görmek hiç bu kadar keyifli olmamıştı.",
+      features: [
+        "Çift Yönlü Sayaç Desteği: Hem gelecekteki günler için Geri Sayım (Countdown) yapın hem de geçmişteki özel günlerden bugüne geçen süreyi (Elapsed Time) takip edin.",
+        "Harika Ana Ekran Widget’ları: En önemli etkinliklerinizi, uygulamayı açmadan doğrudan ana ekranınızdan farklı boyut ve şık tasarımlarla takip edin.",
+        "Gelişmiş Kişiselleştirme Seçenekleri: Canlı önizleme, gradyan arka planlar, galeri fotoğrafları, geniş ikon kütüphanesi ve yazı rengi seçimiyle tamamen size özel tasarımlar yapın.",
+        "Gelişmiş Bildirimler ve Hatırlatıcılar: Her bir etkinlik için birden fazla bildirim ayarlayarak hiçbir önemli günü kaçırmayın (Örn: Etkinlik anında, 1 saat önce, 1 gün önce).",
+        "Akıllı Tekrar Seçenekleri: Doğum günleri, yıldönümleri veya yılbaşı gibi her yıl tekrarlanan günleri otomatik olarak yenileyin.",
+        "Kolay Kategori Yönetimi: Etkinliklerinizi Aşk, Tatil, Eğitim, İş, Sağlık gibi farklı kategorilere ayırarak düzenli tutun.",
+        "Modern Tasarım ve Karanlık Mod: iOS estetiğine tam uyumlu, göz yormayan, akıcı arayüz, Karanlık Mod ve iPad yerleşim desteği."
+      ]
+    },
+    en: {
+      name: "TimeFlow: Countdown & Count Up",
+      category: "Productivity",
+      cardDescription: "The most elegant, easiest, and most personal way to track the most important moments of your life! Count down to future events or track elapsed time from past milestones.",
+      description: "The most elegant, easiest, and most personal way to track the most important and special moments in your life! With the Countdown & Count Up app, you can eagerly count down the days to your upcoming events or track in real time how much time has passed since your past milestones. Track exams, vacations, birthdays, or days elapsed since you quit smoking or met your partner in a fun and stylish way.",
+      features: [
+        "Dual Counter Support: Count down to future events (Countdown) or track the elapsed time (Elapsed Time) since special past days.",
+        "Home Screen Widgets: Monitor your most important events directly from your home screen with elegant widgets in different sizes.",
+        "Advanced Customization: Design your card with live previews, ready-made gradients, custom photos, a rich icon library, and customizable text colors.",
+        "Advanced Notifications: Set multiple reminders for each event (at event time, 1 hour before, 1 day before, etc.) so you never miss a milestone.",
+        "Smart Repeat Options: Automatically renew yearly repeating days such as birthdays, anniversaries, or New Year's.",
+        "Easy Category Management: Keep your events organized by categorizing them into Love, Vacation, Education, Work, Health, etc.",
+        "Modern Design & Dark Mode: Enjoy a fluid, elegant interface fully matching iOS aesthetics, complete with Dark Mode and iPad support."
+      ]
+    }
+  },
+  oneline: {
+    tr: {
+      category: "Yaşam Tarzı",
+      cardDescription: "Her güne sadece tek bir satır ve bir duygu ekleyerek karmaşadan uzak, minimalist ve düzenli bir günlük tutma alışkanlığı kazandıran kişisel mikro günlük.",
+      description: "Bir gün, tek bir satır, bir duygu. Hayatın yoğun temposunda kendinize ayıracağınız küçük bir an ile gününüzü özetleyin, modunuzu seçin ve zamanla kendi duygu haritasızı ve anılarınızı minimalist bir yapıda biriktirin.",
+      features: [
+        "Minimalist Günlük Deneyimi: Gününüzü tek bir anlamlı satırla yazarak hızlı ve kalıcı bir alışkanlık edinin",
+        "Duygu Durum Takibi: Her güne özel bir emoji veya mod seçerek ruh halinizi zaman içinde grafiklerle analiz edin",
+        "Güvenli ve Gizli: Günlüğünüzü şifreleme ve Face ID / Touch ID ile güvende tutun",
+        "Görsel İstatistikler: Aylık duygu grafiklerinizi ve yazma alışkanlıklarınızı şık grafiklerle inceleyin"
+      ]
+    },
+    en: {
+      category: "Lifestyle",
+      cardDescription: "A personal micro journal that builds a clutter-free, minimalist, and organized journaling habit by adding just one line and one mood to each day.",
+      description: "One day, one line, one mood. Summarize your day in a single line, choose your mood, and accumulate your emotional map and memories over time in a minimalist layout.",
+      features: [
+        "Minimalist Journaling Experience: Form a quick and lasting habit by writing your day in a single meaningful line",
+        "Mood Tracking: Choose a custom emoji or mood for each day and analyze your mood over time with charts",
+        "Secure & Private: Keep your journal safe with encryption and Face ID / Touch ID support",
+        "Visual Statistics: Review your monthly mood charts and writing habits with elegant graphs"
+      ]
+    }
   }
 };
+

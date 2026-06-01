@@ -23,11 +23,21 @@ import piramit4 from './assets/piramit/4.PNG'
 import randomjourney1 from './assets/randomjourney/1.PNG'
 import randomjourney2 from './assets/randomjourney/2.PNG'
 
+import timeflow1 from './assets/timeflow/1.PNG'
+import timeflow2 from './assets/timeflow/2.PNG'
+import timeflow3 from './assets/timeflow/3.PNG'
+import timeflow4 from './assets/timeflow/4.PNG'
+
+import oneline1 from './assets/oneline/1.PNG'
+import oneline2 from './assets/oneline/2.PNG'
+
 import veltrimIcon from './assets/veltrim_icon.png'
 import qrmakerIcon from './assets/qrmaker_icon.png'
 import rollivaIcon from './assets/rolliva_icon.png'
 import piramitIcon from './assets/piramit_icon.JPG'
 import randomjourneyIcon from './assets/randomjourney_icon.png'
+import timeflowIcon from './assets/timeflow_icon.png'
+import onelineIcon from './assets/oneline_icon.png'
 
 import appleIcon from './assets/apple.png'
 
@@ -37,8 +47,33 @@ let currentLang = localStorage.getItem('preferredLang') || 'tr';
 // Target email address for FormSubmit submissions
 const TARGET_EMAIL = 'support@krenixstudios.com';
 
-// Apps Dataset structured with both TR and EN translations
 const appsData = {
+  timeflow: {
+    name: "TimeFlow: Geri ve İleri Sayım",
+    type: "app",
+    icon: timeflowIcon,
+    screenshots: [timeflow1, timeflow2, timeflow3, timeflow4],
+    links: {
+      ios: "https://apps.apple.com/tr/app/timeflow-geri-ve-i-leri-say%C4%B1m/id6772533223?l=tr",
+      github: "https://github.com"
+    },
+    tags: ["SwiftUI", "Combine", "Widgets", "iOS"],
+    tr: appsTranslations.timeflow.tr,
+    en: appsTranslations.timeflow.en
+  },
+  oneline: {
+    name: "One Line: Micro Journal",
+    type: "app",
+    icon: onelineIcon,
+    screenshots: [oneline1, oneline2],
+    links: {
+      ios: "https://apps.apple.com/tr/app/one-line-micro-journal/id1527493608?l=tr",
+      github: "https://github.com"
+    },
+    tags: ["SwiftUI", "CoreData", "Charts", "iOS"],
+    tr: appsTranslations.oneline.tr,
+    en: appsTranslations.oneline.en
+  },
   veltrim: {
     name: "Veltrim: Smart Clipboard",
     type: "app",
@@ -160,10 +195,10 @@ function openModal(appKey) {
   detailsContainer.innerHTML = `
     <div class="modal-header-section">
       <div class="modal-app-icon">
-        <img src="${app.icon}" alt="${app.name} Icon" />
+        <img src="${app.icon}" alt="${local.name || app.name} Icon" />
       </div>
       <div class="modal-title-box">
-        <h3>${app.name}</h3>
+        <h3>${local.name || app.name}</h3>
         <span class="modal-category">${local.category}</span>
       </div>
     </div>
@@ -297,27 +332,27 @@ contactForm.addEventListener('submit', (e) => {
       message: message
     })
   })
-  .then(response => {
-    if (response.ok) {
-      return response.json();
-    }
-    throw new Error('Gönderim başarısız.');
-  })
-  .then(data => {
-    feedbackMsg.className = 'form-message success';
-    feedbackMsg.textContent = translations[currentLang].feedback_success.replace('{name}', name);
-    contactForm.reset();
-  })
-  .catch(error => {
-    console.error('İletişim formu hatası:', error);
-    feedbackMsg.className = 'form-message error';
-    feedbackMsg.textContent = translations[currentLang].feedback_error;
-  })
-  .finally(() => {
-    setTimeout(() => {
-      feedbackMsg.style.display = 'none';
-    }, 5000);
-  });
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('Gönderim başarısız.');
+    })
+    .then(data => {
+      feedbackMsg.className = 'form-message success';
+      feedbackMsg.textContent = translations[currentLang].feedback_success.replace('{name}', name);
+      contactForm.reset();
+    })
+    .catch(error => {
+      console.error('İletişim formu hatası:', error);
+      feedbackMsg.className = 'form-message error';
+      feedbackMsg.textContent = translations[currentLang].feedback_error;
+    })
+    .finally(() => {
+      setTimeout(() => {
+        feedbackMsg.style.display = 'none';
+      }, 5000);
+    });
 });
 
 // Apps Tab Filtering Handler
@@ -367,10 +402,10 @@ function renderAppCards() {
     card.innerHTML = `
       <div class="app-header">
         <div class="app-icon">
-          <img src="${app.icon}" alt="${app.name} Icon" />
+          <img src="${app.icon}" alt="${local.name || app.name} Icon" />
         </div>
         <div class="app-meta">
-          <h3 class="app-name">${app.name}</h3>
+          <h3 class="app-name">${local.name || app.name}</h3>
           <span class="app-category">${local.category}</span>
         </div>
       </div>
