@@ -30,6 +30,8 @@ import timeflow4 from './assets/timeflow/4.PNG'
 
 import oneline1 from './assets/oneline/1.PNG'
 import oneline2 from './assets/oneline/2.PNG'
+import oneline3 from './assets/oneline/3.PNG'
+import oneline4 from './assets/oneline/4.PNG'
 
 import veltrimIcon from './assets/veltrim_icon.png'
 import qrmakerIcon from './assets/qrmaker_icon.png'
@@ -62,12 +64,12 @@ const appsData = {
     en: appsTranslations.timeflow.en
   },
   oneline: {
-    name: "One Line: Micro Journal",
+    name: "One Line: Mikro Günlük",
     type: "app",
     icon: onelineIcon,
-    screenshots: [oneline1, oneline2],
+    screenshots: [oneline1, oneline2, oneline3, oneline4],
     links: {
-      ios: "https://apps.apple.com/tr/app/one-line-micro-journal/id1527493608?l=tr",
+      ios: "https://apps.apple.com/tr/app/one-line-mikro-g%C3%BCnl%C3%BCk/id6773496465?l=tr",
       github: "https://github.com"
     },
     tags: ["SwiftUI", "CoreData", "Charts", "iOS"],

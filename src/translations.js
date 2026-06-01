@@ -248,25 +248,33 @@ export const appsTranslations = {
   },
   oneline: {
     tr: {
+      name: "One Line: Mikro Günlük",
       category: "Yaşam Tarzı",
-      cardDescription: "Her güne sadece tek bir satır ve bir duygu ekleyerek karmaşadan uzak, minimalist ve düzenli bir günlük tutma alışkanlığı kazandıran kişisel mikro günlük.",
-      description: "Bir gün, tek bir satır, bir duygu. Hayatın yoğun temposunda kendinize ayıracağınız küçük bir an ile gününüzü özetleyin, modunuzu seçin ve zamanla kendi duygu haritasızı ve anılarınızı minimalist bir yapıda biriktirin.",
+      cardDescription: "Hayatınızı her gün tek bir cümleyle kaydetmeniz için tasarlanmış minimalist ve yapay zeka destekli bir günlük uygulaması. Sayfalarca yazma baskısı olmadan anılarınızı biriktirin.",
+      description: "One Line, hayatınızı her gün tek bir cümleyle kaydetmeniz için tasarlanmış minimalist bir günlük uygulamasıdır. Sayfalarca yazma baskısı olmadan, sadece o günkü modunuzu seçin ve gününüzü özetleyen tek bir satır yazın. Kalıcı bir farkındalık alışkanlığı edinin, en güzel anılarınıza geri dönüp bakın ve yapay zeka destekli gelişmiş analizlerle duygusal durumunuzu keşfedin.",
       features: [
-        "Minimalist Günlük Deneyimi: Gününüzü tek bir anlamlı satırla yazarak hızlı ve kalıcı bir alışkanlık edinin",
-        "Duygu Durum Takibi: Her güne özel bir emoji veya mod seçerek ruh halinizi zaman içinde grafiklerle analiz edin",
-        "Güvenli ve Gizli: Günlüğünüzü şifreleme ve Face ID / Touch ID ile güvende tutun",
-        "Görsel İstatistikler: Aylık duygu grafiklerinizi ve yazma alışkanlıklarınızı şık grafiklerle inceleyin"
+        "Günde Tek Bir Satır: Sayfalarca yazma baskısı olmadan günün özünü yakalamak için tek bir cümle yazın.",
+        "Ruh Hali Takibi: Günlük hislerinizi seçin ve zaman içindeki duygusal eğilimlerinizi izleyin.",
+        "Yapay Zeka Raporları: Duygusal yöneliminizi analiz eden haftalık, aylık ve yıllık derinlemesine raporların kilidini açın.",
+        "Seri Koruyucu (Streak): Dünü mü unuttunuz? Serinizi bozmamak için geçmişe dönük kayıt oluşturun.",
+        "Hafıza Şeridi ve Hızlı Arama: Geçmişinizdeki rastgele anılara tek dokunuşla göz atın, takvimle veya aramayla geçmişi inceleyin.",
+        "Paylaşım Şablonları: Ruh hali grafiklerinizi Polaroid, Cyberpunk, Aura ve Editorial gibi şık temalarla Instagram Hikayelerinde paylaşın.",
+        "Premium Güvenlik & Senkronizasyon: iCloud eşitlemesi, Face ID/Touch ID koruması, detaylı istatistikler ve PDF kitap çıktısı desteği."
       ]
     },
     en: {
+      name: "One Line: Micro Journal",
       category: "Lifestyle",
-      cardDescription: "A personal micro journal that builds a clutter-free, minimalist, and organized journaling habit by adding just one line and one mood to each day.",
-      description: "One day, one line, one mood. Summarize your day in a single line, choose your mood, and accumulate your emotional map and memories over time in a minimalist layout.",
+      cardDescription: "A minimalist, AI-powered daily journal designed to capture your life in a single line. Accumulate your memories without the pressure of writing pages.",
+      description: "One Line is a minimalist daily journal application designed to record your life with just one sentence every day. Without the pressure of writing pages, simply choose your daily mood and write a single line summarizing your day. Build a lasting mindfulness habit, look back at your best memories, and explore your emotional patterns with advanced AI analysis.",
       features: [
-        "Minimalist Journaling Experience: Form a quick and lasting habit by writing your day in a single meaningful line",
-        "Mood Tracking: Choose a custom emoji or mood for each day and analyze your mood over time with charts",
-        "Secure & Private: Keep your journal safe with encryption and Face ID / Touch ID support",
-        "Visual Statistics: Review your monthly mood charts and writing habits with elegant graphs"
+        "One Line a Day: Journaling made easy. Capture the essence of your day with just a single sentence.",
+        "Mood Tracking: Log your daily feelings and track your emotional trends over time.",
+        "AI-Powered Reports: Unlock deep weekly, monthly, and yearly reports analyzing your emotional patterns.",
+        "Streak Saver: Forgot yesterday? Create past entries retroactively to keep your writing streak alive.",
+        "Memory Lane & Quick Search: Easily search your journal, view past entries month-by-month, or revisit random memories.",
+        "Beautiful Share Templates: Share your mood charts on Instagram Stories with sleek Polaroid, Cyberpunk, Aura, and Editorial themes.",
+        "Premium Sync & Security: iCloud sync across Apple devices, Face ID / Touch ID lock, detailed statistics, and digital PDF book export."
       ]
     }
   }
