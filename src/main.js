@@ -1,47 +1,21 @@
 import './style.css'
 import { translations, appsTranslations } from './translations.js'
 
-import veltrim1 from './assets/veltrim/1.PNG'
-import veltrim2 from './assets/veltrim/2.PNG'
-import veltrim3 from './assets/veltrim/3.PNG'
+// Every image under assets/apps/<key>/: icon.webp plus tr-N / en-N App Store screenshots
+const appImages = import.meta.glob('./assets/apps/*/*.webp', { eager: true, import: 'default' });
 
-import qrmaker1 from './assets/qrmaker/1.PNG'
-import qrmaker2 from './assets/qrmaker/2.PNG'
-import qrmaker3 from './assets/qrmaker/3.PNG'
-import qrmaker4 from './assets/qrmaker/4.PNG'
+function imagesFor(key) {
+  const dir = `./assets/apps/${key}/`;
+  const shots = lang => Object.keys(appImages).filter(p => p.startsWith(`${dir}${lang}-`)).sort().map(p => appImages[p]);
+  const tr = shots('tr');
+  const en = shots('en');
+  // Older listings have one screenshot set for every language
+  return { icon: appImages[`${dir}icon.webp`], screenshots: { tr, en: en.length ? en : tr } };
+}
 
-import rolliva1 from './assets/rolliva/1.PNG'
-import rolliva2 from './assets/rolliva/2.PNG'
-import rolliva3 from './assets/rolliva/3.PNG'
-import rolliva4 from './assets/rolliva/4.PNG'
-
-import piramit1 from './assets/piramit/1.PNG'
-import piramit2 from './assets/piramit/2.PNG'
-import piramit3 from './assets/piramit/3.PNG'
-import piramit4 from './assets/piramit/4.PNG'
-
-import randomjourney1 from './assets/randomjourney/1.PNG'
-import randomjourney2 from './assets/randomjourney/2.PNG'
-
-import timeflow1 from './assets/timeflow/1.png'
-import timeflow2 from './assets/timeflow/2.png'
-import timeflow3 from './assets/timeflow/3.png'
-import timeflow4 from './assets/timeflow/4.png'
-
-import oneline1 from './assets/oneline/1.PNG'
-import oneline2 from './assets/oneline/2.PNG'
-import oneline3 from './assets/oneline/3.png'
-import oneline4 from './assets/oneline/4.png'
-
-import veltrimIcon from './assets/veltrim_icon.png'
-import qrmakerIcon from './assets/qrmaker_icon.png'
-import rollivaIcon from './assets/rolliva_icon.png'
-import piramitIcon from './assets/piramit_icon.JPG'
-import randomjourneyIcon from './assets/randomjourney_icon.png'
-import timeflowIcon from './assets/timeflow_icon.png'
-import onelineIcon from './assets/oneline_icon.png'
-
-import appleIcon from './assets/apple.png'
+const iconAttrs = 'class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+const arrowRightIcon = `<svg ${iconAttrs}><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+const arrowUpRightIcon = `<svg ${iconAttrs}><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`;
 
 // State for Language selection
 let currentLang = localStorage.getItem('preferredLang') || 'tr';
@@ -49,99 +23,36 @@ let currentLang = localStorage.getItem('preferredLang') || 'tr';
 // Target email address for FormSubmit submissions
 const TARGET_EMAIL = 'support@krenixstudios.com';
 
-const appsData = {
-  timeflow: {
-    name: "TimeFlow: Geri ve İleri Sayım",
-    type: "app",
-    icon: timeflowIcon,
-    screenshots: [timeflow1, timeflow2, timeflow3, timeflow4],
-    links: {
-      ios: "https://apps.apple.com/tr/app/timeflow-geri-ve-i-leri-say%C4%B1m/id6772533223?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["SwiftUI", "Combine", "Widgets", "iOS"],
-    tr: appsTranslations.timeflow.tr,
-    en: appsTranslations.timeflow.en
-  },
-  oneline: {
-    name: "One Line: Mikro Günlük",
-    type: "app",
-    icon: onelineIcon,
-    screenshots: [oneline1, oneline2, oneline3, oneline4],
-    links: {
-      ios: "https://apps.apple.com/tr/app/one-line-mikro-g%C3%BCnl%C3%BCk/id6773496465?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["SwiftUI", "CoreData", "Charts", "iOS"],
-    tr: appsTranslations.oneline.tr,
-    en: appsTranslations.oneline.en
-  },
-  veltrim: {
-    name: "Veltrim: Smart Clipboard",
-    type: "app",
-    icon: veltrimIcon,
-    screenshots: [veltrim1, veltrim2, veltrim3],
-    links: {
-      ios: "https://apps.apple.com/tr/app/veltrim-smart-clipboard/id6766660936?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["Flutter", "Dart", "Hive", "iOS"],
-    tr: appsTranslations.veltrim.tr,
-    en: appsTranslations.veltrim.en
-  },
-  qrmaker: {
-    name: "QRMaker&Scanner",
-    type: "app",
-    icon: qrmakerIcon,
-    screenshots: [qrmaker1, qrmaker2, qrmaker3, qrmaker4],
-    links: {
-      ios: "https://apps.apple.com/tr/app/qrmaker-scanner/id6504368000?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["Flutter", "Dart", "Mobile Scanner", "iOS"],
-    tr: appsTranslations.qrmaker.tr,
-    en: appsTranslations.qrmaker.en
-  },
-  rolliva: {
-    name: "Rolliva",
-    type: "app",
-    icon: rollivaIcon,
-    screenshots: [rolliva1, rolliva2, rolliva3, rolliva4],
-    links: {
-      ios: "https://apps.apple.com/tr/app/rolliva-zar-%C3%A7ark/id6765519968?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["Flutter", "Dart", "Rive", "iOS"],
-    tr: appsTranslations.rolliva.tr,
-    en: appsTranslations.rolliva.en
-  },
-  piramit: {
-    name: "Piramit Bulmaca",
-    type: "game",
-    icon: piramitIcon,
-    screenshots: [piramit1, piramit2, piramit3, piramit4],
-    links: {
-      ios: "https://apps.apple.com/tr/app/piramit-bulmaca/id6743098390?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["Flutter", "Dart", "Bloc", "iOS"],
-    tr: appsTranslations.piramit.tr,
-    en: appsTranslations.piramit.en
-  },
-  randomjourney: {
-    name: "RandomJourney",
-    type: "app",
-    icon: randomjourneyIcon,
-    screenshots: [randomjourney1, randomjourney2],
-    links: {
-      ios: "https://apps.apple.com/tr/app/randomjourney/id6737148094?l=tr",
-      github: "https://github.com"
-    },
-    tags: ["SwiftUI", "MapKit", "CoreLocation", "iOS"],
-    tr: appsTranslations.randomjourney.tr,
-    en: appsTranslations.randomjourney.en
-  }
+// App Store id, release date and tech stack. Texts live in appsTranslations, images in assets/apps/<key>/.
+const appsList = {
+  pack: { type: "app", id: 6818205295, releaseDate: "2026-10-09", tags: ["SwiftUI", "SwiftData", "Charts", "StoreKit"] },
+  bloom: { type: "app", id: 6809461611, releaseDate: "2026-09-26", tags: ["SwiftUI", "SwiftData", "ActivityKit", "WidgetKit"] },
+  medlyra: { type: "app", id: 6808695787, releaseDate: "2026-09-16", tags: ["SwiftUI", "CloudKit", "UserNotifications", "StoreKit"] },
+  shelf: { type: "app", id: 6801054318, releaseDate: "2026-08-17", tags: ["SwiftUI", "SwiftData", "VisionKit", "CloudKit"] },
+  shapemerge: { type: "game", id: 6785105331, releaseDate: "2026-07-08", tags: ["SwiftUI", "GameKit", "Combine", "StoreKit"] },
+  clearin: { type: "app", id: 6783086043, releaseDate: "2026-07-01", tags: ["SwiftUI", "Combine", "Network", "StoreKit"] },
+  shotsilo: { type: "app", id: 6779800886, releaseDate: "2026-06-19", tags: ["SwiftUI", "SwiftData", "Vision", "PhotoKit"] },
+  timeflow: { type: "app", id: 6772533223, releaseDate: "2026-05-30", tags: ["SwiftUI", "WidgetKit", "ActivityKit", "CloudKit"] },
+  oneline: { type: "app", id: 6773496465, releaseDate: "2026-05-30", tags: ["SwiftUI", "SwiftData", "Charts", "LocalAuthentication"] },
+  veltrim: { type: "app", id: 6766660936, releaseDate: "2026-05-07", tags: ["SwiftUI", "WidgetKit", "Vision", "CryptoKit"] },
+  rolliva: { type: "app", id: 6765519968, releaseDate: "2026-05-03", tags: ["SwiftUI", "Combine", "UIKit", "StoreKit"] },
+  piramit: { type: "game", id: 6743098390, releaseDate: "2025-03-19", tags: ["Flutter", "Dart", "Lottie", "In-App Purchase"] },
+  randomjourney: { type: "app", id: 6737148094, releaseDate: "2024-10-21", tags: ["SwiftUI", "MapKit", "CoreLocation", "Firebase"] },
+  qrmaker: { type: "app", id: 6504368000, releaseDate: "2024-06-23", tags: ["Flutter", "Dart", "Firebase", "Mobile Scanner"] }
 };
+
+// Newest first: the first entry becomes the featured card
+const appsData = Object.fromEntries(
+  Object.entries(appsList)
+    .sort(([, a], [, b]) => b.releaseDate.localeCompare(a.releaseDate))
+    .map(([key, app]) => [key, {
+      ...app,
+      ...imagesFor(key),
+      links: { ios: `https://apps.apple.com/app/id${app.id}` },
+      tr: appsTranslations[key].tr,
+      en: appsTranslations[key].en
+    }])
+);
 
 // Global DOM Elements
 const header = document.getElementById('main-header');
@@ -157,6 +68,7 @@ const feedbackMsg = document.getElementById('form-feedback-message');
 // Modal Slider State
 let currentAppScreenshots = [];
 let currentSlideIndex = 0;
+let lastFocusedElement = null;
 
 // Header Scroll Event
 window.addEventListener('scroll', () => {
@@ -169,15 +81,15 @@ window.addEventListener('scroll', () => {
 
 // Mobile Nav Toggle
 navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-  navToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+  const isOpen = navMenu.classList.toggle('active');
+  navToggle.setAttribute('aria-expanded', isOpen);
 });
 
 // Close Mobile Nav on link click
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('active');
-    navToggle.textContent = '☰';
+    navToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -187,7 +99,7 @@ function openModal(appKey) {
   if (!app) return;
   const local = app[currentLang];
 
-  currentAppScreenshots = app.screenshots;
+  currentAppScreenshots = app.screenshots[currentLang];
   currentSlideIndex = 0;
 
   // Render Image Slider
@@ -197,35 +109,35 @@ function openModal(appKey) {
   detailsContainer.innerHTML = `
     <div class="modal-header-section">
       <div class="modal-app-icon">
-        <img src="${app.icon}" alt="${local.name || app.name} Icon" />
+        <img src="${app.icon}" alt="" />
       </div>
       <div class="modal-title-box">
-        <h3>${local.name || app.name}</h3>
+        <h3 id="modal-app-title">${local.name}</h3>
         <span class="modal-category">${local.category}</span>
       </div>
     </div>
-    
-    <div class="modal-tags">
-      ${app.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-    </div>
-    
+
     <p class="modal-description">${local.description}</p>
-    
+
     <h4 class="modal-features-title">${translations[currentLang].modal_features_title}</h4>
     <ul class="modal-features-list">
       ${local.features.map(feat => `<li>${feat}</li>`).join('')}
     </ul>
-    
+
+    <p class="modal-tags">${app.tags.join(' · ')}</p>
+
     <div class="modal-buttons">
       ${app.links.ios ? `
-        <a href="${app.links.ios}" class="btn btn-primary" target="_blank">
-          <img src="${appleIcon}" alt="App Store" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px; object-fit: contain;" />${translations[currentLang].modal_btn_appstore}
+        <a href="${app.links.ios}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          ${translations[currentLang].modal_btn_appstore} ${arrowUpRightIcon}
         </a>` : ''}
     </div>
   `;
 
+  lastFocusedElement = document.activeElement;
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
+  modalClose.focus();
 }
 
 // Render Slider Slides & Dots
@@ -244,8 +156,9 @@ function renderCarousel() {
     slide.innerHTML = `<img src="${src}" class="carousel-image" alt="Screenshot ${idx + 1}" />`;
     carouselContainer.insertBefore(slide, prevBtn);
 
-    const dot = document.createElement('div');
+    const dot = document.createElement('button');
     dot.className = `dot ${idx === 0 ? 'active' : ''}`;
+    dot.setAttribute('aria-label', translations[currentLang].carousel_dot_label.replace('{n}', idx + 1));
     dot.addEventListener('click', () => showSlide(idx));
     dotsContainer.appendChild(dot);
   });
@@ -295,6 +208,7 @@ document.getElementById('btn-next-slide').addEventListener('click', () => {
 function closeModal() {
   modal.classList.remove('active');
   document.body.style.overflow = '';
+  lastFocusedElement?.focus();
 }
 
 modalClose.addEventListener('click', closeModal);
@@ -318,6 +232,9 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.getElementById('form-email').value;
   const message = document.getElementById('form-message').value;
 
+  const submitBtn = document.getElementById('btn-submit-contact');
+  submitBtn.disabled = true;
+  submitBtn.setAttribute('aria-busy', 'true');
   feedbackMsg.style.display = 'block';
   feedbackMsg.className = 'form-message';
   feedbackMsg.textContent = translations[currentLang].feedback_sending;
@@ -351,6 +268,8 @@ contactForm.addEventListener('submit', (e) => {
       feedbackMsg.textContent = translations[currentLang].feedback_error;
     })
     .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.removeAttribute('aria-busy');
       setTimeout(() => {
         feedbackMsg.style.display = 'none';
       }, 5000);
@@ -363,8 +282,10 @@ const tabButtons = document.querySelectorAll('.tab-btn');
 tabButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     // Switch active tab class
-    tabButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    tabButtons.forEach(b => {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-pressed', b === btn);
+    });
 
     const selectedTab = btn.getAttribute('data-tab');
 
@@ -382,16 +303,21 @@ tabButtons.forEach(btn => {
 });
 
 // Dynamically Render App Cards Based on Current Language
+// The first app in appsData is shown large; the rest form an index list below it.
 function renderAppCards() {
   const grid = document.getElementById('applications-grid');
   grid.innerHTML = '';
+  const list = document.createElement('div');
+  list.className = 'app-list';
 
-  Object.keys(appsData).forEach(key => {
+  Object.keys(appsData).forEach((key, idx) => {
     const app = appsData[key];
     const local = app[currentLang];
+    const name = local.name;
+    const isFeatured = idx === 0;
 
     const card = document.createElement('article');
-    card.className = 'app-card';
+    card.className = `app-card ${isFeatured ? 'app-featured' : 'app-row'}`;
     card.setAttribute('data-app-id', key);
     card.setAttribute('data-app-type', app.type);
 
@@ -401,31 +327,43 @@ function renderAppCards() {
       card.classList.add('hidden');
     }
 
-    card.innerHTML = `
-      <div class="app-header">
-        <div class="app-icon">
-          <img src="${app.icon}" alt="${local.name || app.name} Icon" />
+    const storeLink = app.links.ios ? `
+      <a href="${app.links.ios}" class="app-store-link" target="_blank" rel="noopener noreferrer">
+        App Store ${arrowUpRightIcon}
+      </a>` : '';
+
+    card.innerHTML = isFeatured ? `
+      <div class="featured-body">
+        <div class="app-header">
+          <div class="app-icon"><img src="${app.icon}" alt="" /></div>
+          <div class="app-meta">
+            <h3 class="app-name">${name}</h3>
+            <span class="app-category">${local.category}</span>
+          </div>
         </div>
-        <div class="app-meta">
-          <h3 class="app-name">${local.name || app.name}</h3>
-          <span class="app-category">${local.category}</span>
+        <p class="app-description">${local.cardDescription}</p>
+        <p class="app-tags">${app.tags.join(' · ')}</p>
+        <div class="app-actions">
+          <button class="btn btn-primary btn-detail" data-app="${key}">
+            ${translations[currentLang].card_btn_detail} ${arrowRightIcon}
+          </button>
+          ${storeLink}
         </div>
+      </div>
+      <div class="featured-shots" aria-hidden="true">
+        ${app.screenshots[currentLang].slice(0, 3).map(src => `<img src="${src}" alt="" loading="lazy" decoding="async" />`).join('')}
+      </div>
+    ` : `
+      <div class="app-icon"><img src="${app.icon}" alt="" loading="lazy" /></div>
+      <div class="app-meta">
+        <h3 class="app-name">
+          <button class="btn-detail" data-app="${key}">${name}</button>
+        </h3>
+        <span class="app-category">${local.category}</span>
       </div>
       <p class="app-description">${local.cardDescription}</p>
-      <div class="app-tags">
-        ${app.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-      </div>
-      <div class="app-footer">
-        <div class="app-links">
-          ${app.links.ios ? `
-            <a href="${app.links.ios}" class="app-link-btn" title="iOS App Store" target="_blank">
-              <img src="${appleIcon}" alt="App Store" />
-            </a>` : ''}
-        </div>
-        <button class="btn-detail" data-app="${key}">
-          ${currentLang === 'tr' ? 'Detayları Gör' : 'View Details'} <span>→</span>
-        </button>
-      </div>
+      ${storeLink}
+      <span class="row-arrow">${arrowRightIcon}</span>
     `;
 
     // Wire detail click event
@@ -433,7 +371,26 @@ function renderAppCards() {
       openModal(key);
     });
 
-    grid.appendChild(card);
+    if (isFeatured) {
+      grid.appendChild(card);
+    } else {
+      list.appendChild(card);
+    }
+  });
+
+  grid.appendChild(list);
+}
+
+// Hero shelf: every app icon, each opening its detail modal
+function renderHeroShelf() {
+  const shelf = document.getElementById('hero-shelf');
+  shelf.innerHTML = Object.keys(appsData).map(key => {
+    const app = appsData[key];
+    const name = app[currentLang].name;
+    return `<li><button class="shelf-item" data-app="${key}" aria-label="${name}" title="${name}"><img src="${app.icon}" alt="" /></button></li>`;
+  }).join('');
+  shelf.querySelectorAll('.shelf-item').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.app));
   });
 }
 
@@ -455,13 +412,22 @@ function updateStaticTranslations() {
     }
   });
 
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const translation = translations[currentLang][el.getAttribute('data-i18n-aria')];
+    if (translation) {
+      el.setAttribute('aria-label', translation);
+    }
+  });
+
   // Update document metadata
   document.title = translations[currentLang].doc_title;
   document.documentElement.lang = currentLang;
 
   // Toggle active class on language selection buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+    const isActive = btn.getAttribute('data-lang') === currentLang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive);
   });
 }
 
@@ -471,7 +437,10 @@ function setLanguage(lang) {
   localStorage.setItem('preferredLang', lang);
   updateStaticTranslations();
   renderAppCards();
+  renderHeroShelf();
 }
+
+document.getElementById('stat-app-count').textContent = Object.keys(appsData).length;
 
 // Language buttons event listeners
 document.querySelectorAll('.lang-btn').forEach(btn => {
