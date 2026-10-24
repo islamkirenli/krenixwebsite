@@ -20,8 +20,11 @@
     <div class="nav-container">
       <a href="/" class="logo">Krenix Studios</a>
       <div class="lang-selector">
-        <button class="lang-btn active" id="btn-tr" aria-pressed="true">TR</button>
-        <button class="lang-btn" id="btn-en" aria-pressed="false">EN</button>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        <select class="lang-select" id="lang-select" aria-label="Dil">
+          <option value="tr">Türkçe</option>
+        </select>
+        <svg class="icon lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
       </div>
     </div>
   </header>
@@ -29,8 +32,8 @@
   <main class="policy">
     <div class="container policy-body">
 
-      <!-- TURKISH CONTENT -->
-      <article id="content-tr" lang="tr">
+      <!-- One article per language; privacy.js shows the active one. Turkish is the source text. -->
+      <article data-lang="tr" lang="tr">
         <h1>Gizlilik Politikası</h1>
         <span class="last-updated">Son güncelleme: 25 Ekim 2026</span>
 
@@ -69,6 +72,7 @@
 
         <h2 id="tr-sorumlu">2. Veri sorumlusu ve kapsam</h2>
         <p>Bu politikada "Krenix Studios", "biz" ve "bizim" ifadeleri, aşağıdaki uygulamaları geliştiren ve yayınlayan Krenix Studios'u (İstanbul, Türkiye) ifade eder. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve uygulanabildiği ölçüde Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında veri sorumlusu Krenix Studios'tur. Bize <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a> adresinden ulaşabilirsiniz.</p>
+        <p>Bu politika Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, Rusça, Japonca ve Korece olarak yayınlanır. Sürümler arasında farklılık olması hâlinde Türkçe metin esas alınır.</p>
         <p>Politika şu uygulamaları ve web sitemizi kapsar: Çanta: Kamp Malzeme Listesi (Pack), Bloom: Kahve Zamanlayıcı, Medlyra: İlaç Takip Asistanı, Shelf: Son Kullanma Takibi, Şekil Birleştir: Blok Bulmaca (Shape Merge), Clearin: E-posta Temizleyici, ShotSilo: Ekran Görüntüleri, TimeFlow: Geri ve İleri Sayım, One Line: Mikro Günlük, Veltrim: Smart Clipboard, Rolliva: Zar &amp; Çark, Piramit Bulmaca, RandomJourney ve QRMaker&amp;Scanner.</p>
 
         <h2 id="tr-tablo">3. Uygulamalara genel bakış</h2>
@@ -335,8 +339,7 @@
         <p>Krenix Studios, İstanbul, Türkiye<br>E-posta: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
       </article>
 
-      <!-- ENGLISH CONTENT -->
-      <article id="content-en" lang="en" style="display: none;">
+      <article data-lang="en" lang="en" hidden>
         <h1>Privacy Policy</h1>
         <span class="last-updated">Last updated: October 25, 2026</span>
 
@@ -375,6 +378,7 @@
 
         <h2 id="en-controller">2. Data controller and scope</h2>
         <p>In this policy, "Krenix Studios", "we", "us" and "our" refer to Krenix Studios (Istanbul, Türkiye), which develops and publishes the apps listed below. Krenix Studios is the data controller under the Turkish Personal Data Protection Law No. 6698 (KVKK) and, where it applies, the EU General Data Protection Regulation (GDPR). You can reach us at <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>.</p>
+        <p>This policy is published in Turkish, English, German, French, Spanish, Russian, Japanese and Korean. If the versions differ, the Turkish text prevails.</p>
         <p>This policy covers our website and these apps: Pack: Ultralight Gear List, Bloom: Coffee Brew Timer, Medlyra: Medication Tracker, Shelf: Expiry Date Tracker, Shape Merge: Block Puzzle, Clearin: Email Inbox Cleaner, ShotSilo: Screenshot Manager, TimeFlow: Countdown Timer, One Line: Micro Journal, Veltrim: Smart Clipboard, Rolliva: Dice &amp; Wheel, Piramit Bulmaca, RandomJourney and QRMaker&amp;Scanner.</p>
 
         <h2 id="en-overview">3. Apps at a glance</h2>
@@ -641,6 +645,1842 @@
         <p>Krenix Studios, Istanbul, Türkiye<br>Email: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
       </article>
 
+      <article data-lang="de" lang="de" hidden>
+        <h1>Datenschutzerklärung</h1>
+        <span class="last-updated">Zuletzt aktualisiert: 25. Oktober 2026</span>
+
+        <p class="policy-lede">Diese Erklärung beschreibt, welche Daten die von Krenix Studios im App Store veröffentlichten Apps und die Website krenixstudios.com verarbeiten, warum und wie. Die meisten unserer Apps speichern deine Daten nur auf deinem Gerät. Jeden Fall, in dem Daten dein Gerät verlassen, führen wir unten einzeln auf.</p>
+
+        <nav class="policy-toc" aria-label="Inhalt">
+          <p>Inhalt</p>
+          <ol>
+            <li><a href="#de-kurz">Kurz gesagt</a></li>
+            <li><a href="#de-verantwortlich">Verantwortlicher und Geltungsbereich</a></li>
+            <li><a href="#de-ueberblick">Die Apps im Überblick</a></li>
+            <li><a href="#de-allgemein">Themen, die alle Apps betreffen</a></li>
+            <li><a href="#de-apps">Details nach App</a></li>
+            <li><a href="#de-website">Website</a></li>
+            <li><a href="#de-rechtsgrundlagen">Rechtsgrundlagen</a></li>
+            <li><a href="#de-dritte">Dritte und Übermittlungen ins Ausland</a></li>
+            <li><a href="#de-speicherdauer">Speicherdauer</a></li>
+            <li><a href="#de-sicherheit">Sicherheit</a></li>
+            <li><a href="#de-rechte">Deine Rechte und Einstellungen</a></li>
+            <li><a href="#de-kinder">Datenschutz für Kinder</a></li>
+            <li><a href="#de-aenderungen">Änderungen</a></li>
+            <li><a href="#de-kontakt">Kontakt</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="de-kurz">1. Kurz gesagt</h2>
+        <ul>
+          <li>Wir verkaufen und vermieten deine personenbezogenen Daten nicht und geben sie nicht zu Marketingzwecken weiter.</li>
+          <li>Was du in unsere Apps eingibst (Tagebuchzeilen, Medikamente, Ausrüstung, Produkte, Screenshots, Zwischenablageverlauf und Ähnliches), bleibt auf deinem Gerät. Wenn du die iCloud-Synchronisierung aktivierst, wird es im privaten iCloud-Bereich deines Apple Accounts gespeichert. Krenix Studios hat darauf keinen Zugriff.</li>
+          <li>Nur QRMaker&amp;Scanner und RandomJourney verlangen ein Konto oder speichern deine Daten in einer von uns verwalteten Serverinfrastruktur (Google Firebase).</li>
+          <li>Einige Apps erfassen mit Google Firebase Analytics Nutzungsdaten, um zu verstehen, wie sie verwendet werden, und einige zeigen Werbung über Google AdMob. Welche App was nutzt, zeigt die Tabelle in Abschnitt 3.</li>
+          <li>Auf deine Werbe-ID (IDFA) wird nur zugegriffen, wenn du es in Apples Abfrage zur Tracking-Erlaubnis zulässt.</li>
+          <li>Gesundheitsdaten in Medlyra, etwa Medikamente, Dosen, Notizen und Familienmitglieder, werden niemals an Analyse- oder Werbedienste gesendet.</li>
+          <li>Berichte, Auswertungen, Texterkennung und automatische Sortierung laufen auf deinem Gerät. Deine Inhalte werden nie an einen KI-Dienst gesendet.</li>
+        </ul>
+
+        <h2 id="de-verantwortlich">2. Verantwortlicher und Geltungsbereich</h2>
+        <p>„Krenix Studios“, „wir“ und „uns“ bezeichnen in dieser Erklärung Krenix Studios (Istanbul, Türkei), das die unten genannten Apps entwickelt und veröffentlicht. Krenix Studios ist Verantwortlicher im Sinne des türkischen Datenschutzgesetzes Nr. 6698 (KVKK) und, soweit anwendbar, der EU-Datenschutz-Grundverordnung (DSGVO). Du erreichst uns unter <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>.</p>
+        <p>Diese Erklärung wird auf Türkisch, Englisch, Deutsch, Französisch, Spanisch, Russisch, Japanisch und Koreanisch veröffentlicht. Bei Abweichungen zwischen den Fassungen ist der türkische Text maßgeblich.</p>
+        <p>Sie gilt für unsere Website und diese Apps: Rucksack: Packliste &amp; Gewicht (Pack), Bloom: Kaffee Brühtimer, Medlyra: Medikamenten-Tracker, Shelf: MHD &amp; Verfallsdatum, Formen verbinden: Blockpuzzle (Shape Merge), Clearin: Postfach aufräumen, ShotSilo: Screenshot Manager, TimeFlow: Countdown-Timer, One Line: Mikro-Tagebuch, Veltrim: Smart Clipboard, Rolliva: Würfel &amp; Glücksrad, Piramit Bulmaca, RandomJourney und QRMaker&amp;Scanner.</p>
+
+        <h2 id="de-ueberblick">3. Die Apps im Überblick</h2>
+        <p>Die Tabelle fasst zusammen, wo die Daten jeder App liegen und welche externen Dienste genutzt werden. Details stehen in den Abschnitten 4 und 5.</p>
+        <div class="table-wrap" role="region" aria-label="Tabelle: Die Apps im Überblick" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">Wo deine Daten liegen</th>
+                <th scope="col">Analyse</th>
+                <th scope="col">Werbung</th>
+                <th scope="col">Weitere Daten, die das Gerät verlassen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Rucksack (Pack)</td><td>Gerät</td><td>Keine</td><td>Keine</td><td>Keine</td></tr>
+              <tr><td>Bloom</td><td>Gerät, optional iCloud</td><td>Firebase</td><td>Keine</td><td>Keine</td></tr>
+              <tr><td>Medlyra</td><td>Gerät, optional iCloud</td><td>Firebase (ohne Gesundheitsdaten)</td><td>Keine</td><td>Keine</td></tr>
+              <tr><td>Shelf</td><td>Gerät, optional iCloud</td><td>Firebase</td><td>Keine</td><td>Gescannte Barcode-Nummer (offene Produktdatenbanken)</td></tr>
+              <tr><td>Formen verbinden</td><td>Gerät</td><td>Firebase</td><td>AdMob</td><td>Game Center-Punktestände (Apple)</td></tr>
+              <tr><td>Clearin</td><td>Gerät, Schlüsselbund, optional iCloud</td><td>Firebase</td><td>AdMob</td><td>Deine E-Mails nur direkt zwischen Gerät und deinem E-Mail-Anbieter</td></tr>
+              <tr><td>ShotSilo</td><td>Gerät, optional iCloud</td><td>Firebase</td><td>AdMob</td><td>Keine</td></tr>
+              <tr><td>TimeFlow</td><td>Gerät, optional iCloud</td><td>Firebase</td><td>AdMob</td><td>Keine</td></tr>
+              <tr><td>One Line</td><td>Gerät, optional iCloud</td><td>Keine</td><td>Keine</td><td>Keine</td></tr>
+              <tr><td>Veltrim</td><td>Gerät, optional iCloud</td><td>Firebase (je nach Einwilligung)</td><td>AdMob</td><td>Keine</td></tr>
+              <tr><td>Rolliva</td><td>Gerät</td><td>Firebase</td><td>AdMob</td><td>Keine</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>Gerät</td><td>Keine</td><td>AdMob</td><td>Keine</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>Keine</td><td>Keine</td><td>Routen, Reiseverlauf, Standortkoordinaten</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>Gerät und Google Firebase</td><td>Keine</td><td>AdMob</td><td>Kontodaten, QR-Verlauf, hochgeladene Dateien</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="de-allgemein">4. Themen, die alle Apps betreffen</h2>
+
+        <h3>4.1 Daten auf deinem Gerät</h3>
+        <p>Was du in unsere Apps eingibst, wird im App-Bereich deines Geräts mit Apples lokalen Speichertechnologien (SwiftData, UserDefaults, Schlüsselbund und Ähnliche) gespeichert. Wir haben keinen Zugriff darauf. Wenn du eine App löschst, werden diese Daten von deinem Gerät entfernt. Exportierte Dateien (PDF, CSV, JSON, Bilder) werden nur dort gespeichert, wo du es wählst, oder mit der App geteilt, die du auswählst.</p>
+
+        <h3>4.2 iCloud-Synchronisierung</h3>
+        <p>In unterstützten Apps werden deine Daten bei aktivierter Synchronisierung über Apples CloudKit-Dienst in der privaten iCloud-Datenbank oder im iCloud-Schlüssel-Wert-Speicher deines Apple Accounts gespeichert und zwischen deinen Geräten synchronisiert. Nur dein Apple Account hat Zugriff auf diesen Bereich. Krenix Studios kann die Inhalte nicht sehen. Während der Synchronisierung kann Apple stille Mitteilungen ohne Inhalt verwenden, um deine Geräte über Änderungen zu informieren. iCloud-Daten unterliegen der <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinie von Apple</a>.</p>
+
+        <h3>4.3 Analyse: Google Firebase Analytics</h3>
+        <p>Bloom, Medlyra, Shelf, Formen verbinden, Clearin, ShotSilo, TimeFlow, Veltrim und Rolliva nutzen Google Firebase Analytics, um zu verstehen, wie die Apps verwendet werden. Erfasst werden:</p>
+        <ul>
+          <li>eine App-Instanz-ID, also eine zufällige Kennung, die der Installation der App auf deinem Gerät zugewiesen wird,</li>
+          <li>Gerätemodell, Betriebssystemversion, App-Version, Sprache und ein aus der IP-Adresse abgeleiteter ungefährer Standort (Land und Stadt),</li>
+          <li>Anzahl und Dauer der Sitzungen, aufgerufene Bildschirme und Aktionsereignisse wie „Eintrag hinzugefügt“ oder „Pro-Bildschirm geöffnet“,</li>
+          <li>Kaufereignisse (gewählter Tarif und Preis),</li>
+          <li>in einigen Apps Nutzereigenschaften wie Pro-Status, App-Sprache, Design, Währung oder Anzahl gespeicherter Einträge,</li>
+          <li>deine Werbe-ID (IDFA), sofern du Tracking erlaubt hast.</li>
+        </ul>
+        <p>Analysedaten enthalten nie deinen Namen, deine E-Mail-Adresse oder die Inhalte, die du eingibst (Notizen, Medikamentennamen, E-Mails, Screenshots, kopierte Texte). Wir nutzen sie, um Fehler und problematische Abläufe zu finden, zu verstehen, welche Funktionen genutzt werden, und die Apps zu verbessern. In Veltrim wird die Analyse entsprechend deiner Auswahl im Einwilligungsbildschirm der App ein- oder ausgeschaltet. Rucksack, One Line, Piramit Bulmaca, RandomJourney und QRMaker&amp;Scanner nutzen keinen Analysedienst.</p>
+
+        <h3>4.4 Werbung: Google AdMob und Tracking-Erlaubnis</h3>
+        <p>Die kostenlosen Versionen von TimeFlow, Veltrim, Rolliva, Clearin, ShotSilo, Formen verbinden, Piramit Bulmaca und QRMaker&amp;Scanner können über Google AdMob Banner-, Interstitial- und Rewarded-Anzeigen zeigen. Um Anzeigen auszuliefern, ihre Häufigkeit zu begrenzen, sie zu messen und Missbrauch zu verhindern, verarbeitet Google Daten wie Geräteinformationen, IP-Adresse, Interaktionen mit Anzeigen in der App und, falls erlaubt, deine Werbe-ID.</p>
+        <ul>
+          <li>Diese Apps zeigen Apples Abfrage zur App-Tracking-Transparenz (ATT), bevor sie auf deine Werbe-ID zugreifen. Lehnst du ab, wird deine IDFA nicht weitergegeben, und Anzeigen werden ohne sie ausgeliefert.</li>
+          <li>Du kannst deine Wahl jederzeit unter Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking ändern.</li>
+          <li>Veltrim zeigt Nutzern im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zusätzlich einen Einwilligungsbildschirm über Googles Plattform zur Einwilligungsverwaltung.</li>
+          <li>In einigen Apps (zum Beispiel Rolliva PRO und ShotSilo Pro) wird die Werbung entfernt, wenn du auf die kostenpflichtige Version umsteigst.</li>
+        </ul>
+        <p>Wie Google Werbedaten nutzt, kannst du in den <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Werberichtlinien von Google</a> nachlesen. Rucksack, Bloom, Medlyra, Shelf, One Line und RandomJourney zeigen keine Werbung.</p>
+
+        <h3>4.5 Käufe</h3>
+        <p>Abonnements und Einmalkäufe erfolgen über Apples App Store. Apple verarbeitet deine Zahlungsdaten. Wir sehen und speichern deine Kartendaten nie. Um Pro-Funktionen freizuschalten, erhält die App von Apple einen verifizierten Nachweis der Transaktion (Produkt, Datum, Status). In Apps mit Analyse wird das Kaufereignis (Tarif und Preis) auch in Firebase Analytics erfasst. Abonnements kannst du in den Einstellungen deines Apple Accounts verwalten oder kündigen.</p>
+
+        <h3>4.6 Mitteilungen</h3>
+        <p>Erinnerungen, Hinweise und Serien-Mitteilungen sind lokale Mitteilungen, die auf deinem Gerät geplant werden. Ihr Inhalt wird nie an einen Server gesendet. Du kannst Mitteilungen jederzeit unter Einstellungen &gt; Mitteilungen deaktivieren.</p>
+
+        <h3>4.7 Geräteberechtigungen</h3>
+        <p>Jede Berechtigung wird erst abgefragt, wenn du die zugehörige Funktion nutzt. Wenn du ablehnst, funktioniert der Rest der App weiter.</p>
+        <ul>
+          <li><strong>Kamera:</strong> Shelf (Ablaufdaten lesen, Barcodes scannen, Produktfotos aufnehmen) und QRMaker&amp;Scanner (QR-Codes scannen). Das Kamerabild wird auf deinem Gerät verarbeitet und weder gespeichert noch gesendet. Nur Produktfotos, die du aufnimmst, werden auf deinem Gerät gespeichert.</li>
+          <li><strong>Fotos:</strong> ShotSilo (deine Screenshots finden, anzeigen und nach deiner Bestätigung löschen), TimeFlow (ein Foto, das du als Kartenhintergrund wählst) sowie Rucksack, ShotSilo und QRMaker&amp;Scanner (erstellte Bilder in Fotos sichern).</li>
+          <li><strong>Kalender:</strong> TimeFlow (Ereignisse aus deinem Kalender importieren und deine Ereignisse hinzufügen).</li>
+          <li><strong>Standort:</strong> RandomJourney (zufällige Koordinaten erzeugen und Orte in der Nähe finden, nur während der Nutzung der App).</li>
+          <li><strong>Face ID oder Touch ID:</strong> One Line, ShotSilo und Veltrim (optionale App-Sperre). Die biometrische Prüfung führt Apple auf deinem Gerät durch. Deine biometrischen Daten erreichen uns nie.</li>
+          <li><strong>Zwischenablage:</strong> Veltrim liest die Zwischenablage, um Kopiertes deinem Verlauf hinzuzufügen. Rucksack, Rolliva und ShotSilo kopieren nur Text, den du kopieren möchtest.</li>
+          <li><strong>Tracking (ATT):</strong> Apps mit Werbung, wie in 4.4 beschrieben.</li>
+          <li><strong>Game Center:</strong> Formen verbinden (Bestenlisten).</li>
+        </ul>
+
+        <h2 id="de-apps">5. Details nach App</h2>
+
+        <h3>Rucksack: Packliste &amp; Gewicht (Pack)</h3>
+        <ul>
+          <li>Dein Ausrüstungsschrank, Touren, Gewichte, Preise, Links und Notizen werden nur auf deinem Gerät gespeichert. Es gibt kein Konto, keine Anmeldung, keine Analyse und keine Werbung. Die App funktioniert offline.</li>
+          <li>Zum Sichern deiner Shakedown-Karte wird nur der Zugriff „Nur hinzufügen“ auf Fotos angefragt. Markdown-Tabellen werden in die Zwischenablage kopiert.</li>
+          <li>CSV-Exporte und JSON-Backups werden dort gespeichert, wo du es wählst. Importierte CSV-Dateien werden auf deinem Gerät verarbeitet.</li>
+          <li>Links zu deiner Ausrüstung öffnen sich nur in deinem Browser, wenn du darauf tippst.</li>
+        </ul>
+
+        <h3>Bloom: Kaffee Brühtimer</h3>
+        <ul>
+          <li>Deine Rezepte, dein Bohnenkeller und dein Brühprotokoll (Mahlgrad, Temperatur, Bewertung, Geschmacksnotizen) werden auf deinem Gerät gespeichert. Mit Bloom Pro kannst du die iCloud-Synchronisierung aktivieren.</li>
+          <li>Der Brühtimer läuft auf deinem Gerät als Live-Aktivität auf dem Sperrbildschirm und in der Dynamic Island sowie in Widgets. Hinweise sind lokale Mitteilungen.</li>
+          <li>Firebase Analytics wird genutzt (4.3). Keine Werbung.</li>
+        </ul>
+
+        <h3>Medlyra: Medikamenten-Tracker</h3>
+        <ul>
+          <li>Deine Medikamente, Einnahmepläne, Einnahmeprotokolle, Notizen und die Familienmitglieder, die du hinzufügst, sind Gesundheitsdaten. Sie liegen nur auf deinem Gerät und, wenn du die iCloud-Synchronisierung aktivierst, in deiner privaten iCloud-Datenbank. Krenix Studios kann auf diese Daten weder zugreifen noch sie verarbeiten.</li>
+          <li>Firebase Analytics erfasst nur die Art der Aktion, etwa „Dosis erfasst“ oder „Bildschirm geöffnet“. Medikamentennamen, Dosen, Notizen und Namen von Familienmitgliedern werden nie an die Analyse gesendet.</li>
+          <li>Erinnerungen und die Aktionen „Eingenommen“ und „15 Minuten später“ laufen über lokale Mitteilungen.</li>
+          <li>Keine Werbung.</li>
+        </ul>
+
+        <h3>Shelf: MHD &amp; Verfallsdatum</h3>
+        <ul>
+          <li>Deine Produkte, Ablaufdaten, Kategorien, Preise und Produktfotos werden auf deinem Gerät gespeichert. Du kannst die iCloud-Synchronisierung aktivieren.</li>
+          <li>Das Lesen von Ablaufdaten und das Scannen von Barcodes erfolgen vollständig auf deinem Gerät mit Apples VisionKit- und Vision-Technologien.</li>
+          <li>Wenn du einen Barcode scannst, wird nur die Barcode-Nummer an die offenen Datenbanken Open Food Facts, Open Beauty Facts, Open Pet Food Facts und Open Products Facts gesendet, um Produktname und Kategorie zu finden. Diese Dienste können die IP-Adresse der Anfrage sehen. Sonst wird nichts gesendet.</li>
+          <li>Firebase Analytics wird genutzt. Pro-Status, App-Sprache, Design, Währung und Anzahl aktiver Produkte werden als Nutzereigenschaften erfasst. Keine Werbung.</li>
+        </ul>
+
+        <h3>Formen verbinden: Blockpuzzle (Shape Merge)</h3>
+        <ul>
+          <li>Deine Punktestände, dein Fortschritt und freigeschaltete Designs werden auf deinem Gerät gespeichert.</li>
+          <li>Wenn du bei Game Center angemeldet bist, werden deine Punktestände an die Bestenlisten von Apple Game Center gesendet, und dein Game Center-Spitzname ist für andere Spieler sichtbar. Diese Daten verarbeitet Apple.</li>
+          <li>Hinweise, wenn dein Highscore überholt wird, sind lokale Mitteilungen.</li>
+          <li>Firebase Analytics und Google AdMob werden genutzt (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Clearin: Postfach aufräumen</h3>
+        <ul>
+          <li>Du verbindest dein Gmail-, Outlook-, iCloud- oder anderes IMAP-Konto mit einem App-Passwort deines Anbieters. Das App-Passwort wird verschlüsselt im Schlüsselbund deines Geräts gespeichert. Deine E-Mail-Adresse und Serverdaten bleiben auf deinem Gerät.</li>
+          <li>Deine E-Mails werden über eine verschlüsselte (TLS) IMAP-Verbindung gelesen und verwaltet, die direkt von deinem Gerät zum Server deines E-Mail-Anbieters aufgebaut wird. E-Mail-Inhalte werden nie an Krenix Studios oder an Server Dritter gesendet. Löschungen und andere Aktionen erfolgen direkt in deinem E-Mail-Konto.</li>
+          <li>Wenn du dich abmeldest, sendet dein Gerät eine Anfrage an die Abmeldeadresse, die der Absender in der E-Mail angegeben hat, oder bereitet eine Abmelde-E-Mail vor. Diese Anfrage übermittelt deine IP-Adresse an den Server des Absenders.</li>
+          <li>Deine Aufräumstatistiken (gelöschte und behaltene E-Mails, gesparter Speicher, Serie, Kategoriegrößen) werden auf deinem Gerät gespeichert. Wenn du die iCloud-Synchronisierung aktivierst, werden sie über deinen iCloud-Schlüssel-Wert-Speicher synchronisiert, verknüpft mit deiner E-Mail-Adresse.</li>
+          <li>Firebase Analytics erfasst nur Aktionsarten und Anzahlen. Google AdMob wird genutzt (4.3, 4.4).</li>
+        </ul>
+
+        <h3>ShotSilo: Screenshot Manager</h3>
+        <ul>
+          <li>Der Fotozugriff dient dazu, deine Screenshots zu finden, anzuzeigen und nach deiner Bestätigung zu löschen. Löschungen laufen über die Bestätigungsabfrage von iOS.</li>
+          <li>Texterkennung (OCR) und automatisches Einordnen in Ordner erfolgen vollständig auf deinem Gerät mit Apples Vision-, Core ML- und Natural Language-Technologien. Deine Bilder und erkannte Texte werden nie an einen Server gesendet.</li>
+          <li>Deine Ordner, Regeln zum automatischen Löschen und der Index erkannter Texte werden auf deinem Gerät gespeichert. Mit ShotSilo Pro kannst du die iCloud-Synchronisierung aktivieren. Die Face ID-Sperre ist optional.</li>
+          <li>Wenn du bei erkanntem Text auf „Bei Google suchen“ tippst, wird dieser Text als Google-Suche in deinem Browser geöffnet.</li>
+          <li>Firebase Analytics und Google AdMob werden genutzt (4.3, 4.4).</li>
+        </ul>
+
+        <h3>TimeFlow: Countdown-Timer</h3>
+        <ul>
+          <li>Deine Ereignisse, Daten, Kategorien, Erinnerungen und Kartendesigns werden auf deinem Gerät gespeichert. Du kannst die iCloud-Synchronisierung aktivieren. Widgets und Live-Aktivitäten laufen auf deinem Gerät.</li>
+          <li>Der Kalenderzugriff wird nur angefragt, wenn du Ereignisse aus deinem Kalender importieren oder ein Ereignis hinzufügen möchtest.</li>
+          <li>Ein Foto, das du als Kartenhintergrund wählst, wird in die App kopiert und bleibt auf deinem Gerät.</li>
+          <li>Firebase Analytics und Google AdMob werden genutzt (4.3, 4.4).</li>
+        </ul>
+
+        <h3>One Line: Mikro-Tagebuch</h3>
+        <ul>
+          <li>Deine Tagebuchzeilen und Stimmungseinträge werden auf deinem Gerät gespeichert. Mit Premium kannst du die iCloud-Synchronisierung aktivieren. Die Sperre mit Face ID oder Touch ID ist optional.</li>
+          <li>Berichte und Auswertungen werden vollständig auf deinem Gerät berechnet. Was du schreibst, wird nie an einen KI-Dienst oder einen Server gesendet.</li>
+          <li>PDF-Buchexporte und Bilder zum Teilen werden auf deinem Gerät erstellt und nur dorthin gesendet, wo du es wählst.</li>
+          <li>Keine Analyse und keine Werbung.</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>Wenn du die App öffnest oder Inhalte über das Teilen-Menü sendest, werden kopierte Texte, Links und Bilder deinem Zwischenablageverlauf hinzugefügt. Verlauf, Ordner und Tags werden auf deinem Gerät gespeichert. Du kannst die iCloud-Synchronisierung aktivieren.</li>
+          <li>Text in Bildern wird mit Apples Vision-Technologie auf deinem Gerät erkannt.</li>
+          <li>Die Sperre mit Face ID oder Touch ID ist optional.</li>
+          <li>Google AdMob wird genutzt. Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz wird Googles Einwilligungsbildschirm angezeigt. Firebase Analytics wird entsprechend deiner Auswahl dort ein- oder ausgeschaltet (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Rolliva: Würfel &amp; Glücksrad</h3>
+        <ul>
+          <li>Deine Glücksräder, Würfel- und Münzeinstellungen, Spielergruppen und eigenen Fragen werden auf deinem Gerät gespeichert.</li>
+          <li>Firebase Analytics und Google AdMob werden genutzt (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>Dein Spielfortschritt, deine Punkte, Hinweise und Belohnungen werden auf deinem Gerät gespeichert.</li>
+          <li>In-App-Käufe erfolgen über den App Store (4.5).</li>
+          <li>Google AdMob wird genutzt (4.4). Keine Analyse.</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>Entdeckte Routen, dein Reiseverlauf und dein Fortschritt werden in einer Google Firebase-Clouddatenbank gespeichert.</li>
+          <li>Der Standortzugriff wird nur während der Nutzung der App angefragt, um Orte in deiner Nähe zu finden und zufällige Koordinaten in der gewählten Region zu erzeugen. Deine Standortkoordinaten werden verschlüsselt in der Firebase-Datenbank gespeichert.</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>Konto:</strong> Du kannst ein Konto mit E-Mail und Passwort, „Mit Apple anmelden“ oder „Mit Google anmelden“ erstellen. Die Authentifizierung erfolgt über Google Firebase Authentication. Bei „Mit Apple anmelden“ kannst du deine E-Mail-Adresse verbergen.</li>
+          <li><strong>Profil:</strong> Deine Nutzer-ID, E-Mail-Adresse, Vor- und Nachname, Avatarwahl, Sprache sowie die Zeitpunkte deines letzten Scans und deines zuletzt erstellten Codes werden in Google Cloud Firestore gespeichert.</li>
+          <li><strong>QR-Verlauf:</strong> Der Inhalt der Codes, die du erstellst und scannst, wird in Firestore gespeichert, QR-Bilder in Firebase Storage, damit du geräteübergreifend auf deine Codes zugreifen und sie sichern kannst.</li>
+          <li><strong>Hochgeladene Dateien:</strong> Dokumente und Bilder, die du an einen QR-Code anhängst, werden in Firebase Storage hochgeladen. Der entstehende Link wird in den QR-Code geschrieben, und jeder, der den Code scannt, kann diese Datei öffnen. Sei vorsichtig, wenn du auf diese Weise persönliche oder vertrauliche Dateien teilst.</li>
+          <li><strong>Kamera und WLAN:</strong> Das Scannen von QR-Codes erfolgt auf deinem Gerät, und das Kamerabild wird nicht gespeichert. Wenn du einen WLAN-QR-Code scannst, werden Netzwerkname und Passwort nur verwendet, um dein Gerät mit diesem Netzwerk zu verbinden.</li>
+          <li><strong>Kontolöschung:</strong> Du kannst dein Konto in der App löschen. Dabei werden deine QR-Daten und hochgeladenen Dateien, dein Profil und dein Authentifizierungskonto gelöscht. Deine E-Mail-Adresse und der von dir angegebene Löschgrund werden in einem separaten Datensatz aufbewahrt, um die Durchführung der Löschung zu belegen.</li>
+          <li>Google AdMob wird genutzt (4.4). Keine Analyse.</li>
+        </ul>
+
+        <h2 id="de-website">6. Website</h2>
+        <ul>
+          <li>krenixstudios.com verwendet keine Cookies, Analyse- oder Tracking-Werkzeuge.</li>
+          <li>Deine Spracheinstellung wird im lokalen Speicher deines Browsers (localStorage) gespeichert und nicht an einen Server gesendet.</li>
+          <li>Schriftarten werden von Google Fonts geladen. Dabei werden deine IP-Adresse und Browserdaten an Google übermittelt.</li>
+          <li>Name, E-Mail-Adresse und Nachricht aus dem Kontaktformular werden über den Dienst FormSubmit (formsubmit.co) an unser Postfach zugestellt. Wir nutzen sie nur, um dir zu antworten, und nie für Marketing.</li>
+          <li>Unser Hosting-Anbieter kann übliche Serverprotokolle wie IP-Adresse, Browsertyp und Zeitpunkt des Besuchs für Sicherheit und Betrieb speichern.</li>
+        </ul>
+
+        <h2 id="de-rechtsgrundlagen">7. Rechtsgrundlagen</h2>
+        <p>Wir verarbeiten personenbezogene Daten auf folgenden Rechtsgrundlagen nach Art. 5 KVKK und Art. 6 DSGVO:</p>
+        <ul>
+          <li><strong>Vertragserfüllung:</strong> Konten bei QRMaker&amp;Scanner und RandomJourney, Käufe, iCloud-Synchronisierung und das Funktionieren der Funktionen, die du nutzt.</li>
+          <li><strong>Berechtigte Interessen:</strong> Analyse zur Verbesserung der Apps und zur Fehlersuche, Sicherheit und Serverprotokolle der Website.</li>
+          <li><strong>Einwilligung:</strong> Zugriff auf deine Werbe-ID und Tracking (ATT-Erlaubnis) sowie deine Auswahl im Einwilligungsbildschirm von Veltrim. Du kannst deine Einwilligung jederzeit widerrufen.</li>
+          <li><strong>Beantwortung deiner Anfragen:</strong> Das Kontaktformular und E-Mails, die du uns sendest.</li>
+          <li><strong>Rechtliche Verpflichtung:</strong> Fälle, in denen das Gesetz uns zur Aufbewahrung oder Offenlegung verpflichtet.</li>
+        </ul>
+        <p>Besondere Kategorien personenbezogener Daten wie die Gesundheitsdaten in Medlyra verarbeiten wir nicht. Sie bleiben nur auf deinem Gerät und in deinem iCloud-Konto, unter deiner Kontrolle.</p>
+
+        <h2 id="de-dritte">8. Dritte und Übermittlungen ins Ausland</h2>
+        <p>Unsere Apps und unsere Website arbeiten mit den folgenden Dienstleistern. Für jeden gilt dessen eigene Datenschutzrichtlinie:</p>
+        <ul>
+          <li><strong>Apple:</strong> App Store, In-App-Käufe, iCloud und CloudKit, Game Center, „Mit Apple anmelden“ und die Tracking-Erlaubnis. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinie von Apple</a></li>
+          <li><strong>Google Firebase:</strong> Analytics, Authentication, Cloud Firestore und Storage. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Datenschutzinformationen zu Firebase</a></li>
+          <li><strong>Google AdMob:</strong> Werbung in Apps. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Werberichtlinien von Google</a></li>
+          <li><strong>Google:</strong> „Mit Google anmelden“ und Google Fonts. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a></li>
+          <li><strong>Open Food Facts und verwandte offene Datenbanken:</strong> Barcode-Abfragen in Shelf. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinie von Open Food Facts</a></li>
+          <li><strong>FormSubmit:</strong> Das Kontaktformular auf unserer Website. <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>Dein E-Mail-Anbieter:</strong> Der Gmail-, Outlook-, iCloud- oder andere Anbieter, den du in Clearin verbindest, arbeitet nach seiner eigenen Richtlinie.</li>
+        </ul>
+        <p>Diese Anbieter können Server außerhalb der Türkei betreiben, vor allem in den Vereinigten Staaten und der Europäischen Union, sodass deine Daten ins Ausland übermittelt werden können. Solche Übermittlungen stützen sich auf die Garantien nach Art. 9 KVKK und der DSGVO (zum Beispiel Standardvertragsklauseln). Wenn das Gesetz es verlangt, können wir Daten an zuständige Behörden weitergeben.</p>
+
+        <h2 id="de-speicherdauer">9. Speicherdauer</h2>
+        <ul>
+          <li><strong>Daten auf deinem Gerät:</strong> Bis du sie löschst oder die App entfernst.</li>
+          <li><strong>iCloud-Daten:</strong> In deinem Apple Account, bis du sie löschst. Du verwaltest sie unter Einstellungen &gt; [dein Name] &gt; iCloud.</li>
+          <li><strong>Analysedaten:</strong> Für einen begrenzten Zeitraum gemäß der Aufbewahrungseinstellung von Firebase Analytics. Danach löscht Google sie automatisch.</li>
+          <li><strong>Kontodaten von QRMaker&amp;Scanner und RandomJourney:</strong> Solange dein Konto besteht. Sie werden gelöscht, wenn du dein Konto löschst. Ein Nachweis der Löschanfrage wird aufbewahrt, um ihre Durchführung zu belegen.</li>
+          <li><strong>Korrespondenz:</strong> Bis deine Anfrage erledigt ist und solange gesetzliche Pflichten es erfordern.</li>
+        </ul>
+
+        <h2 id="de-sicherheit">10. Sicherheit</h2>
+        <p>Daten werden bei der Übertragung mit TLS verschlüsselt. Passwörter liegen im Schlüsselbund, und Daten auf deinem Gerät sind durch Apples Datenschutzfunktionen geschützt. Unterstützte Apps bieten eine Sperre mit Face ID oder Touch ID. In Firebase gespeicherte Kontodaten sind durch die Authentifizierungs- und Zugriffskontrollen von Firebase geschützt. Keine Übertragungs- oder Speichermethode ist vollkommen sicher. Kommt es zu einer Datenpanne, informieren wir dich und die zuständigen Behörden, wie es das Gesetz vorschreibt.</p>
+
+        <h2 id="de-rechte">11. Deine Rechte und Einstellungen</h2>
+        <p>Nach Art. 11 KVKK hast du das Recht zu erfahren, ob deine personenbezogenen Daten verarbeitet werden, und falls ja, Auskunft darüber zu verlangen, den Zweck der Verarbeitung und dessen Einhaltung zu erfahren, die Dritten im In- und Ausland zu kennen, an die sie übermittelt werden, bei unvollständigen oder unrichtigen Daten die Berichtigung zu verlangen, die Löschung oder Vernichtung zu verlangen, die Mitteilung dieser Maßnahmen an die Dritten zu verlangen, an die die Daten übermittelt wurden, einem Ergebnis zu widersprechen, das ausschließlich durch automatisierte Analyse zu deinen Lasten entsteht, und Ersatz für Schäden durch rechtswidrige Verarbeitung zu verlangen.</p>
+        <p>Wenn die DSGVO für dich gilt, hast du außerdem das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Du kannst deine Einwilligung jederzeit widerrufen.</p>
+        <p>Um diese Rechte auszuüben, schreib an <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>. Wir antworten spätestens innerhalb von 30 Tagen. Wenn du mit unserer Antwort nicht zufrieden bist, kannst du dich bei der türkischen Datenschutzbehörde oder der Datenschutzaufsichtsbehörde in deinem Land beschweren.</p>
+        <p>Praktische Einstellungen:</p>
+        <ul>
+          <li><strong>Tracking-Erlaubnis:</strong> Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking.</li>
+          <li><strong>Kamera, Fotos, Kalender, Standort und Mitteilungen:</strong> Einstellungen &gt; die jeweilige App.</li>
+          <li><strong>iCloud-Daten:</strong> Einstellungen &gt; [dein Name] &gt; iCloud.</li>
+          <li><strong>Daten auf dem Gerät löschen:</strong> Entferne die App von deinem Gerät.</li>
+          <li><strong>Analyse-ID zurücksetzen:</strong> Wenn du die App löschst und neu installierst, wird eine neue App-Instanz-ID erstellt.</li>
+          <li><strong>Konto bei QRMaker&amp;Scanner:</strong> Die Option zur Kontolöschung in der App.</li>
+          <li><strong>Daten von RandomJourney:</strong> Schreib uns eine E-Mail, um sie löschen zu lassen.</li>
+        </ul>
+
+        <h2 id="de-kinder">12. Datenschutz für Kinder</h2>
+        <p>Unsere Apps richten sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Kindern in diesem Alter. Wenn du bemerkst, dass dein Kind uns personenbezogene Daten übermittelt hat, kontaktiere uns bitte, und wir löschen sie umgehend.</p>
+
+        <h2 id="de-aenderungen">13. Änderungen</h2>
+        <p>Wir können diese Erklärung aktualisieren, wenn sich unsere Apps oder die Rechtslage ändern. Die aktuelle Fassung ist immer auf dieser Seite veröffentlicht, und das Datum oben ändert sich. Wesentliche Änderungen kündigen wir auf unserer Website oder in unseren Apps an.</p>
+
+        <h2 id="de-kontakt">14. Kontakt</h2>
+        <p>Krenix Studios, Istanbul, Türkei<br>E-Mail: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
+      <article data-lang="fr" lang="fr" hidden>
+        <h1>Politique de confidentialité</h1>
+        <span class="last-updated">Dernière mise à jour : 25 octobre 2026</span>
+
+        <p class="policy-lede">Cette politique explique quelles données traitent les apps publiées par Krenix Studios sur l'App Store et le site krenixstudios.com, pourquoi et comment. La plupart de nos apps conservent vos données uniquement sur votre appareil. Chaque cas où des données quittent votre appareil est décrit ci-dessous, un par un.</p>
+
+        <nav class="policy-toc" aria-label="Sommaire">
+          <p>Sommaire</p>
+          <ol>
+            <li><a href="#fr-resume">En bref</a></li>
+            <li><a href="#fr-responsable">Responsable du traitement et champ d'application</a></li>
+            <li><a href="#fr-apercu">Les apps en un coup d'œil</a></li>
+            <li><a href="#fr-commun">Points communs à toutes les apps</a></li>
+            <li><a href="#fr-apps">Détails par app</a></li>
+            <li><a href="#fr-site">Site web</a></li>
+            <li><a href="#fr-bases">Bases juridiques</a></li>
+            <li><a href="#fr-tiers">Tiers et transferts internationaux</a></li>
+            <li><a href="#fr-conservation">Durées de conservation</a></li>
+            <li><a href="#fr-securite">Sécurité</a></li>
+            <li><a href="#fr-droits">Vos droits et vos choix</a></li>
+            <li><a href="#fr-enfants">Protection des enfants</a></li>
+            <li><a href="#fr-modifications">Modifications</a></li>
+            <li><a href="#fr-contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="fr-resume">1. En bref</h2>
+        <ul>
+          <li>Nous ne vendons ni ne louons vos données personnelles, et nous ne les partageons avec personne à des fins marketing.</li>
+          <li>Le contenu que vous saisissez dans nos apps (lignes de journal, médicaments, matériel, produits, captures d'écran, historique du presse-papiers, etc.) reste sur votre appareil. Si vous activez la synchronisation iCloud, il est stocké dans l'espace iCloud privé de votre compte Apple. Krenix Studios n'a pas accès à cet espace.</li>
+          <li>Seules QRMaker&amp;Scanner et RandomJourney vous demandent de créer un compte ou conservent vos données sur une infrastructure de serveurs que nous gérons (Google Firebase).</li>
+          <li>Certaines apps collectent des données d'utilisation avec Google Firebase Analytics pour comprendre comment elles sont utilisées, et certaines affichent des publicités via Google AdMob. Le tableau de la section 3 indique ce que chaque app utilise.</li>
+          <li>Votre identifiant publicitaire (IDFA) n'est consulté que si vous l'autorisez dans la demande de suivi d'Apple.</li>
+          <li>Les données de santé de Medlyra, comme les médicaments, les doses, les notes et les membres de la famille, ne sont jamais envoyées à des services d'analyse ou de publicité.</li>
+          <li>Les rapports, analyses, la reconnaissance de texte et le tri automatique s'exécutent sur votre appareil. Votre contenu n'est jamais envoyé à un service d'IA.</li>
+        </ul>
+
+        <h2 id="fr-responsable">2. Responsable du traitement et champ d'application</h2>
+        <p>Dans cette politique, « Krenix Studios », « nous » et « notre » désignent Krenix Studios (Istanbul, Turquie), qui développe et publie les apps listées ci-dessous. Krenix Studios est responsable du traitement au sens de la loi turque n° 6698 sur la protection des données personnelles (KVKK) et, lorsqu'il s'applique, du Règlement général sur la protection des données de l'UE (RGPD). Vous pouvez nous écrire à <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>.</p>
+        <p>Cette politique est publiée en turc, anglais, allemand, français, espagnol, russe, japonais et coréen. En cas de divergence entre les versions, le texte turc prévaut.</p>
+        <p>Elle couvre notre site web et les apps suivantes : Sac à dos : Randonnée, Bivouac (Pack), Bloom: Minuteur à Café, Medlyra : Suivi Médicaments, Shelf: Date de Péremption, Fusion de Formes: Jeu Puzzle (Shape Merge), Clearin: Nettoyage Mail, ShotSilo: Captures d'Écran, TimeFlow: Compte à Rebours, One Line: Micro Journal, Veltrim: Smart Clipboard, Rolliva : Dés &amp; Roue, Piramit Bulmaca, RandomJourney et QRMaker&amp;Scanner.</p>
+
+        <h2 id="fr-apercu">3. Les apps en un coup d'œil</h2>
+        <p>Le tableau ci-dessous résume où sont conservées les données de chaque app et quels services externes sont utilisés. Les sections 4 et 5 donnent les détails.</p>
+        <div class="table-wrap" role="region" aria-label="Tableau : les apps en un coup d'œil" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">Où sont vos données</th>
+                <th scope="col">Analyse</th>
+                <th scope="col">Publicité</th>
+                <th scope="col">Autres données quittant l'appareil</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Sac à dos (Pack)</td><td>Appareil</td><td>Aucune</td><td>Aucune</td><td>Aucune</td></tr>
+              <tr><td>Bloom</td><td>Appareil, iCloud en option</td><td>Firebase</td><td>Aucune</td><td>Aucune</td></tr>
+              <tr><td>Medlyra</td><td>Appareil, iCloud en option</td><td>Firebase (sans données de santé)</td><td>Aucune</td><td>Aucune</td></tr>
+              <tr><td>Shelf</td><td>Appareil, iCloud en option</td><td>Firebase</td><td>Aucune</td><td>Numéro de code-barres scanné (bases de produits ouvertes)</td></tr>
+              <tr><td>Fusion de Formes</td><td>Appareil</td><td>Firebase</td><td>AdMob</td><td>Scores Game Center (Apple)</td></tr>
+              <tr><td>Clearin</td><td>Appareil, trousseau, iCloud en option</td><td>Firebase</td><td>AdMob</td><td>Vos e-mails circulent uniquement entre votre appareil et votre propre fournisseur de messagerie</td></tr>
+              <tr><td>ShotSilo</td><td>Appareil, iCloud en option</td><td>Firebase</td><td>AdMob</td><td>Aucune</td></tr>
+              <tr><td>TimeFlow</td><td>Appareil, iCloud en option</td><td>Firebase</td><td>AdMob</td><td>Aucune</td></tr>
+              <tr><td>One Line</td><td>Appareil, iCloud en option</td><td>Aucune</td><td>Aucune</td><td>Aucune</td></tr>
+              <tr><td>Veltrim</td><td>Appareil, iCloud en option</td><td>Firebase (selon votre consentement)</td><td>AdMob</td><td>Aucune</td></tr>
+              <tr><td>Rolliva</td><td>Appareil</td><td>Firebase</td><td>AdMob</td><td>Aucune</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>Appareil</td><td>Aucune</td><td>AdMob</td><td>Aucune</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>Aucune</td><td>Aucune</td><td>Itinéraires, historique de voyage, coordonnées de localisation</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>Appareil et Google Firebase</td><td>Aucune</td><td>AdMob</td><td>Données de compte, historique QR, fichiers que vous envoyez</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="fr-commun">4. Points communs à toutes les apps</h2>
+
+        <h3>4.1 Données conservées sur votre appareil</h3>
+        <p>Ce que vous saisissez dans nos apps est stocké dans l'espace de l'app sur votre appareil à l'aide des technologies de stockage local d'Apple (SwiftData, UserDefaults, trousseau et similaires). Nous n'y avons pas accès. Lorsque vous supprimez une app, ces données sont effacées de votre appareil. Les fichiers que vous exportez (PDF, CSV, JSON, images) sont enregistrés uniquement à l'endroit que vous choisissez ou partagés avec l'app que vous sélectionnez.</p>
+
+        <h3>4.2 Synchronisation iCloud</h3>
+        <p>Dans les apps qui la proposent, l'activation de la synchronisation stocke vos données dans la base de données iCloud privée ou dans le stockage clé-valeur iCloud de votre compte Apple, via le service CloudKit d'Apple, et les synchronise entre vos appareils. Seul votre compte Apple peut accéder à cet espace. Krenix Studios ne peut pas en voir le contenu. Pendant la synchronisation, Apple peut utiliser des notifications silencieuses sans contenu pour informer vos appareils des modifications. Les données iCloud sont soumises à la <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">politique de confidentialité d'Apple</a>.</p>
+
+        <h3>4.3 Analyse : Google Firebase Analytics</h3>
+        <p>Bloom, Medlyra, Shelf, Fusion de Formes, Clearin, ShotSilo, TimeFlow, Veltrim et Rolliva utilisent Google Firebase Analytics pour comprendre comment les apps sont utilisées. Les données collectées sont :</p>
+        <ul>
+          <li>un identifiant d'instance d'app, c'est-à-dire un identifiant aléatoire attribué à l'installation de l'app sur votre appareil,</li>
+          <li>le modèle de l'appareil, la version du système, la version de l'app, la langue et une localisation approximative déduite de l'adresse IP (pays et ville),</li>
+          <li>le nombre et la durée des sessions, les écrans consultés et des événements d'action comme « élément ajouté » ou « écran Pro ouvert »,</li>
+          <li>les événements d'achat (formule choisie et prix),</li>
+          <li>dans certaines apps, des propriétés utilisateur comme le statut Pro, la langue de l'app, le thème, la devise ou le nombre d'éléments enregistrés,</li>
+          <li>votre identifiant publicitaire (IDFA), si vous avez autorisé le suivi.</li>
+        </ul>
+        <p>Les données d'analyse ne contiennent jamais votre nom, votre adresse e-mail ou le contenu que vous saisissez (notes, noms de médicaments, e-mails, captures d'écran, textes copiés). Nous les utilisons pour trouver les bugs et les parcours défaillants, comprendre quelles fonctionnalités sont utilisées et améliorer les apps. Dans Veltrim, la collecte d'analyse est activée ou désactivée selon votre choix sur l'écran de consentement de l'app. Sac à dos, One Line, Piramit Bulmaca, RandomJourney et QRMaker&amp;Scanner n'utilisent aucun service d'analyse.</p>
+
+        <h3>4.4 Publicité : Google AdMob et autorisation de suivi</h3>
+        <p>Les versions gratuites de TimeFlow, Veltrim, Rolliva, Clearin, ShotSilo, Fusion de Formes, Piramit Bulmaca et QRMaker&amp;Scanner peuvent afficher des bannières, des interstitiels et des publicités avec récompense via Google AdMob. Pour diffuser les publicités, en limiter la fréquence, les mesurer et prévenir les abus, Google traite des données comme les informations sur l'appareil, l'adresse IP, les interactions avec les publicités dans l'app et, si vous l'avez autorisé, votre identifiant publicitaire.</p>
+        <ul>
+          <li>Ces apps affichent la demande de transparence du suivi des apps (ATT) d'Apple avant d'accéder à votre identifiant publicitaire. Si vous refusez, votre IDFA n'est pas partagé et les publicités sont diffusées sans lui.</li>
+          <li>Vous pouvez modifier votre choix à tout moment dans Réglages &gt; Confidentialité et sécurité &gt; Suivi.</li>
+          <li>Veltrim affiche aussi un écran de consentement via la plateforme de gestion du consentement de Google aux utilisateurs de l'Espace économique européen, du Royaume-Uni et de la Suisse.</li>
+          <li>Dans certaines apps (par exemple Rolliva PRO et ShotSilo Pro), les publicités sont supprimées lorsque vous passez à la version payante.</li>
+        </ul>
+        <p>Vous pouvez lire comment Google utilise les données publicitaires dans la <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">politique publicitaire de Google</a>. Sac à dos, Bloom, Medlyra, Shelf, One Line et RandomJourney n'affichent pas de publicité.</p>
+
+        <h3>4.5 Achats</h3>
+        <p>Les abonnements et achats uniques passent par l'App Store d'Apple. Apple traite vos données de paiement. Nous ne voyons ni ne conservons jamais vos informations de carte. Pour débloquer les fonctionnalités Pro, l'app reçoit d'Apple un justificatif vérifié de la transaction (produit, date, statut). Dans les apps qui utilisent l'analyse, l'événement d'achat (formule et prix) est aussi enregistré dans Firebase Analytics. Vous pouvez gérer ou résilier vos abonnements dans les réglages de votre compte Apple.</p>
+
+        <h3>4.6 Notifications</h3>
+        <p>Les rappels, alertes et notifications de série sont des notifications locales programmées sur votre appareil. Leur contenu n'est jamais envoyé à un serveur. Vous pouvez désactiver les notifications à tout moment dans Réglages &gt; Notifications.</p>
+
+        <h3>4.7 Autorisations de l'appareil</h3>
+        <p>Chaque autorisation n'est demandée que lorsque vous utilisez la fonctionnalité concernée. Si vous refusez, le reste de l'app continue de fonctionner.</p>
+        <ul>
+          <li><strong>Appareil photo :</strong> Shelf (lecture des dates de péremption, scan des codes-barres, photos de produits) et QRMaker&amp;Scanner (scan des QR codes). Le flux de la caméra est traité sur votre appareil et n'est ni enregistré ni envoyé. Seules les photos de produits que vous prenez sont enregistrées sur votre appareil.</li>
+          <li><strong>Photos :</strong> ShotSilo (trouver, afficher et, avec votre confirmation, supprimer vos captures d'écran), TimeFlow (une photo choisie comme fond de carte), ainsi que Sac à dos, ShotSilo et QRMaker&amp;Scanner (enregistrer les images générées dans Photos).</li>
+          <li><strong>Calendrier :</strong> TimeFlow (importer des événements de votre calendrier et y ajouter vos événements).</li>
+          <li><strong>Localisation :</strong> RandomJourney (générer des coordonnées aléatoires et trouver des lieux proches, uniquement pendant l'utilisation de l'app).</li>
+          <li><strong>Face ID ou Touch ID :</strong> One Line, ShotSilo et Veltrim (verrouillage facultatif de l'app). L'authentification biométrique est effectuée par Apple sur votre appareil. Vos données biométriques ne nous parviennent jamais.</li>
+          <li><strong>Presse-papiers :</strong> Veltrim lit le presse-papiers pour ajouter ce que vous copiez à votre historique. Sac à dos, Rolliva et ShotSilo copient uniquement le texte que vous leur demandez de copier.</li>
+          <li><strong>Suivi (ATT) :</strong> les apps qui affichent des publicités, comme décrit en 4.4.</li>
+          <li><strong>Game Center :</strong> Fusion de Formes (classements).</li>
+        </ul>
+
+        <h2 id="fr-apps">5. Détails par app</h2>
+
+        <h3>Sac à dos : Randonnée, Bivouac (Pack)</h3>
+        <ul>
+          <li>Votre inventaire de matériel, vos sorties, poids, prix, liens et notes sont stockés uniquement sur votre appareil. Il n'y a ni compte, ni connexion, ni analyse, ni publicité. L'app fonctionne hors ligne.</li>
+          <li>Seul l'accès « ajout uniquement » à Photos est demandé, pour enregistrer votre carte de poids. Les tableaux Markdown sont copiés dans le presse-papiers.</li>
+          <li>Les exports CSV et les sauvegardes JSON sont enregistrés à l'endroit que vous choisissez. Les fichiers CSV que vous importez sont traités sur votre appareil.</li>
+          <li>Les liens ajoutés à votre matériel s'ouvrent dans votre navigateur uniquement lorsque vous les touchez.</li>
+        </ul>
+
+        <h3>Bloom: Minuteur à Café</h3>
+        <ul>
+          <li>Vos recettes, votre cave à grains et votre journal d'infusion (mouture, température, note, notes de dégustation) sont stockés sur votre appareil. Avec Bloom Pro, vous pouvez activer la synchronisation iCloud.</li>
+          <li>Le minuteur fonctionne sur votre appareil comme Activité en direct sur l'écran verrouillé et dans la Dynamic Island, ainsi que dans les widgets. Les alertes sont des notifications locales.</li>
+          <li>Firebase Analytics est utilisé (4.3). Pas de publicité.</li>
+        </ul>
+
+        <h3>Medlyra : Suivi Médicaments</h3>
+        <ul>
+          <li>Vos médicaments, horaires de prise, historiques de prise, notes et les membres de la famille que vous ajoutez sont des données de santé. Ils sont conservés uniquement sur votre appareil et, si vous activez la synchronisation iCloud, dans votre base de données iCloud privée. Krenix Studios ne peut ni y accéder ni les traiter.</li>
+          <li>Firebase Analytics enregistre uniquement le type d'action, comme « une prise a été enregistrée » ou « un écran a été ouvert ». Les noms de médicaments, doses, notes et noms des membres de la famille ne sont jamais envoyés à l'analyse.</li>
+          <li>Les rappels et les actions « Pris » et « Reporter de 15 minutes » fonctionnent avec des notifications locales.</li>
+          <li>Pas de publicité.</li>
+        </ul>
+
+        <h3>Shelf: Date de Péremption</h3>
+        <ul>
+          <li>Vos produits, dates de péremption, catégories, prix et photos de produits sont stockés sur votre appareil. Vous pouvez activer la synchronisation iCloud.</li>
+          <li>La lecture des dates de péremption et le scan des codes-barres se font entièrement sur votre appareil avec les technologies VisionKit et Vision d'Apple.</li>
+          <li>Lorsque vous scannez un code-barres, seul le numéro du code-barres est envoyé aux bases de données ouvertes Open Food Facts, Open Beauty Facts, Open Pet Food Facts et Open Products Facts pour trouver le nom et la catégorie du produit. Ces services peuvent voir l'adresse IP d'où provient la requête. Rien d'autre n'est envoyé.</li>
+          <li>Firebase Analytics est utilisé. Le statut Pro, la langue de l'app, le thème, la devise et le nombre de produits actifs sont enregistrés comme propriétés utilisateur. Pas de publicité.</li>
+        </ul>
+
+        <h3>Fusion de Formes: Jeu Puzzle (Shape Merge)</h3>
+        <ul>
+          <li>Vos scores, votre progression et les thèmes débloqués sont stockés sur votre appareil.</li>
+          <li>Si vous êtes connecté à Game Center, vos scores sont envoyés aux classements Apple Game Center et votre pseudo Game Center est visible des autres joueurs. Apple traite ces données.</li>
+          <li>Les alertes lorsque votre meilleur score est battu sont des notifications locales.</li>
+          <li>Firebase Analytics et Google AdMob sont utilisés (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Clearin: Nettoyage Mail</h3>
+        <ul>
+          <li>Vous connectez votre compte Gmail, Outlook, iCloud ou un autre compte IMAP avec un mot de passe d'app fourni par votre fournisseur. Ce mot de passe est stocké chiffré dans le trousseau de votre appareil. Votre adresse e-mail et les informations du serveur restent sur votre appareil.</li>
+          <li>Vos e-mails sont lus et gérés via une connexion IMAP chiffrée (TLS) établie directement entre votre appareil et le serveur de votre fournisseur de messagerie. Le contenu des e-mails n'est jamais envoyé à Krenix Studios ni à un serveur tiers. Les suppressions et autres actions se font directement dans votre compte de messagerie.</li>
+          <li>Lorsque vous choisissez de vous désabonner, votre appareil envoie une requête à l'adresse de désabonnement indiquée par l'expéditeur dans l'e-mail, ou prépare un e-mail de désabonnement. Cette requête transmet votre adresse IP au serveur de l'expéditeur.</li>
+          <li>Vos statistiques de nettoyage (e-mails supprimés et conservés, espace libéré, série, tailles par catégorie) sont stockées sur votre appareil. Si vous activez la synchronisation iCloud, elles sont synchronisées via votre stockage clé-valeur iCloud, associées à votre adresse e-mail.</li>
+          <li>Firebase Analytics enregistre uniquement les types d'action et les nombres. Google AdMob est utilisé (4.3, 4.4).</li>
+        </ul>
+
+        <h3>ShotSilo: Captures d'Écran</h3>
+        <ul>
+          <li>L'accès à Photos sert à trouver et afficher vos captures d'écran, et à les supprimer avec votre confirmation. Les suppressions passent par la demande de confirmation d'iOS.</li>
+          <li>La reconnaissance de texte (OCR) et le classement automatique en dossiers se font entièrement sur votre appareil avec les technologies Vision, Core ML et Natural Language d'Apple. Vos images et le texte reconnu ne sont jamais envoyés à un serveur.</li>
+          <li>Vos dossiers, règles de suppression automatique et l'index du texte reconnu sont stockés sur votre appareil. Avec ShotSilo Pro, vous pouvez activer la synchronisation iCloud. Le verrouillage Face ID est facultatif.</li>
+          <li>Si vous touchez « Rechercher sur Google » sur un texte reconnu, ce texte s'ouvre comme recherche Google dans votre navigateur.</li>
+          <li>Firebase Analytics et Google AdMob sont utilisés (4.3, 4.4).</li>
+        </ul>
+
+        <h3>TimeFlow: Compte à Rebours</h3>
+        <ul>
+          <li>Vos événements, dates, catégories, rappels et designs de cartes sont stockés sur votre appareil. Vous pouvez activer la synchronisation iCloud. Les widgets et Activités en direct fonctionnent sur votre appareil.</li>
+          <li>L'accès au calendrier n'est demandé que si vous souhaitez importer des événements de votre calendrier ou y ajouter un événement.</li>
+          <li>Une photo choisie comme fond de carte est copiée dans l'app et reste sur votre appareil.</li>
+          <li>Firebase Analytics et Google AdMob sont utilisés (4.3, 4.4).</li>
+        </ul>
+
+        <h3>One Line: Micro Journal</h3>
+        <ul>
+          <li>Vos lignes de journal et vos humeurs sont stockées sur votre appareil. Avec Premium, vous pouvez activer la synchronisation iCloud. Le verrouillage Face ID ou Touch ID est facultatif.</li>
+          <li>Les rapports et analyses sont calculés entièrement sur votre appareil. Ce que vous écrivez n'est jamais envoyé à un service d'IA ou à un serveur.</li>
+          <li>Les exports en livre PDF et les images de partage sont créés sur votre appareil et envoyés uniquement là où vous le choisissez.</li>
+          <li>Ni analyse ni publicité.</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>Lorsque vous ouvrez l'app ou envoyez du contenu depuis le menu de partage, les textes, liens et images copiés sont ajoutés à votre historique. Votre historique, vos dossiers et vos étiquettes sont stockés sur votre appareil. Vous pouvez activer la synchronisation iCloud.</li>
+          <li>Le texte des images est reconnu sur votre appareil avec la technologie Vision d'Apple.</li>
+          <li>Le verrouillage Face ID ou Touch ID est facultatif.</li>
+          <li>Google AdMob est utilisé. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, l'écran de consentement de Google s'affiche. Firebase Analytics est activé ou désactivé selon votre choix sur cet écran (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Rolliva : Dés &amp; Roue</h3>
+        <ul>
+          <li>Vos roues, réglages de dés et de pièces, groupes de joueurs et questions personnalisées sont stockés sur votre appareil.</li>
+          <li>Firebase Analytics et Google AdMob sont utilisés (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>Votre progression, vos scores, indices et récompenses sont stockés sur votre appareil.</li>
+          <li>Les achats intégrés passent par l'App Store (4.5).</li>
+          <li>Google AdMob est utilisé (4.4). Pas d'analyse.</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>Les itinéraires découverts, votre historique de voyage et votre progression sont stockés dans une base de données cloud Google Firebase.</li>
+          <li>L'accès à la localisation n'est demandé que pendant l'utilisation de l'app, pour trouver des lieux proches et générer des coordonnées aléatoires dans la région choisie. Vos coordonnées sont stockées chiffrées dans la base de données Firebase.</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>Compte :</strong> vous pouvez créer un compte avec e-mail et mot de passe, Se connecter avec Apple ou Se connecter avec Google. L'authentification est assurée par Google Firebase Authentication. Avec Se connecter avec Apple, vous pouvez masquer votre adresse e-mail.</li>
+          <li><strong>Profil :</strong> votre identifiant utilisateur, adresse e-mail, prénom et nom, choix d'avatar, langue, ainsi que les dates de votre dernier scan et de votre dernier code créé sont stockés dans Google Cloud Firestore.</li>
+          <li><strong>Historique QR :</strong> le contenu des codes que vous créez et scannez est stocké dans Firestore, et les images QR dans Firebase Storage, pour que vous puissiez retrouver et sauvegarder vos codes sur plusieurs appareils.</li>
+          <li><strong>Fichiers envoyés :</strong> les documents et images que vous associez à un QR code sont envoyés dans Firebase Storage. Le lien obtenu est inscrit dans le QR code, et toute personne qui scanne le code peut ouvrir ce fichier. Soyez prudent si vous partagez ainsi des fichiers personnels ou confidentiels.</li>
+          <li><strong>Appareil photo et Wi-Fi :</strong> le scan des QR codes se fait sur votre appareil et le flux de la caméra n'est pas enregistré. Lorsque vous scannez un QR code Wi-Fi, le nom du réseau et le mot de passe servent uniquement à connecter votre appareil à ce réseau.</li>
+          <li><strong>Suppression du compte :</strong> vous pouvez supprimer votre compte dans l'app. La suppression efface vos données QR et fichiers envoyés, votre profil et votre compte d'authentification. Votre adresse e-mail et le motif de suppression que vous saisissez sont conservés dans un enregistrement distinct pour attester que la demande a été traitée.</li>
+          <li>Google AdMob est utilisé (4.4). Pas d'analyse.</li>
+        </ul>
+
+        <h2 id="fr-site">6. Site web</h2>
+        <ul>
+          <li>krenixstudios.com n'utilise ni cookies, ni outils d'analyse ou de suivi.</li>
+          <li>Votre préférence de langue est stockée dans le stockage local de votre navigateur (localStorage) et n'est pas envoyée à un serveur.</li>
+          <li>Les polices sont chargées depuis Google Fonts, ce qui transmet votre adresse IP et les informations de votre navigateur à Google.</li>
+          <li>Le nom, l'adresse e-mail et le message saisis dans le formulaire de contact sont acheminés vers notre boîte de réception via le service FormSubmit (formsubmit.co). Nous les utilisons uniquement pour vous répondre et jamais à des fins marketing.</li>
+          <li>Notre hébergeur peut conserver des journaux serveur standard, comme l'adresse IP, le type de navigateur et l'heure de visite, pour la sécurité et le fonctionnement.</li>
+        </ul>
+
+        <h2 id="fr-bases">7. Bases juridiques</h2>
+        <p>Nous traitons les données personnelles sur les bases juridiques suivantes, au sens de l'article 5 de la KVKK et de l'article 6 du RGPD :</p>
+        <ul>
+          <li><strong>Exécution d'un contrat :</strong> comptes QRMaker&amp;Scanner et RandomJourney, achats, synchronisation iCloud et fonctionnement des fonctionnalités que vous utilisez.</li>
+          <li><strong>Intérêts légitimes :</strong> analyse pour améliorer les apps et corriger les bugs, sécurité et journaux serveur du site web.</li>
+          <li><strong>Consentement :</strong> accès à votre identifiant publicitaire et suivi (autorisation ATT), et vos choix sur l'écran de consentement de Veltrim. Vous pouvez retirer votre consentement à tout moment.</li>
+          <li><strong>Réponse à vos demandes :</strong> le formulaire de contact et les e-mails que vous nous envoyez.</li>
+          <li><strong>Obligation légale :</strong> les cas où la loi nous impose de conserver ou de communiquer des données.</li>
+        </ul>
+        <p>Nous ne traitons pas de catégories particulières de données personnelles comme les données de santé de Medlyra. Elles restent uniquement sur votre appareil et dans votre compte iCloud, sous votre contrôle.</p>
+
+        <h2 id="fr-tiers">8. Tiers et transferts internationaux</h2>
+        <p>Nos apps et notre site travaillent avec les prestataires suivants. Chacun est soumis à sa propre politique de confidentialité :</p>
+        <ul>
+          <li><strong>Apple :</strong> App Store, achats intégrés, iCloud et CloudKit, Game Center, Se connecter avec Apple et l'autorisation de suivi. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Politique de confidentialité d'Apple</a></li>
+          <li><strong>Google Firebase :</strong> Analytics, Authentication, Cloud Firestore et Storage. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Informations de confidentialité Firebase</a></li>
+          <li><strong>Google AdMob :</strong> publicité dans les apps. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Politique publicitaire de Google</a></li>
+          <li><strong>Google :</strong> Se connecter avec Google et Google Fonts. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Règles de confidentialité de Google</a></li>
+          <li><strong>Open Food Facts et bases ouvertes associées :</strong> recherches par code-barres dans Shelf. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité d'Open Food Facts</a></li>
+          <li><strong>FormSubmit :</strong> le formulaire de contact de notre site. <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>Votre fournisseur de messagerie :</strong> le fournisseur Gmail, Outlook, iCloud ou autre que vous connectez dans Clearin agit selon sa propre politique.</li>
+        </ul>
+        <p>Ces prestataires peuvent avoir des serveurs hors de Turquie, principalement aux États-Unis et dans l'Union européenne, de sorte que vos données peuvent être transférées à l'étranger. Ces transferts reposent sur les garanties prévues à l'article 9 de la KVKK et par le RGPD (par exemple les clauses contractuelles types). Nous pouvons communiquer des données aux autorités publiques compétentes lorsque la loi l'exige.</p>
+
+        <h2 id="fr-conservation">9. Durées de conservation</h2>
+        <ul>
+          <li><strong>Données sur votre appareil :</strong> jusqu'à ce que vous les supprimiez ou supprimiez l'app.</li>
+          <li><strong>Données iCloud :</strong> dans votre compte Apple jusqu'à ce que vous les supprimiez. Vous pouvez les gérer dans Réglages &gt; [votre nom] &gt; iCloud.</li>
+          <li><strong>Données d'analyse :</strong> pendant une durée limitée fixée par le réglage de conservation de Firebase Analytics, après quoi Google les supprime automatiquement.</li>
+          <li><strong>Données de compte QRMaker&amp;Scanner et RandomJourney :</strong> tant que votre compte est ouvert. Elles sont supprimées lorsque vous supprimez votre compte. Une trace de la demande de suppression est conservée pour attester qu'elle a été traitée.</li>
+          <li><strong>Correspondance :</strong> jusqu'au traitement de votre demande et aussi longtemps que les obligations légales l'exigent.</li>
+        </ul>
+
+        <h2 id="fr-securite">10. Sécurité</h2>
+        <p>Les données sont chiffrées en transit avec TLS. Les mots de passe sont stockés dans le trousseau, et les données sur votre appareil sont protégées par les fonctionnalités de protection des données d'Apple. Les apps qui le permettent proposent un verrouillage Face ID ou Touch ID. Les données de compte conservées dans Firebase sont protégées par l'infrastructure d'authentification et de contrôle d'accès de Firebase. Aucune méthode de transmission ou de stockage n'est totalement sûre. En cas de violation, nous vous en informerons, ainsi que les autorités compétentes, comme la loi l'exige.</p>
+
+        <h2 id="fr-droits">11. Vos droits et vos choix</h2>
+        <p>En vertu de l'article 11 de la KVKK, vous avez le droit de savoir si vos données personnelles sont traitées, de demander des informations si c'est le cas, de connaître la finalité du traitement et de savoir si les données sont utilisées en conséquence, de connaître les tiers en Turquie ou à l'étranger auxquels elles sont transférées, de demander leur rectification si elles sont incomplètes ou inexactes, de demander leur suppression ou leur destruction, de demander que ces mesures soient notifiées aux tiers destinataires, de vous opposer à un résultat défavorable découlant exclusivement d'une analyse automatisée et de demander réparation d'un préjudice causé par un traitement illicite.</p>
+        <p>Si le RGPD s'applique à vous, vous disposez également des droits d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition. Vous pouvez retirer votre consentement à tout moment.</p>
+        <p>Pour exercer ces droits, écrivez à <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>. Nous répondons au plus tard dans un délai de 30 jours. Si notre réponse ne vous satisfait pas, vous pouvez introduire une réclamation auprès de l'Autorité turque de protection des données personnelles ou de l'autorité de protection des données de votre pays.</p>
+        <p>Choix pratiques :</p>
+        <ul>
+          <li><strong>Autorisation de suivi :</strong> Réglages &gt; Confidentialité et sécurité &gt; Suivi.</li>
+          <li><strong>Appareil photo, photos, calendrier, localisation et notifications :</strong> Réglages &gt; l'app concernée.</li>
+          <li><strong>Données iCloud :</strong> Réglages &gt; [votre nom] &gt; iCloud.</li>
+          <li><strong>Supprimer les données de l'appareil :</strong> supprimez l'app de votre appareil.</li>
+          <li><strong>Réinitialiser l'identifiant d'analyse :</strong> supprimer puis réinstaller l'app crée un nouvel identifiant d'instance.</li>
+          <li><strong>Compte QRMaker&amp;Scanner :</strong> l'option de suppression de compte dans l'app.</li>
+          <li><strong>Données RandomJourney :</strong> écrivez-nous pour les faire supprimer.</li>
+        </ul>
+
+        <h2 id="fr-enfants">12. Protection des enfants</h2>
+        <p>Nos apps ne s'adressent pas aux enfants de moins de 13 ans, et nous ne collectons pas sciemment de données personnelles auprès d'enfants de cet âge. Si vous constatez que votre enfant nous a transmis des données personnelles, contactez-nous et nous les supprimerons immédiatement.</p>
+
+        <h2 id="fr-modifications">13. Modifications</h2>
+        <p>Nous pouvons mettre à jour cette politique lorsque nos apps ou la loi évoluent. La version en vigueur est toujours publiée sur cette page, et la date en haut est modifiée. Nous annonçons les changements importants sur notre site ou dans nos apps.</p>
+
+        <h2 id="fr-contact">14. Contact</h2>
+        <p>Krenix Studios, Istanbul, Turquie<br>E-mail : <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
+      <article data-lang="es" lang="es" hidden>
+        <h1>Política de privacidad</h1>
+        <span class="last-updated">Última actualización: 25 de octubre de 2026</span>
+
+        <p class="policy-lede">Esta política explica qué datos tratan las apps que Krenix Studios publica en la App Store y el sitio web krenixstudios.com, por qué y cómo. La mayoría de nuestras apps guardan tus datos solo en tu dispositivo. Cada caso en el que algún dato sale de tu dispositivo se describe a continuación, uno por uno.</p>
+
+        <nav class="policy-toc" aria-label="Índice">
+          <p>Índice</p>
+          <ol>
+            <li><a href="#es-resumen">En resumen</a></li>
+            <li><a href="#es-responsable">Responsable del tratamiento y alcance</a></li>
+            <li><a href="#es-vista">Las apps de un vistazo</a></li>
+            <li><a href="#es-comun">Temas comunes a todas las apps</a></li>
+            <li><a href="#es-apps">Detalles por app</a></li>
+            <li><a href="#es-web">Sitio web</a></li>
+            <li><a href="#es-bases">Bases jurídicas</a></li>
+            <li><a href="#es-terceros">Terceros y transferencias internacionales</a></li>
+            <li><a href="#es-conservacion">Plazos de conservación</a></li>
+            <li><a href="#es-seguridad">Seguridad</a></li>
+            <li><a href="#es-derechos">Tus derechos y opciones</a></li>
+            <li><a href="#es-menores">Privacidad de los menores</a></li>
+            <li><a href="#es-cambios">Cambios</a></li>
+            <li><a href="#es-contacto">Contacto</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="es-resumen">1. En resumen</h2>
+        <ul>
+          <li>No vendemos ni alquilamos tus datos personales, y no los compartimos con nadie con fines de marketing.</li>
+          <li>El contenido que introduces en nuestras apps (líneas de diario, medicamentos, equipo, productos, capturas de pantalla, historial del portapapeles y similares) se queda en tu dispositivo. Si activas la sincronización con iCloud, se guarda en el espacio privado de iCloud de tu cuenta de Apple. Krenix Studios no puede acceder a ese espacio.</li>
+          <li>Solo QRMaker&amp;Scanner y RandomJourney te piden crear una cuenta o guardan tus datos en una infraestructura de servidores que gestionamos (Google Firebase).</li>
+          <li>Algunas apps recopilan datos de uso con Google Firebase Analytics para entender cómo se usan, y algunas muestran anuncios mediante Google AdMob. La tabla de la sección 3 indica qué usa cada app.</li>
+          <li>Solo se accede a tu identificador publicitario (IDFA) si lo permites en la solicitud de rastreo de Apple.</li>
+          <li>Los datos de salud de Medlyra, como medicamentos, dosis, notas y familiares, nunca se envían a servicios de análisis ni de publicidad.</li>
+          <li>Los informes, análisis, el reconocimiento de texto y la clasificación automática se ejecutan en tu dispositivo. Tu contenido nunca se envía a un servicio de IA.</li>
+        </ul>
+
+        <h2 id="es-responsable">2. Responsable del tratamiento y alcance</h2>
+        <p>En esta política, «Krenix Studios», «nosotros» y «nuestro» se refieren a Krenix Studios (Estambul, Turquía), que desarrolla y publica las apps indicadas abajo. Krenix Studios es el responsable del tratamiento según la Ley turca n.º 6698 de Protección de Datos Personales (KVKK) y, cuando sea aplicable, el Reglamento General de Protección de Datos de la UE (RGPD). Puedes escribirnos a <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>.</p>
+        <p>Esta política se publica en turco, inglés, alemán, francés, español, ruso, japonés y coreano. Si las versiones difieren, prevalece el texto en turco.</p>
+        <p>Cubre nuestro sitio web y estas apps: Mochila: Senderismo y Trekking (Pack), Bloom: Temporizador Café, Medlyra: Control de Medicinas, Shelf: Fecha de Caducidad, Fusionar Formas: Rompecabezas (Shape Merge), Clearin: Limpiar Correo, ShotSilo: Gestor de Capturas, TimeFlow: Cuenta Regresiva, One Line: Microdiario, Veltrim: Smart Clipboard, Rolliva: Dados y Ruleta, Piramit Bulmaca, RandomJourney y QRMaker&amp;Scanner.</p>
+
+        <h2 id="es-vista">3. Las apps de un vistazo</h2>
+        <p>La siguiente tabla resume dónde se guardan los datos de cada app y qué servicios externos se usan. Las secciones 4 y 5 tienen los detalles.</p>
+        <div class="table-wrap" role="region" aria-label="Tabla: las apps de un vistazo" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">App</th>
+                <th scope="col">Dónde están tus datos</th>
+                <th scope="col">Análisis</th>
+                <th scope="col">Anuncios</th>
+                <th scope="col">Otros datos que salen del dispositivo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mochila (Pack)</td><td>Dispositivo</td><td>Ninguno</td><td>Ninguno</td><td>Ninguno</td></tr>
+              <tr><td>Bloom</td><td>Dispositivo, iCloud opcional</td><td>Firebase</td><td>Ninguno</td><td>Ninguno</td></tr>
+              <tr><td>Medlyra</td><td>Dispositivo, iCloud opcional</td><td>Firebase (sin datos de salud)</td><td>Ninguno</td><td>Ninguno</td></tr>
+              <tr><td>Shelf</td><td>Dispositivo, iCloud opcional</td><td>Firebase</td><td>Ninguno</td><td>Número del código de barras escaneado (bases de datos abiertas de productos)</td></tr>
+              <tr><td>Fusionar Formas</td><td>Dispositivo</td><td>Firebase</td><td>AdMob</td><td>Puntuaciones de Game Center (Apple)</td></tr>
+              <tr><td>Clearin</td><td>Dispositivo, llavero, iCloud opcional</td><td>Firebase</td><td>AdMob</td><td>Tus correos solo viajan directamente entre tu dispositivo y tu propio proveedor de correo</td></tr>
+              <tr><td>ShotSilo</td><td>Dispositivo, iCloud opcional</td><td>Firebase</td><td>AdMob</td><td>Ninguno</td></tr>
+              <tr><td>TimeFlow</td><td>Dispositivo, iCloud opcional</td><td>Firebase</td><td>AdMob</td><td>Ninguno</td></tr>
+              <tr><td>One Line</td><td>Dispositivo, iCloud opcional</td><td>Ninguno</td><td>Ninguno</td><td>Ninguno</td></tr>
+              <tr><td>Veltrim</td><td>Dispositivo, iCloud opcional</td><td>Firebase (según tu consentimiento)</td><td>AdMob</td><td>Ninguno</td></tr>
+              <tr><td>Rolliva</td><td>Dispositivo</td><td>Firebase</td><td>AdMob</td><td>Ninguno</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>Dispositivo</td><td>Ninguno</td><td>AdMob</td><td>Ninguno</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>Ninguno</td><td>Ninguno</td><td>Rutas, historial de viajes, coordenadas de ubicación</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>Dispositivo y Google Firebase</td><td>Ninguno</td><td>AdMob</td><td>Datos de la cuenta, historial de QR, archivos que subes</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="es-comun">4. Temas comunes a todas las apps</h2>
+
+        <h3>4.1 Datos guardados en tu dispositivo</h3>
+        <p>Lo que introduces en nuestras apps se guarda en el espacio de la app en tu dispositivo con las tecnologías de almacenamiento local de Apple (SwiftData, UserDefaults, llavero y similares). No tenemos acceso a ello. Cuando eliminas una app, estos datos se borran de tu dispositivo. Los archivos que exportas (PDF, CSV, JSON, imágenes) solo se guardan donde tú eliges o se comparten con la app que seleccionas.</p>
+
+        <h3>4.2 Sincronización con iCloud</h3>
+        <p>En las apps que lo admiten, al activar la sincronización tus datos se guardan, mediante el servicio CloudKit de Apple, en la base de datos privada de iCloud o en el almacenamiento clave-valor de iCloud de tu cuenta de Apple, y se sincronizan entre tus dispositivos. Solo tu cuenta de Apple puede acceder a ese espacio. Krenix Studios no puede ver su contenido. Durante la sincronización, Apple puede usar notificaciones silenciosas sin contenido para avisar a tus dispositivos de los cambios. Los datos de iCloud están sujetos a la <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">política de privacidad de Apple</a>.</p>
+
+        <h3>4.3 Análisis: Google Firebase Analytics</h3>
+        <p>Bloom, Medlyra, Shelf, Fusionar Formas, Clearin, ShotSilo, TimeFlow, Veltrim y Rolliva usan Google Firebase Analytics para entender cómo se usan las apps. Los datos recopilados son:</p>
+        <ul>
+          <li>un identificador de instancia de la app, es decir, un identificador aleatorio asignado a la instalación de la app en tu dispositivo,</li>
+          <li>modelo del dispositivo, versión del sistema operativo, versión de la app, idioma y ubicación aproximada derivada de la dirección IP (a nivel de país y ciudad),</li>
+          <li>número y duración de las sesiones, pantallas vistas y eventos de acción como «elemento añadido» o «pantalla Pro abierta»,</li>
+          <li>eventos de compra (plan elegido y precio),</li>
+          <li>en algunas apps, propiedades de usuario como el estado Pro, el idioma de la app, el tema, la moneda o el número de elementos guardados,</li>
+          <li>tu identificador publicitario (IDFA), si has permitido el rastreo.</li>
+        </ul>
+        <p>Los datos de análisis nunca incluyen tu nombre, tu dirección de correo ni el contenido que introduces (notas, nombres de medicamentos, correos, capturas de pantalla, textos copiados). Los usamos para encontrar errores y flujos que fallan, entender qué funciones se usan y mejorar las apps. En Veltrim, la recopilación de análisis se activa o desactiva según tu elección en la pantalla de consentimiento de la app. Mochila, One Line, Piramit Bulmaca, RandomJourney y QRMaker&amp;Scanner no usan ningún servicio de análisis.</p>
+
+        <h3>4.4 Anuncios: Google AdMob y permiso de rastreo</h3>
+        <p>Las versiones gratuitas de TimeFlow, Veltrim, Rolliva, Clearin, ShotSilo, Fusionar Formas, Piramit Bulmaca y QRMaker&amp;Scanner pueden mostrar anuncios de banner, intersticiales y bonificados mediante Google AdMob. Para mostrar los anuncios, limitar su frecuencia, medirlos y evitar abusos, Google trata datos como información del dispositivo, dirección IP, interacciones con los anuncios dentro de la app y, si lo has permitido, tu identificador publicitario.</p>
+        <ul>
+          <li>Estas apps muestran la solicitud de Transparencia en el rastreo de apps (ATT) de Apple antes de acceder a tu identificador publicitario. Si la rechazas, tu IDFA no se comparte y los anuncios se muestran sin él.</li>
+          <li>Puedes cambiar tu elección en cualquier momento en Ajustes &gt; Privacidad y seguridad &gt; Rastreo.</li>
+          <li>Veltrim también muestra una pantalla de consentimiento mediante la plataforma de gestión del consentimiento de Google a los usuarios del Espacio Económico Europeo, el Reino Unido y Suiza.</li>
+          <li>En algunas apps (por ejemplo, Rolliva PRO y ShotSilo Pro), los anuncios se eliminan al pasar a la versión de pago.</li>
+        </ul>
+        <p>Puedes leer cómo usa Google los datos publicitarios en la <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">política de publicidad de Google</a>. Mochila, Bloom, Medlyra, Shelf, One Line y RandomJourney no muestran anuncios.</p>
+
+        <h3>4.5 Compras</h3>
+        <p>Las suscripciones y compras únicas se realizan a través de la App Store de Apple. Apple trata tus datos de pago. Nunca vemos ni guardamos los datos de tu tarjeta. Para desbloquear las funciones Pro, la app recibe de Apple un registro verificado de la transacción (producto, fecha, estado). En las apps que usan análisis, el evento de compra (plan y precio) también se registra en Firebase Analytics. Puedes gestionar o cancelar tus suscripciones en los ajustes de tu cuenta de Apple.</p>
+
+        <h3>4.6 Notificaciones</h3>
+        <p>Los recordatorios, avisos y notificaciones de racha son notificaciones locales programadas en tu dispositivo. Su contenido nunca se envía a un servidor. Puedes desactivar las notificaciones en cualquier momento en Ajustes &gt; Notificaciones.</p>
+
+        <h3>4.7 Permisos del dispositivo</h3>
+        <p>Cada permiso se solicita solo cuando usas la función correspondiente. Si lo rechazas, el resto de la app sigue funcionando.</p>
+        <ul>
+          <li><strong>Cámara:</strong> Shelf (leer fechas de caducidad, escanear códigos de barras, hacer fotos de productos) y QRMaker&amp;Scanner (escanear códigos QR). La imagen de la cámara se procesa en tu dispositivo y no se guarda ni se envía. Solo se guardan en tu dispositivo las fotos de productos que haces.</li>
+          <li><strong>Fotos:</strong> ShotSilo (encontrar, mostrar y, con tu confirmación, eliminar tus capturas de pantalla), TimeFlow (una foto que eliges como fondo de tarjeta) y Mochila, ShotSilo y QRMaker&amp;Scanner (guardar en Fotos las imágenes generadas).</li>
+          <li><strong>Calendario:</strong> TimeFlow (importar eventos de tu calendario y añadir tus eventos a él).</li>
+          <li><strong>Ubicación:</strong> RandomJourney (generar coordenadas aleatorias y encontrar puntos cercanos, solo mientras usas la app).</li>
+          <li><strong>Face ID o Touch ID:</strong> One Line, ShotSilo y Veltrim (bloqueo opcional de la app). La autenticación biométrica la realiza Apple en tu dispositivo. Tus datos biométricos nunca nos llegan.</li>
+          <li><strong>Portapapeles:</strong> Veltrim lee el portapapeles para añadir a tu historial lo que copias. Mochila, Rolliva y ShotSilo solo copian el texto que les pides.</li>
+          <li><strong>Rastreo (ATT):</strong> las apps que muestran anuncios, como se describe en 4.4.</li>
+          <li><strong>Game Center:</strong> Fusionar Formas (clasificaciones).</li>
+        </ul>
+
+        <h2 id="es-apps">5. Detalles por app</h2>
+
+        <h3>Mochila: Senderismo y Trekking (Pack)</h3>
+        <ul>
+          <li>Tu armario de equipo, salidas, pesos, precios, enlaces y notas se guardan solo en tu dispositivo. No hay cuenta, inicio de sesión, análisis ni publicidad. La app funciona sin conexión.</li>
+          <li>Solo se solicita el acceso a Fotos «solo añadir», para guardar tu tarjeta de peso. Las tablas Markdown se copian al portapapeles.</li>
+          <li>Las exportaciones CSV y las copias de seguridad JSON se guardan donde tú eliges. Los archivos CSV que importas se procesan en tu dispositivo.</li>
+          <li>Los enlaces que añades al equipo se abren en tu navegador solo cuando los tocas.</li>
+        </ul>
+
+        <h3>Bloom: Temporizador Café</h3>
+        <ul>
+          <li>Tus recetas, tu bodega de granos y tu registro de preparaciones (molienda, temperatura, valoración, notas de cata) se guardan en tu dispositivo. Con Bloom Pro puedes activar la sincronización con iCloud.</li>
+          <li>El temporizador funciona en tu dispositivo como Actividad en vivo en la pantalla bloqueada y en la Dynamic Island, y en widgets. Los avisos son notificaciones locales.</li>
+          <li>Se usa Firebase Analytics (4.3). Sin anuncios.</li>
+        </ul>
+
+        <h3>Medlyra: Control de Medicinas</h3>
+        <ul>
+          <li>Tus medicamentos, pautas de dosis, registros de tomas, notas y los familiares que añades son datos de salud. Se guardan solo en tu dispositivo y, si activas la sincronización con iCloud, en tu base de datos privada de iCloud. Krenix Studios no puede acceder a estos datos ni tratarlos.</li>
+          <li>Firebase Analytics registra solo el tipo de acción, como «se registró una toma» o «se abrió una pantalla». Los nombres de medicamentos, dosis, notas y nombres de familiares nunca se envían al análisis.</li>
+          <li>Los recordatorios y las acciones «Tomado» y «Posponer 15 minutos» funcionan con notificaciones locales.</li>
+          <li>Sin anuncios.</li>
+        </ul>
+
+        <h3>Shelf: Fecha de Caducidad</h3>
+        <ul>
+          <li>Tus productos, fechas de caducidad, categorías, precios y fotos de productos se guardan en tu dispositivo. Puedes activar la sincronización con iCloud.</li>
+          <li>La lectura de fechas de caducidad y el escaneo de códigos de barras se hacen por completo en tu dispositivo con las tecnologías VisionKit y Vision de Apple.</li>
+          <li>Cuando escaneas un código de barras, solo se envía el número del código a las bases de datos abiertas Open Food Facts, Open Beauty Facts, Open Pet Food Facts y Open Products Facts para encontrar el nombre y la categoría del producto. Estos servicios pueden ver la dirección IP desde la que llega la solicitud. No se envía nada más.</li>
+          <li>Se usa Firebase Analytics. El estado Pro, el idioma de la app, el tema, la moneda y el número de productos activos se registran como propiedades de usuario. Sin anuncios.</li>
+        </ul>
+
+        <h3>Fusionar Formas: Rompecabezas (Shape Merge)</h3>
+        <ul>
+          <li>Tus puntuaciones, tu progreso y los temas desbloqueados se guardan en tu dispositivo.</li>
+          <li>Si has iniciado sesión en Game Center, tus puntuaciones se envían a las clasificaciones de Apple Game Center y tu apodo de Game Center es visible para otros jugadores. Apple trata estos datos.</li>
+          <li>Los avisos de que han superado tu récord son notificaciones locales.</li>
+          <li>Se usan Firebase Analytics y Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Clearin: Limpiar Correo</h3>
+        <ul>
+          <li>Conectas tu cuenta de Gmail, Outlook, iCloud u otra cuenta IMAP con una contraseña de aplicación que te da tu proveedor. Esa contraseña se guarda cifrada en el llavero de tu dispositivo. Tu dirección de correo y los datos del servidor se quedan en tu dispositivo.</li>
+          <li>Tus correos se leen y gestionan mediante una conexión IMAP cifrada (TLS) que va directamente de tu dispositivo al servidor de tu proveedor de correo. El contenido de los correos nunca se envía a Krenix Studios ni a servidores de terceros. Las eliminaciones y otras acciones se hacen directamente en tu cuenta de correo.</li>
+          <li>Cuando eliges darte de baja, tu dispositivo envía una solicitud a la dirección de baja que el remitente indicó en el correo, o prepara un correo de baja. Esa solicitud transmite tu dirección IP al servidor del remitente.</li>
+          <li>Tus estadísticas de limpieza (correos eliminados y conservados, espacio liberado, racha, tamaños por categoría) se guardan en tu dispositivo. Si activas la sincronización con iCloud, se sincronizan mediante tu almacenamiento clave-valor de iCloud, asociadas a tu dirección de correo.</li>
+          <li>Firebase Analytics registra solo tipos de acción y cantidades. Se usa Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>ShotSilo: Gestor de Capturas</h3>
+        <ul>
+          <li>El acceso a Fotos se usa para encontrar y mostrar tus capturas de pantalla, y para eliminarlas con tu confirmación. Las eliminaciones pasan por la ventana de confirmación de iOS.</li>
+          <li>El reconocimiento de texto (OCR) y la organización automática en carpetas se hacen por completo en tu dispositivo con las tecnologías Vision, Core ML y Natural Language de Apple. Tus imágenes y el texto reconocido nunca se envían a un servidor.</li>
+          <li>Tus carpetas, reglas de borrado automático y el índice de texto reconocido se guardan en tu dispositivo. Con ShotSilo Pro puedes activar la sincronización con iCloud. El bloqueo con Face ID es opcional.</li>
+          <li>Si tocas «Buscar en Google» sobre un texto reconocido, ese texto se abre como búsqueda de Google en tu navegador.</li>
+          <li>Se usan Firebase Analytics y Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>TimeFlow: Cuenta Regresiva</h3>
+        <ul>
+          <li>Tus eventos, fechas, categorías, recordatorios y diseños de tarjetas se guardan en tu dispositivo. Puedes activar la sincronización con iCloud. Los widgets y las Actividades en vivo funcionan en tu dispositivo.</li>
+          <li>El acceso al calendario solo se solicita cuando quieres importar eventos de tu calendario o añadir un evento a él.</li>
+          <li>Una foto que eliges como fondo de tarjeta se copia en la app y se queda en tu dispositivo.</li>
+          <li>Se usan Firebase Analytics y Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>One Line: Microdiario</h3>
+        <ul>
+          <li>Tus líneas de diario y registros de ánimo se guardan en tu dispositivo. Con Premium puedes activar la sincronización con iCloud. El bloqueo con Face ID o Touch ID es opcional.</li>
+          <li>Los informes y análisis se calculan por completo en tu dispositivo. Lo que escribes nunca se envía a un servicio de IA ni a un servidor.</li>
+          <li>Las exportaciones como libro PDF y las imágenes para compartir se crean en tu dispositivo y solo se envían adonde tú eliges.</li>
+          <li>Sin análisis y sin anuncios.</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>Cuando abres la app o envías contenido desde el menú de compartir, los textos, enlaces e imágenes que copiaste se añaden a tu historial. Tu historial, carpetas y etiquetas se guardan en tu dispositivo. Puedes activar la sincronización con iCloud.</li>
+          <li>El texto de las imágenes se reconoce en tu dispositivo con la tecnología Vision de Apple.</li>
+          <li>El bloqueo con Face ID o Touch ID es opcional.</li>
+          <li>Se usa Google AdMob. En el Espacio Económico Europeo, el Reino Unido y Suiza se muestra la pantalla de consentimiento de Google. Firebase Analytics se activa o desactiva según tu elección en esa pantalla (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Rolliva: Dados y Ruleta</h3>
+        <ul>
+          <li>Tus ruletas, ajustes de dados y monedas, grupos de jugadores y preguntas personalizadas se guardan en tu dispositivo.</li>
+          <li>Se usan Firebase Analytics y Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>Tu progreso, puntuaciones, pistas y recompensas se guardan en tu dispositivo.</li>
+          <li>Las compras dentro de la app se hacen a través de la App Store (4.5).</li>
+          <li>Se usa Google AdMob (4.4). Sin análisis.</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>Las rutas que descubres, tu historial de viajes y tu progreso se guardan en una base de datos en la nube de Google Firebase.</li>
+          <li>El acceso a la ubicación se solicita solo mientras usas la app, para encontrar puntos cercanos y generar coordenadas aleatorias en la región que eliges. Tus coordenadas se guardan cifradas en la base de datos de Firebase.</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>Cuenta:</strong> puedes crear una cuenta con correo y contraseña, Iniciar sesión con Apple o Iniciar sesión con Google. La autenticación la gestiona Google Firebase Authentication. Con Iniciar sesión con Apple puedes ocultar tu dirección de correo.</li>
+          <li><strong>Perfil:</strong> tu identificador de usuario, dirección de correo, nombre y apellidos, avatar elegido, idioma y las fechas de tu último escaneo y del último código creado se guardan en Google Cloud Firestore.</li>
+          <li><strong>Historial de QR:</strong> el contenido de los códigos que creas y escaneas se guarda en Firestore, y las imágenes QR en Firebase Storage, para que puedas acceder a tus códigos y hacer copias de seguridad desde varios dispositivos.</li>
+          <li><strong>Archivos subidos:</strong> los documentos e imágenes que eliges adjuntar a un código QR se suben a Firebase Storage. El enlace resultante se escribe en el código QR y cualquiera que lo escanee puede abrir ese archivo. Ten cuidado al compartir así archivos personales o confidenciales.</li>
+          <li><strong>Cámara y Wi-Fi:</strong> el escaneo de QR se hace en tu dispositivo y la imagen de la cámara no se guarda. Cuando escaneas un código QR de Wi-Fi, el nombre de la red y la contraseña solo se usan para conectar tu dispositivo a esa red.</li>
+          <li><strong>Eliminación de la cuenta:</strong> puedes eliminar tu cuenta desde la app. Al hacerlo se borran tus datos de QR y archivos subidos, tu perfil y tu cuenta de autenticación. Tu dirección de correo y el motivo de eliminación que escribes se guardan en un registro aparte para documentar que la solicitud se completó.</li>
+          <li>Se usa Google AdMob (4.4). Sin análisis.</li>
+        </ul>
+
+        <h2 id="es-web">6. Sitio web</h2>
+        <ul>
+          <li>krenixstudios.com no usa cookies ni herramientas de análisis o rastreo.</li>
+          <li>Tu preferencia de idioma se guarda en el almacenamiento local de tu navegador (localStorage) y no se envía a ningún servidor.</li>
+          <li>Las fuentes se cargan desde Google Fonts, lo que transmite tu dirección IP y los datos de tu navegador a Google.</li>
+          <li>El nombre, la dirección de correo y el mensaje que escribes en el formulario de contacto llegan a nuestra bandeja de entrada mediante el servicio FormSubmit (formsubmit.co). Solo los usamos para responderte, nunca con fines de marketing.</li>
+          <li>Nuestro proveedor de alojamiento puede guardar registros estándar del servidor, como la dirección IP, el tipo de navegador y la hora de la visita, por motivos de seguridad y funcionamiento.</li>
+        </ul>
+
+        <h2 id="es-bases">7. Bases jurídicas</h2>
+        <p>Tratamos los datos personales sobre las siguientes bases jurídicas, según el artículo 5 de la KVKK y el artículo 6 del RGPD:</p>
+        <ul>
+          <li><strong>Ejecución de un contrato:</strong> cuentas de QRMaker&amp;Scanner y RandomJourney, compras, sincronización con iCloud y el funcionamiento de las funciones que usas.</li>
+          <li><strong>Intereses legítimos:</strong> análisis para mejorar las apps y encontrar errores, seguridad y registros del servidor del sitio web.</li>
+          <li><strong>Consentimiento:</strong> acceso a tu identificador publicitario y rastreo (permiso ATT), y tus elecciones en la pantalla de consentimiento de Veltrim. Puedes retirar tu consentimiento en cualquier momento.</li>
+          <li><strong>Responder a tus solicitudes:</strong> el formulario de contacto y los correos que nos envías.</li>
+          <li><strong>Obligación legal:</strong> los casos en que la ley nos exige conservar o comunicar datos.</li>
+        </ul>
+        <p>No tratamos categorías especiales de datos personales, como los datos de salud de Medlyra. Esos datos se quedan solo en tu dispositivo y en tu cuenta de iCloud, bajo tu control.</p>
+
+        <h2 id="es-terceros">8. Terceros y transferencias internacionales</h2>
+        <p>Nuestras apps y nuestro sitio web trabajan con los siguientes proveedores. Cada uno está sujeto a su propia política de privacidad:</p>
+        <ul>
+          <li><strong>Apple:</strong> App Store, compras dentro de la app, iCloud y CloudKit, Game Center, Iniciar sesión con Apple y el permiso de rastreo. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política de privacidad de Apple</a></li>
+          <li><strong>Google Firebase:</strong> Analytics, Authentication, Cloud Firestore y Storage. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Información de privacidad de Firebase</a></li>
+          <li><strong>Google AdMob:</strong> publicidad dentro de las apps. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Política de publicidad de Google</a></li>
+          <li><strong>Google:</strong> Iniciar sesión con Google y Google Fonts. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Google</a></li>
+          <li><strong>Open Food Facts y bases de datos abiertas relacionadas:</strong> búsquedas por código de barras en Shelf. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Open Food Facts</a></li>
+          <li><strong>FormSubmit:</strong> el formulario de contacto de nuestro sitio web. <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>Tu proveedor de correo:</strong> el proveedor de Gmail, Outlook, iCloud u otro que conectas en Clearin funciona según su propia política.</li>
+        </ul>
+        <p>Estos proveedores pueden tener servidores fuera de Turquía, principalmente en Estados Unidos y la Unión Europea, por lo que tus datos pueden transferirse al extranjero. Estas transferencias se basan en las garantías previstas en el artículo 9 de la KVKK y en el RGPD (por ejemplo, cláusulas contractuales tipo). Podemos comunicar datos a las autoridades públicas competentes cuando la ley lo exija.</p>
+
+        <h2 id="es-conservacion">9. Plazos de conservación</h2>
+        <ul>
+          <li><strong>Datos en tu dispositivo:</strong> hasta que los borres o elimines la app.</li>
+          <li><strong>Datos de iCloud:</strong> en tu cuenta de Apple hasta que los borres. Puedes gestionarlos en Ajustes &gt; [tu nombre] &gt; iCloud.</li>
+          <li><strong>Datos de análisis:</strong> durante un periodo limitado definido por el ajuste de conservación de Firebase Analytics, tras el cual Google los elimina automáticamente.</li>
+          <li><strong>Datos de cuenta de QRMaker&amp;Scanner y RandomJourney:</strong> mientras tu cuenta esté abierta. Se eliminan cuando eliminas tu cuenta. Se conserva un registro de la solicitud de eliminación para documentar que se completó.</li>
+          <li><strong>Correspondencia:</strong> hasta resolver tu solicitud y durante el tiempo que exijan las obligaciones legales.</li>
+        </ul>
+
+        <h2 id="es-seguridad">10. Seguridad</h2>
+        <p>Los datos se cifran en tránsito con TLS. Las contraseñas se guardan en el llavero y los datos de tu dispositivo están protegidos por las funciones de protección de datos de Apple. Las apps que lo admiten ofrecen bloqueo con Face ID o Touch ID. Los datos de cuenta guardados en Firebase están protegidos por la infraestructura de autenticación y control de acceso de Firebase. Ningún método de transmisión o almacenamiento es totalmente seguro. Si se produce una brecha, te lo notificaremos a ti y a las autoridades competentes según exija la ley.</p>
+
+        <h2 id="es-derechos">11. Tus derechos y opciones</h2>
+        <p>Según el artículo 11 de la KVKK, tienes derecho a saber si se tratan tus datos personales, a solicitar información si es así, a conocer la finalidad del tratamiento y si se usan conforme a ella, a conocer los terceros en Turquía o en el extranjero a los que se transfieren, a solicitar su rectificación si están incompletos o son inexactos, a solicitar su supresión o destrucción, a pedir que estas medidas se notifiquen a los terceros a los que se transfirieron, a oponerte a un resultado en tu contra derivado únicamente de un análisis automatizado y a reclamar una indemnización por los daños causados por un tratamiento ilícito.</p>
+        <p>Si el RGPD te es aplicable, también tienes los derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición. Puedes retirar tu consentimiento en cualquier momento.</p>
+        <p>Para ejercer estos derechos, escribe a <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>. Responderemos en un plazo máximo de 30 días. Si no estás satisfecho con nuestra respuesta, puedes presentar una reclamación ante la Autoridad turca de Protección de Datos Personales o ante la autoridad de protección de datos de tu país.</p>
+        <p>Opciones prácticas:</p>
+        <ul>
+          <li><strong>Permiso de rastreo:</strong> Ajustes &gt; Privacidad y seguridad &gt; Rastreo.</li>
+          <li><strong>Cámara, fotos, calendario, ubicación y notificaciones:</strong> Ajustes &gt; la app correspondiente.</li>
+          <li><strong>Datos de iCloud:</strong> Ajustes &gt; [tu nombre] &gt; iCloud.</li>
+          <li><strong>Borrar los datos del dispositivo:</strong> elimina la app de tu dispositivo.</li>
+          <li><strong>Restablecer el identificador de análisis:</strong> al eliminar y reinstalar la app se crea un nuevo identificador de instancia.</li>
+          <li><strong>Cuenta de QRMaker&amp;Scanner:</strong> la opción de eliminar la cuenta dentro de la app.</li>
+          <li><strong>Datos de RandomJourney:</strong> escríbenos para que los eliminemos.</li>
+        </ul>
+
+        <h2 id="es-menores">12. Privacidad de los menores</h2>
+        <p>Nuestras apps no están dirigidas a menores de 13 años y no recopilamos a sabiendas datos personales de niños de esa edad. Si notas que tu hijo o hija nos ha facilitado datos personales, ponte en contacto con nosotros y los eliminaremos de inmediato.</p>
+
+        <h2 id="es-cambios">13. Cambios</h2>
+        <p>Podemos actualizar esta política cuando cambien nuestras apps o la ley. La versión vigente se publica siempre en esta página y la fecha de arriba se actualiza. Anunciamos los cambios importantes en nuestro sitio web o en nuestras apps.</p>
+
+        <h2 id="es-contacto">14. Contacto</h2>
+        <p>Krenix Studios, Estambul, Turquía<br>Correo: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
+      <article data-lang="ru" lang="ru" hidden>
+        <h1>Политика конфиденциальности</h1>
+        <span class="last-updated">Последнее обновление: 25 октября 2026 г.</span>
+
+        <p class="policy-lede">Эта политика объясняет, какие данные обрабатывают приложения, которые Krenix Studios публикует в App Store, и сайт krenixstudios.com, зачем и как. Большинство наших приложений хранят ваши данные только на вашем устройстве. Каждый случай, когда данные покидают устройство, описан ниже по отдельности.</p>
+
+        <nav class="policy-toc" aria-label="Содержание">
+          <p>Содержание</p>
+          <ol>
+            <li><a href="#ru-kratko">Коротко</a></li>
+            <li><a href="#ru-operator">Оператор данных и сфера действия</a></li>
+            <li><a href="#ru-obzor">Приложения в обзоре</a></li>
+            <li><a href="#ru-obshchee">Общие для всех приложений темы</a></li>
+            <li><a href="#ru-prilozheniya">Подробности по приложениям</a></li>
+            <li><a href="#ru-sajt">Сайт</a></li>
+            <li><a href="#ru-osnovaniya">Правовые основания</a></li>
+            <li><a href="#ru-tretyi">Третьи стороны и трансграничная передача</a></li>
+            <li><a href="#ru-hranenie">Сроки хранения</a></li>
+            <li><a href="#ru-bezopasnost">Безопасность</a></li>
+            <li><a href="#ru-prava">Ваши права и настройки</a></li>
+            <li><a href="#ru-deti">Конфиденциальность детей</a></li>
+            <li><a href="#ru-izmeneniya">Изменения</a></li>
+            <li><a href="#ru-kontakty">Контакты</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="ru-kratko">1. Коротко</h2>
+        <ul>
+          <li>Мы не продаём и не сдаём в аренду ваши персональные данные и не передаём их никому в маркетинговых целях.</li>
+          <li>Всё, что вы вводите в наших приложениях (строки дневника, лекарства, снаряжение, продукты, скриншоты, история буфера обмена и т. п.), остаётся на вашем устройстве. Если вы включите синхронизацию iCloud, данные хранятся в личном пространстве iCloud вашего Apple Account. У Krenix Studios нет доступа к этому пространству.</li>
+          <li>Только QRMaker&amp;Scanner и RandomJourney предлагают создать учётную запись или хранят ваши данные в серверной инфраструктуре, которой мы управляем (Google Firebase).</li>
+          <li>Некоторые приложения собирают данные об использовании через Google Firebase Analytics, чтобы понимать, как ими пользуются, а некоторые показывают рекламу через Google AdMob. Что использует каждое приложение, показано в таблице в разделе 3.</li>
+          <li>Доступ к вашему рекламному идентификатору (IDFA) возможен, только если вы разрешите его в запросе Apple на отслеживание.</li>
+          <li>Медицинские данные в Medlyra, например лекарства, дозы, заметки и члены семьи, никогда не передаются сервисам аналитики или рекламы.</li>
+          <li>Отчёты, аналитика, распознавание текста и автоматическая сортировка работают на вашем устройстве. Ваш контент никогда не отправляется в сервисы ИИ.</li>
+        </ul>
+
+        <h2 id="ru-operator">2. Оператор данных и сфера действия</h2>
+        <p>В этой политике «Krenix Studios», «мы» и «наш» означают Krenix Studios (Стамбул, Турция), которая разрабатывает и публикует перечисленные ниже приложения. Krenix Studios является оператором (ответственным за обработку) данных согласно турецкому Закону № 6698 о защите персональных данных (KVKK) и, где применимо, Общему регламенту ЕС по защите данных (GDPR). Связаться с нами можно по адресу <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>.</p>
+        <p>Эта политика публикуется на турецком, английском, немецком, французском, испанском, русском, японском и корейском языках. При расхождениях между версиями преимущественную силу имеет текст на турецком языке.</p>
+        <p>Она распространяется на наш сайт и следующие приложения: Рюкзак: снаряжение в поход (Pack), Bloom: Кофейный Таймер, Medlyra: Приём лекарств, Shelf: Срок годности товаров, Слияние Фигур: Головоломка (Shape Merge), Clearin: Очистка почты, ShotSilo: Менеджер скриншотов, TimeFlow: Обратный отсчет, One Line: Микро-дневник, Veltrim: Smart Clipboard, Rolliva: Кости и Колесо, Piramit Bulmaca, RandomJourney и QRMaker&amp;Scanner.</p>
+
+        <h2 id="ru-obzor">3. Приложения в обзоре</h2>
+        <p>В таблице кратко показано, где хранятся данные каждого приложения и какие внешние сервисы используются. Подробности приведены в разделах 4 и 5.</p>
+        <div class="table-wrap" role="region" aria-label="Таблица: приложения в обзоре" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">Приложение</th>
+                <th scope="col">Где хранятся данные</th>
+                <th scope="col">Аналитика</th>
+                <th scope="col">Реклама</th>
+                <th scope="col">Другие данные, покидающие устройство</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Рюкзак (Pack)</td><td>Устройство</td><td>Нет</td><td>Нет</td><td>Нет</td></tr>
+              <tr><td>Bloom</td><td>Устройство, iCloud по желанию</td><td>Firebase</td><td>Нет</td><td>Нет</td></tr>
+              <tr><td>Medlyra</td><td>Устройство, iCloud по желанию</td><td>Firebase (без медицинских данных)</td><td>Нет</td><td>Нет</td></tr>
+              <tr><td>Shelf</td><td>Устройство, iCloud по желанию</td><td>Firebase</td><td>Нет</td><td>Номер отсканированного штрихкода (открытые базы данных товаров)</td></tr>
+              <tr><td>Слияние Фигур</td><td>Устройство</td><td>Firebase</td><td>AdMob</td><td>Результаты в Game Center (Apple)</td></tr>
+              <tr><td>Clearin</td><td>Устройство, связка ключей, iCloud по желанию</td><td>Firebase</td><td>AdMob</td><td>Ваша почта передаётся только напрямую между устройством и вашим почтовым провайдером</td></tr>
+              <tr><td>ShotSilo</td><td>Устройство, iCloud по желанию</td><td>Firebase</td><td>AdMob</td><td>Нет</td></tr>
+              <tr><td>TimeFlow</td><td>Устройство, iCloud по желанию</td><td>Firebase</td><td>AdMob</td><td>Нет</td></tr>
+              <tr><td>One Line</td><td>Устройство, iCloud по желанию</td><td>Нет</td><td>Нет</td><td>Нет</td></tr>
+              <tr><td>Veltrim</td><td>Устройство, iCloud по желанию</td><td>Firebase (в зависимости от согласия)</td><td>AdMob</td><td>Нет</td></tr>
+              <tr><td>Rolliva</td><td>Устройство</td><td>Firebase</td><td>AdMob</td><td>Нет</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>Устройство</td><td>Нет</td><td>AdMob</td><td>Нет</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>Нет</td><td>Нет</td><td>Маршруты, история поездок, координаты местоположения</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>Устройство и Google Firebase</td><td>Нет</td><td>AdMob</td><td>Данные учётной записи, история QR, загруженные файлы</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ru-obshchee">4. Общие для всех приложений темы</h2>
+
+        <h3>4.1 Данные на вашем устройстве</h3>
+        <p>Всё, что вы вводите в наших приложениях, хранится в области приложения на вашем устройстве с помощью технологий локального хранения Apple (SwiftData, UserDefaults, связка ключей и аналогичные). У нас нет к этому доступа. При удалении приложения эти данные удаляются с устройства. Экспортированные файлы (PDF, CSV, JSON, изображения) сохраняются только там, где вы выберете, или передаются в выбранное вами приложение.</p>
+
+        <h3>4.2 Синхронизация iCloud</h3>
+        <p>В поддерживающих её приложениях при включённой синхронизации ваши данные через сервис Apple CloudKit хранятся в личной базе данных iCloud или в хранилище «ключ-значение» iCloud вашего Apple Account и синхронизируются между устройствами. Доступ к этому пространству есть только у вашего Apple Account. Krenix Studios не видит его содержимое. Во время синхронизации Apple может использовать тихие уведомления без содержимого, чтобы сообщать устройствам об изменениях. Данные iCloud регулируются <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">политикой конфиденциальности Apple</a>.</p>
+
+        <h3>4.3 Аналитика: Google Firebase Analytics</h3>
+        <p>Bloom, Medlyra, Shelf, Слияние Фигур, Clearin, ShotSilo, TimeFlow, Veltrim и Rolliva используют Google Firebase Analytics, чтобы понимать, как используются приложения. Собираются следующие данные:</p>
+        <ul>
+          <li>идентификатор экземпляра приложения, то есть случайный идентификатор, присвоенный установке приложения на вашем устройстве,</li>
+          <li>модель устройства, версия операционной системы, версия приложения, язык и приблизительное местоположение по IP-адресу (на уровне страны и города),</li>
+          <li>число и длительность сеансов, просмотренные экраны и события действий, например «добавлена запись» или «открыт экран Pro»,</li>
+          <li>события покупок (выбранный тариф и цена),</li>
+          <li>в некоторых приложениях свойства пользователя, например статус Pro, язык приложения, тема, валюта или число сохранённых записей,</li>
+          <li>ваш рекламный идентификатор (IDFA), если вы разрешили отслеживание.</li>
+        </ul>
+        <p>Данные аналитики никогда не содержат ваше имя, адрес эл. почты или введённый вами контент (заметки, названия лекарств, письма, скриншоты, скопированный текст). Мы используем их, чтобы находить ошибки и неудачные сценарии, понимать, какие функции используются, и улучшать приложения. В Veltrim сбор аналитики включается или выключается в зависимости от вашего выбора на экране согласия приложения. Рюкзак, One Line, Piramit Bulmaca, RandomJourney и QRMaker&amp;Scanner не используют сервисы аналитики.</p>
+
+        <h3>4.4 Реклама: Google AdMob и разрешение на отслеживание</h3>
+        <p>Бесплатные версии TimeFlow, Veltrim, Rolliva, Clearin, ShotSilo, Слияние Фигур, Piramit Bulmaca и QRMaker&amp;Scanner могут показывать баннерную, полноэкранную рекламу и рекламу с вознаграждением через Google AdMob. Чтобы показывать рекламу, ограничивать её частоту, измерять её и предотвращать злоупотребления, Google обрабатывает такие данные, как сведения об устройстве, IP-адрес, взаимодействия с рекламой в приложении и, если вы это разрешили, ваш рекламный идентификатор.</p>
+        <ul>
+          <li>Эти приложения показывают запрос Apple App Tracking Transparency (ATT) перед доступом к вашему рекламному идентификатору. Если вы откажетесь, IDFA не передаётся, а реклама показывается без него.</li>
+          <li>Изменить выбор можно в любое время в разделе «Настройки» &gt; «Конфиденциальность и безопасность» &gt; «Отслеживание».</li>
+          <li>Veltrim также показывает пользователям из Европейской экономической зоны, Великобритании и Швейцарии экран согласия через платформу управления согласием Google.</li>
+          <li>В некоторых приложениях (например, Rolliva PRO и ShotSilo Pro) реклама отключается при переходе на платную версию.</li>
+        </ul>
+        <p>О том, как Google использует рекламные данные, можно прочитать в <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">рекламной политике Google</a>. Рюкзак, Bloom, Medlyra, Shelf, One Line и RandomJourney рекламу не показывают.</p>
+
+        <h3>4.5 Покупки</h3>
+        <p>Подписки и разовые покупки оформляются через App Store от Apple. Платёжные данные обрабатывает Apple. Мы никогда не видим и не храним данные вашей карты. Чтобы открыть функции Pro, приложение получает от Apple подтверждённую запись о транзакции (продукт, дата, статус). В приложениях с аналитикой событие покупки (тариф и цена) также записывается в Firebase Analytics. Управлять подписками или отменять их можно в настройках вашего Apple Account.</p>
+
+        <h3>4.6 Уведомления</h3>
+        <p>Напоминания, оповещения и уведомления о серии являются локальными уведомлениями, запланированными на вашем устройстве. Их содержимое никогда не отправляется на сервер. Отключить уведомления можно в любое время в разделе «Настройки» &gt; «Уведомления».</p>
+
+        <h3>4.7 Разрешения устройства</h3>
+        <p>Каждое разрешение запрашивается только тогда, когда вы пользуетесь соответствующей функцией. Если вы откажетесь, остальная часть приложения продолжит работать.</p>
+        <ul>
+          <li><strong>Камера:</strong> Shelf (чтение сроков годности, сканирование штрихкодов, фото товаров) и QRMaker&amp;Scanner (сканирование QR-кодов). Изображение с камеры обрабатывается на устройстве, не сохраняется и не отправляется. На устройстве сохраняются только сделанные вами фото товаров.</li>
+          <li><strong>Фото:</strong> ShotSilo (поиск, показ и удаление скриншотов с вашего подтверждения), TimeFlow (фото, выбранное в качестве фона карточки), а также Рюкзак, ShotSilo и QRMaker&amp;Scanner (сохранение созданных изображений в «Фото»).</li>
+          <li><strong>Календарь:</strong> TimeFlow (импорт событий из календаря и добавление в него ваших событий).</li>
+          <li><strong>Геопозиция:</strong> RandomJourney (создание случайных координат и поиск ближайших точек, только во время использования приложения).</li>
+          <li><strong>Face ID или Touch ID:</strong> One Line, ShotSilo и Veltrim (необязательная блокировка приложения). Биометрическую проверку выполняет Apple на вашем устройстве. Ваши биометрические данные к нам не попадают.</li>
+          <li><strong>Буфер обмена:</strong> Veltrim читает буфер обмена, чтобы добавлять скопированное в историю. Рюкзак, Rolliva и ShotSilo только копируют текст, который вы просите скопировать.</li>
+          <li><strong>Отслеживание (ATT):</strong> приложения с рекламой, как описано в пункте 4.4.</li>
+          <li><strong>Game Center:</strong> Слияние Фигур (таблицы лидеров).</li>
+        </ul>
+
+        <h2 id="ru-prilozheniya">5. Подробности по приложениям</h2>
+
+        <h3>Рюкзак: снаряжение в поход (Pack)</h3>
+        <ul>
+          <li>Ваш шкаф снаряжения, походы, вес, цены, ссылки и заметки хранятся только на устройстве. Нет учётной записи, входа, аналитики и рекламы. Приложение работает без интернета.</li>
+          <li>Запрашивается только доступ «Только добавление» к «Фото», чтобы сохранить карточку веса. Таблицы Markdown копируются в буфер обмена.</li>
+          <li>Экспорт в CSV и резервные копии JSON сохраняются туда, куда вы выберете. Импортируемые CSV-файлы обрабатываются на устройстве.</li>
+          <li>Ссылки, добавленные к снаряжению, открываются в браузере, только когда вы на них нажимаете.</li>
+        </ul>
+
+        <h3>Bloom: Кофейный Таймер</h3>
+        <ul>
+          <li>Ваши рецепты, погреб зерна и журнал заваривания (помол, температура, оценка, вкусовые заметки) хранятся на устройстве. С Bloom Pro можно включить синхронизацию iCloud.</li>
+          <li>Таймер работает на устройстве как Live Activity на экране блокировки и в Dynamic Island, а также в виджетах. Оповещения являются локальными уведомлениями.</li>
+          <li>Используется Firebase Analytics (4.3). Рекламы нет.</li>
+        </ul>
+
+        <h3>Medlyra: Приём лекарств</h3>
+        <ul>
+          <li>Ваши лекарства, схемы приёма, журнал приёма, заметки и добавленные члены семьи являются медицинскими данными. Они хранятся только на устройстве и, если вы включите синхронизацию iCloud, в вашей личной базе данных iCloud. Krenix Studios не может получить к ним доступ и не обрабатывает их.</li>
+          <li>Firebase Analytics фиксирует только тип действия, например «отмечен приём» или «открыт экран». Названия лекарств, дозы, заметки и имена членов семьи никогда не отправляются в аналитику.</li>
+          <li>Напоминания и действия «Принято» и «Отложить на 15 минут» работают через локальные уведомления.</li>
+          <li>Рекламы нет.</li>
+        </ul>
+
+        <h3>Shelf: Срок годности товаров</h3>
+        <ul>
+          <li>Ваши товары, сроки годности, категории, цены и фото товаров хранятся на устройстве. Можно включить синхронизацию iCloud.</li>
+          <li>Чтение сроков годности и сканирование штрихкодов полностью выполняются на устройстве с помощью технологий Apple VisionKit и Vision.</li>
+          <li>При сканировании штрихкода в открытые базы данных Open Food Facts, Open Beauty Facts, Open Pet Food Facts и Open Products Facts отправляется только номер штрихкода, чтобы найти название и категорию товара. Эти сервисы могут видеть IP-адрес, с которого пришёл запрос. Больше ничего не отправляется.</li>
+          <li>Используется Firebase Analytics. Статус Pro, язык приложения, тема, валюта и число активных товаров записываются как свойства пользователя. Рекламы нет.</li>
+        </ul>
+
+        <h3>Слияние Фигур: Головоломка (Shape Merge)</h3>
+        <ul>
+          <li>Ваши результаты, прогресс и открытые темы хранятся на устройстве.</li>
+          <li>Если вы вошли в Game Center, ваши результаты отправляются в таблицы лидеров Apple Game Center, а ваш псевдоним Game Center виден другим игрокам. Эти данные обрабатывает Apple.</li>
+          <li>Оповещения о том, что ваш рекорд побит, являются локальными уведомлениями.</li>
+          <li>Используются Firebase Analytics и Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Clearin: Очистка почты</h3>
+        <ul>
+          <li>Вы подключаете учётную запись Gmail, Outlook, iCloud или другую учётную запись IMAP с помощью пароля приложения от вашего провайдера. Пароль приложения хранится в зашифрованном виде в связке ключей устройства. Ваш адрес эл. почты и данные сервера остаются на устройстве.</li>
+          <li>Письма читаются и обрабатываются по зашифрованному (TLS) IMAP-соединению, которое устанавливается напрямую между вашим устройством и сервером почтового провайдера. Содержимое писем никогда не отправляется Krenix Studios или на сторонние серверы. Удаление и другие действия выполняются непосредственно в вашем почтовом ящике.</li>
+          <li>Когда вы выбираете отписку, устройство отправляет запрос на адрес отписки, указанный отправителем в письме, или готовит письмо для отписки. Этот запрос передаёт ваш IP-адрес серверу отправителя.</li>
+          <li>Статистика очистки (удалённые и оставленные письма, освобождённое место, серия, размеры по категориям) хранится на устройстве. Если вы включите синхронизацию iCloud, она синхронизируется через хранилище «ключ-значение» iCloud с привязкой к вашему адресу эл. почты.</li>
+          <li>Firebase Analytics фиксирует только типы действий и их количество. Используется Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>ShotSilo: Менеджер скриншотов</h3>
+        <ul>
+          <li>Доступ к «Фото» нужен, чтобы находить и показывать скриншоты и удалять их с вашего подтверждения. Удаление проходит через окно подтверждения iOS.</li>
+          <li>Распознавание текста (OCR) и автоматическая раскладка по папкам полностью выполняются на устройстве с помощью технологий Apple Vision, Core ML и Natural Language. Ваши изображения и распознанный текст никогда не отправляются на сервер.</li>
+          <li>Папки, правила автоудаления и индекс распознанного текста хранятся на устройстве. С ShotSilo Pro можно включить синхронизацию iCloud. Блокировка Face ID необязательна.</li>
+          <li>Если вы нажмёте «Искать в Google» для распознанного текста, этот текст откроется в браузере как поисковый запрос Google.</li>
+          <li>Используются Firebase Analytics и Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>TimeFlow: Обратный отсчет</h3>
+        <ul>
+          <li>Ваши события, даты, категории, напоминания и оформление карточек хранятся на устройстве. Можно включить синхронизацию iCloud. Виджеты и Live Activities работают на устройстве.</li>
+          <li>Доступ к календарю запрашивается, только когда вы хотите импортировать события из календаря или добавить в него событие.</li>
+          <li>Фото, выбранное в качестве фона карточки, копируется в приложение и остаётся на устройстве.</li>
+          <li>Используются Firebase Analytics и Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>One Line: Микро-дневник</h3>
+        <ul>
+          <li>Строки дневника и записи настроения хранятся на устройстве. С Premium можно включить синхронизацию iCloud. Блокировка Face ID или Touch ID необязательна.</li>
+          <li>Отчёты и аналитика полностью рассчитываются на устройстве. То, что вы пишете, никогда не отправляется в сервисы ИИ или на сервер.</li>
+          <li>Книга в PDF и изображения для публикации создаются на устройстве и отправляются только туда, куда вы выберете.</li>
+          <li>Ни аналитики, ни рекламы.</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>Когда вы открываете приложение или отправляете контент через меню «Поделиться», скопированные тексты, ссылки и изображения добавляются в историю буфера обмена. История, папки и теги хранятся на устройстве. Можно включить синхронизацию iCloud.</li>
+          <li>Текст на изображениях распознаётся на устройстве с помощью технологии Apple Vision.</li>
+          <li>Блокировка Face ID или Touch ID необязательна.</li>
+          <li>Используется Google AdMob. В Европейской экономической зоне, Великобритании и Швейцарии показывается экран согласия Google. Firebase Analytics включается или выключается в зависимости от вашего выбора на этом экране (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Rolliva: Кости и Колесо</h3>
+        <ul>
+          <li>Ваши колёса, настройки кубиков и монет, группы игроков и собственные вопросы хранятся на устройстве.</li>
+          <li>Используются Firebase Analytics и Google AdMob (4.3, 4.4).</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>Игровой прогресс, очки, подсказки и награды хранятся на устройстве.</li>
+          <li>Встроенные покупки оформляются через App Store (4.5).</li>
+          <li>Используется Google AdMob (4.4). Аналитики нет.</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>Открытые вами маршруты, история поездок и прогресс хранятся в облачной базе данных Google Firebase.</li>
+          <li>Доступ к геопозиции запрашивается только во время использования приложения, чтобы находить ближайшие точки и создавать случайные координаты в выбранном регионе. Ваши координаты хранятся в зашифрованном виде в базе данных Firebase.</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>Учётная запись:</strong> можно создать учётную запись с помощью эл. почты и пароля, «Входа с Apple» или «Входа через Google». Аутентификацию выполняет Google Firebase Authentication. При «Входе с Apple» можно скрыть свой адрес эл. почты.</li>
+          <li><strong>Профиль:</strong> ваш идентификатор пользователя, адрес эл. почты, имя и фамилия, выбранный аватар, язык, а также время последнего сканирования и последнего созданного кода хранятся в Google Cloud Firestore.</li>
+          <li><strong>История QR:</strong> содержимое созданных и отсканированных кодов хранится в Firestore, а изображения QR в Firebase Storage, чтобы вы могли получать доступ к кодам и создавать их резервные копии на разных устройствах.</li>
+          <li><strong>Загруженные файлы:</strong> документы и изображения, которые вы прикрепляете к QR-коду, загружаются в Firebase Storage. Полученная ссылка записывается в QR-код, и любой, кто его отсканирует, сможет открыть файл. Будьте осторожны, передавая так личные или конфиденциальные файлы.</li>
+          <li><strong>Камера и Wi-Fi:</strong> сканирование QR выполняется на устройстве, изображение с камеры не сохраняется. При сканировании QR-кода Wi-Fi имя сети и пароль используются только для подключения устройства к этой сети.</li>
+          <li><strong>Удаление учётной записи:</strong> учётную запись можно удалить в приложении. При этом удаляются ваши данные QR и загруженные файлы, профиль и учётная запись аутентификации. Ваш адрес эл. почты и указанная вами причина удаления сохраняются в отдельной записи, подтверждающей выполнение запроса.</li>
+          <li>Используется Google AdMob (4.4). Аналитики нет.</li>
+        </ul>
+
+        <h2 id="ru-sajt">6. Сайт</h2>
+        <ul>
+          <li>krenixstudios.com не использует файлы cookie, инструменты аналитики или отслеживания.</li>
+          <li>Выбранный язык хранится в локальном хранилище браузера (localStorage) и не отправляется на сервер.</li>
+          <li>Шрифты загружаются из Google Fonts, при этом ваш IP-адрес и сведения о браузере передаются Google.</li>
+          <li>Имя, адрес эл. почты и сообщение из формы обратной связи доставляются в наш почтовый ящик через сервис FormSubmit (formsubmit.co). Мы используем их только для ответа вам и никогда в маркетинговых целях.</li>
+          <li>Наш хостинг-провайдер может хранить стандартные серверные журналы, например IP-адрес, тип браузера и время посещения, для безопасности и работы сайта.</li>
+        </ul>
+
+        <h2 id="ru-osnovaniya">7. Правовые основания</h2>
+        <p>Мы обрабатываем персональные данные на следующих правовых основаниях согласно статье 5 KVKK и статье 6 GDPR:</p>
+        <ul>
+          <li><strong>Исполнение договора:</strong> учётные записи QRMaker&amp;Scanner и RandomJourney, покупки, синхронизация iCloud и работа функций, которыми вы пользуетесь.</li>
+          <li><strong>Законные интересы:</strong> аналитика для улучшения приложений и поиска ошибок, безопасность и серверные журналы сайта.</li>
+          <li><strong>Согласие:</strong> доступ к рекламному идентификатору и отслеживание (разрешение ATT), а также ваш выбор на экране согласия Veltrim. Вы можете отозвать согласие в любое время.</li>
+          <li><strong>Ответ на ваши обращения:</strong> форма обратной связи и письма, которые вы нам отправляете.</li>
+          <li><strong>Юридическая обязанность:</strong> случаи, когда закон требует от нас хранить или раскрывать данные.</li>
+        </ul>
+        <p>Мы не обрабатываем особые категории персональных данных, например медицинские данные в Medlyra. Они остаются только на вашем устройстве и в вашей учётной записи iCloud под вашим контролем.</p>
+
+        <h2 id="ru-tretyi">8. Третьи стороны и трансграничная передача</h2>
+        <p>Наши приложения и сайт работают со следующими поставщиками услуг. Каждый из них действует согласно собственной политике конфиденциальности:</p>
+        <ul>
+          <li><strong>Apple:</strong> App Store, встроенные покупки, iCloud и CloudKit, Game Center, «Вход с Apple» и разрешение на отслеживание. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Политика конфиденциальности Apple</a></li>
+          <li><strong>Google Firebase:</strong> Analytics, Authentication, Cloud Firestore и Storage. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Сведения о конфиденциальности Firebase</a></li>
+          <li><strong>Google AdMob:</strong> реклама в приложениях. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Рекламная политика Google</a></li>
+          <li><strong>Google:</strong> «Вход через Google» и Google Fonts. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Политика конфиденциальности Google</a></li>
+          <li><strong>Open Food Facts и связанные открытые базы данных:</strong> поиск по штрихкоду в Shelf. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Политика конфиденциальности Open Food Facts</a></li>
+          <li><strong>FormSubmit:</strong> форма обратной связи на нашем сайте. <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>Ваш почтовый провайдер:</strong> провайдер Gmail, Outlook, iCloud или другой, которого вы подключаете в Clearin, действует согласно своей политике.</li>
+        </ul>
+        <p>Серверы этих поставщиков могут находиться за пределами Турции, прежде всего в США и Европейском союзе, поэтому ваши данные могут передаваться за границу. Такая передача основывается на гарантиях, предусмотренных статьёй 9 KVKK и GDPR (например, стандартными договорными условиями). Мы можем раскрывать данные уполномоченным государственным органам, если этого требует закон.</p>
+
+        <h2 id="ru-hranenie">9. Сроки хранения</h2>
+        <ul>
+          <li><strong>Данные на устройстве:</strong> пока вы их не удалите или не удалите приложение.</li>
+          <li><strong>Данные iCloud:</strong> в вашем Apple Account, пока вы их не удалите. Управлять ими можно в разделе «Настройки» &gt; [ваше имя] &gt; iCloud.</li>
+          <li><strong>Данные аналитики:</strong> в течение ограниченного срока согласно настройке хранения Firebase Analytics, после чего Google удаляет их автоматически.</li>
+          <li><strong>Данные учётных записей QRMaker&amp;Scanner и RandomJourney:</strong> пока учётная запись существует. При удалении учётной записи они удаляются. Запись о запросе на удаление сохраняется как подтверждение его выполнения.</li>
+          <li><strong>Переписка:</strong> до решения вашего вопроса и в течение срока, которого требуют юридические обязанности.</li>
+        </ul>
+
+        <h2 id="ru-bezopasnost">10. Безопасность</h2>
+        <p>Данные шифруются при передаче с помощью TLS. Пароли хранятся в связке ключей, а данные на устройстве защищены функциями защиты данных Apple. Поддерживающие это приложения предлагают блокировку Face ID или Touch ID. Данные учётных записей в Firebase защищены инфраструктурой аутентификации и контроля доступа Firebase. Ни один способ передачи или хранения не является полностью безопасным. В случае утечки мы уведомим вас и соответствующие органы, как того требует закон.</p>
+
+        <h2 id="ru-prava">11. Ваши права и настройки</h2>
+        <p>Согласно статье 11 KVKK вы вправе узнать, обрабатываются ли ваши персональные данные, запросить сведения о них, если обрабатываются, узнать цель обработки и соответствие ей использования данных, знать третьих лиц в Турции или за рубежом, которым они передаются, требовать исправления неполных или неточных данных, требовать их удаления или уничтожения, требовать уведомления об этих действиях третьих лиц, которым данные были переданы, возражать против неблагоприятного для вас результата, полученного исключительно путём автоматизированного анализа, и требовать возмещения ущерба, причинённого незаконной обработкой.</p>
+        <p>Если на вас распространяется GDPR, у вас также есть права на доступ, исправление, удаление, ограничение обработки, переносимость данных и возражение. Вы можете отозвать согласие в любое время.</p>
+        <p>Чтобы воспользоваться этими правами, напишите на <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>. Мы ответим не позднее чем через 30 дней. Если наш ответ вас не устроит, вы можете подать жалобу в Управление по защите персональных данных Турции или в орган по защите данных вашей страны.</p>
+        <p>Практические настройки:</p>
+        <ul>
+          <li><strong>Разрешение на отслеживание:</strong> «Настройки» &gt; «Конфиденциальность и безопасность» &gt; «Отслеживание».</li>
+          <li><strong>Камера, фото, календарь, геопозиция и уведомления:</strong> «Настройки» &gt; нужное приложение.</li>
+          <li><strong>Данные iCloud:</strong> «Настройки» &gt; [ваше имя] &gt; iCloud.</li>
+          <li><strong>Удаление данных с устройства:</strong> удалите приложение с устройства.</li>
+          <li><strong>Сброс идентификатора аналитики:</strong> при удалении и повторной установке приложения создаётся новый идентификатор экземпляра.</li>
+          <li><strong>Учётная запись QRMaker&amp;Scanner:</strong> функция удаления учётной записи в приложении.</li>
+          <li><strong>Данные RandomJourney:</strong> напишите нам, чтобы удалить их.</li>
+        </ul>
+
+        <h2 id="ru-deti">12. Конфиденциальность детей</h2>
+        <p>Наши приложения не предназначены для детей младше 13 лет, и мы сознательно не собираем персональные данные детей этого возраста. Если вы заметили, что ваш ребёнок передал нам персональные данные, свяжитесь с нами, и мы немедленно их удалим.</p>
+
+        <h2 id="ru-izmeneniya">13. Изменения</h2>
+        <p>Мы можем обновлять эту политику при изменении наших приложений или законодательства. Актуальная версия всегда публикуется на этой странице, а дата вверху меняется. О существенных изменениях мы сообщаем на сайте или в приложениях.</p>
+
+        <h2 id="ru-kontakty">14. Контакты</h2>
+        <p>Krenix Studios, Стамбул, Турция<br>Эл. почта: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
+      <article data-lang="ja" lang="ja" hidden>
+        <h1>プライバシーポリシー</h1>
+        <span class="last-updated">最終更新日：2026年10月25日</span>
+
+        <p class="policy-lede">このポリシーでは、Krenix StudiosがApp Storeで公開しているアプリとウェブサイトkrenixstudios.comが、どのデータを、なぜ、どのように取り扱うかを説明します。ほとんどのアプリは、データをお使いのデバイス内にのみ保存します。データがデバイスの外に出るすべてのケースを、以下に一つずつ記載しています。</p>
+
+        <nav class="policy-toc" aria-label="目次">
+          <p>目次</p>
+          <ol>
+            <li><a href="#ja-summary">概要</a></li>
+            <li><a href="#ja-controller">データ管理者と適用範囲</a></li>
+            <li><a href="#ja-overview">アプリ一覧</a></li>
+            <li><a href="#ja-common">すべてのアプリに共通する事項</a></li>
+            <li><a href="#ja-apps">アプリ別の詳細</a></li>
+            <li><a href="#ja-website">ウェブサイト</a></li>
+            <li><a href="#ja-legal">法的根拠</a></li>
+            <li><a href="#ja-third">第三者と国外への移転</a></li>
+            <li><a href="#ja-retention">保存期間</a></li>
+            <li><a href="#ja-security">セキュリティ</a></li>
+            <li><a href="#ja-rights">お客様の権利と選択</a></li>
+            <li><a href="#ja-children">子どものプライバシー</a></li>
+            <li><a href="#ja-changes">変更</a></li>
+            <li><a href="#ja-contact">お問い合わせ</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="ja-summary">1. 概要</h2>
+        <ul>
+          <li>お客様の個人データを販売・貸与することはなく、マーケティング目的で第三者と共有することもありません。</li>
+          <li>アプリに入力した内容（日記、薬、装備、商品、スクリーンショット、クリップボード履歴など）は、お使いのデバイス内にとどまります。iCloud同期をオンにした場合は、お客様のApple Accountの非公開iCloud領域に保存されます。Krenix Studiosはこの領域にアクセスできません。</li>
+          <li>アカウントの作成を求めたり、当社が管理するサーバー基盤（Google Firebase）にデータを保存したりするアプリは、QRMaker&amp;ScannerとRandomJourneyだけです。</li>
+          <li>一部のアプリは、利用状況を把握するためにGoogle Firebase Analyticsで利用データを収集し、一部のアプリはGoogle AdMobで広告を表示します。各アプリが何を使っているかは、第3項の表に記載しています。</li>
+          <li>広告識別子（IDFA）には、Appleのトラッキング許可画面で許可した場合にのみアクセスします。</li>
+          <li>Medlyraの薬、服用量、メモ、家族の情報などの健康データが、分析サービスや広告サービスに送信されることはありません。</li>
+          <li>レポート、分析、テキスト認識、自動分類の機能はデバイス上で動作します。お客様のコンテンツがAIサービスに送信されることはありません。</li>
+        </ul>
+
+        <h2 id="ja-controller">2. データ管理者と適用範囲</h2>
+        <p>このポリシーにおける「Krenix Studios」「当社」とは、以下のアプリを開発・公開しているKrenix Studios（トルコ、イスタンブール）を指します。Krenix Studiosは、トルコ個人データ保護法（第6698号、KVKK）および適用される場合はEU一般データ保護規則（GDPR）上のデータ管理者です。お問い合わせは<a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>までお送りください。</p>
+        <p>このポリシーは、トルコ語、英語、ドイツ語、フランス語、スペイン語、ロシア語、日本語、韓国語で公開しています。各版の内容に相違がある場合は、トルコ語版が優先します。</p>
+        <p>対象は当社ウェブサイトと次のアプリです：ザック：登山・キャンプ装備の重量管理（Pack）、Bloom: コーヒー抽出タイマー、Medlyra: お薬管理・服薬記録、Shelf: 賞味期限・消費期限管理、図形合体: シェイプマージパズル（Shape Merge）、Clearin：メール整理・一括削除、ShotSilo: スクショ整理、TimeFlow: カウントダウン、One Line: マイクロ日記、Veltrim: Smart Clipboard、Rolliva: ダイス＆ルーレット、Piramit Bulmaca、RandomJourney、QRMaker&amp;Scanner。</p>
+
+        <h2 id="ja-overview">3. アプリ一覧</h2>
+        <p>次の表は、各アプリのデータの保存場所と、使用している外部サービスをまとめたものです。詳細は第4項と第5項をご覧ください。</p>
+        <div class="table-wrap" role="region" aria-label="アプリ一覧の表" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">アプリ</th>
+                <th scope="col">データの保存場所</th>
+                <th scope="col">分析</th>
+                <th scope="col">広告</th>
+                <th scope="col">デバイス外に出るその他のデータ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ザック（Pack）</td><td>デバイス</td><td>なし</td><td>なし</td><td>なし</td></tr>
+              <tr><td>Bloom</td><td>デバイス、iCloud（任意）</td><td>Firebase</td><td>なし</td><td>なし</td></tr>
+              <tr><td>Medlyra</td><td>デバイス、iCloud（任意）</td><td>Firebase（健康データを除く）</td><td>なし</td><td>なし</td></tr>
+              <tr><td>Shelf</td><td>デバイス、iCloud（任意）</td><td>Firebase</td><td>なし</td><td>読み取ったバーコード番号（オープンな商品データベース）</td></tr>
+              <tr><td>図形合体</td><td>デバイス</td><td>Firebase</td><td>AdMob</td><td>Game Centerのスコア（Apple）</td></tr>
+              <tr><td>Clearin</td><td>デバイス、キーチェーン、iCloud（任意）</td><td>Firebase</td><td>AdMob</td><td>メールはデバイスとお客様のメールプロバイダの間で直接やり取りされるのみ</td></tr>
+              <tr><td>ShotSilo</td><td>デバイス、iCloud（任意）</td><td>Firebase</td><td>AdMob</td><td>なし</td></tr>
+              <tr><td>TimeFlow</td><td>デバイス、iCloud（任意）</td><td>Firebase</td><td>AdMob</td><td>なし</td></tr>
+              <tr><td>One Line</td><td>デバイス、iCloud（任意）</td><td>なし</td><td>なし</td><td>なし</td></tr>
+              <tr><td>Veltrim</td><td>デバイス、iCloud（任意）</td><td>Firebase（同意に基づく）</td><td>AdMob</td><td>なし</td></tr>
+              <tr><td>Rolliva</td><td>デバイス</td><td>Firebase</td><td>AdMob</td><td>なし</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>デバイス</td><td>なし</td><td>AdMob</td><td>なし</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>なし</td><td>なし</td><td>ルート、旅行履歴、位置座標</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>デバイスとGoogle Firebase</td><td>なし</td><td>AdMob</td><td>アカウント情報、QR履歴、アップロードしたファイル</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ja-common">4. すべてのアプリに共通する事項</h2>
+
+        <h3>4.1 デバイスに保存されるデータ</h3>
+        <p>アプリに入力した内容は、Appleのローカルストレージ技術（SwiftData、UserDefaults、キーチェーンなど）を使い、デバイス内のアプリ領域に保存されます。当社はこれにアクセスできません。アプリを削除すると、これらのデータもデバイスから削除されます。書き出したファイル（PDF、CSV、JSON、画像）は、お客様が選んだ場所にのみ保存されるか、選んだアプリと共有されます。</p>
+
+        <h3>4.2 iCloud同期</h3>
+        <p>対応アプリで同期をオンにすると、データはAppleのCloudKitサービスを通じて、お客様のApple Accountの非公開iCloudデータベースまたはiCloudキーバリューストアに保存され、デバイス間で同期されます。この領域にアクセスできるのはお客様のApple Accountだけで、Krenix Studiosは内容を見ることができません。同期の際、Appleは変更をデバイスに知らせるために、内容を含まないサイレント通知を使う場合があります。iCloudのデータには<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a>が適用されます。</p>
+
+        <h3>4.3 分析：Google Firebase Analytics</h3>
+        <p>Bloom、Medlyra、Shelf、図形合体、Clearin、ShotSilo、TimeFlow、Veltrim、Rollivaは、アプリの利用状況を把握するためにGoogle Firebase Analyticsを使用しています。収集されるデータは次のとおりです。</p>
+        <ul>
+          <li>アプリインスタンスID（デバイス上のアプリのインストールごとにランダムに割り当てられる識別子）</li>
+          <li>デバイスのモデル、OSのバージョン、アプリのバージョン、言語、IPアドレスから推定されるおおよその位置（国・都市レベル）</li>
+          <li>セッションの回数と長さ、表示した画面、「項目を追加」「Pro画面を開いた」などの操作イベント</li>
+          <li>購入イベント（選んだプランと価格）</li>
+          <li>一部のアプリでは、Proのステータス、アプリの言語、テーマ、通貨、保存した項目数などのユーザープロパティ</li>
+          <li>トラッキングを許可した場合は広告識別子（IDFA）</li>
+        </ul>
+        <p>分析データに、お客様の氏名、メールアドレス、入力した内容（メモ、薬の名前、メール、スクリーンショット、コピーしたテキスト）が含まれることはありません。これらのデータは、不具合や問題のある操作の流れを見つけ、どの機能が使われているかを把握し、アプリを改善するために使います。Veltrimでは、アプリの同意画面での選択に応じて分析の収集がオンまたはオフになります。ザック、One Line、Piramit Bulmaca、RandomJourney、QRMaker&amp;Scannerは分析サービスを使用していません。</p>
+
+        <h3>4.4 広告：Google AdMobとトラッキングの許可</h3>
+        <p>TimeFlow、Veltrim、Rolliva、Clearin、ShotSilo、図形合体、Piramit Bulmaca、QRMaker&amp;Scannerの無料版では、Google AdMobによるバナー広告、インタースティシャル広告、リワード広告が表示される場合があります。広告の配信、表示回数の制限、効果測定、不正防止のため、Googleはデバイス情報、IPアドレス、アプリ内での広告とのやり取り、許可した場合は広告識別子などのデータを処理します。</p>
+        <ul>
+          <li>これらのアプリは、広告識別子にアクセスする前にAppleのApp Tracking Transparency（ATT）の許可画面を表示します。許可しない場合、IDFAは共有されず、広告はIDFAを使わずに表示されます。</li>
+          <li>選択はいつでも「設定」&gt;「プライバシーとセキュリティ」&gt;「トラッキング」で変更できます。</li>
+          <li>Veltrimは、欧州経済領域、英国、スイスのユーザーに、Googleの同意管理プラットフォームによる同意画面も表示します。</li>
+          <li>一部のアプリ（たとえばRolliva PROやShotSilo Pro）では、有料版にアップグレードすると広告が表示されなくなります。</li>
+        </ul>
+        <p>Googleによる広告データの利用方法は、<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Googleの広告ポリシー</a>でご確認いただけます。ザック、Bloom、Medlyra、Shelf、One Line、RandomJourneyは広告を表示しません。</p>
+
+        <h3>4.5 購入</h3>
+        <p>サブスクリプションと買い切りの購入は、AppleのApp Storeを通じて行われます。支払い情報はAppleが処理し、当社がカード情報を見たり保存したりすることはありません。Pro機能を有効にするため、アプリはAppleから検証済みの取引記録（商品、日付、状態）を受け取ります。分析を使用するアプリでは、購入イベント（プランと価格）もFirebase Analyticsに記録されます。サブスクリプションの管理や解約は、Apple Accountの設定から行えます。</p>
+
+        <h3>4.6 通知</h3>
+        <p>リマインダー、アラート、連続記録の通知は、デバイス上でスケジュールされるローカル通知です。その内容がサーバーに送信されることはありません。通知はいつでも「設定」&gt;「通知」でオフにできます。</p>
+
+        <h3>4.7 デバイスの権限</h3>
+        <p>各権限は、関連する機能を使うときにのみ要求されます。許可しなくても、アプリのほかの機能は引き続き使えます。</p>
+        <ul>
+          <li><strong>カメラ：</strong>Shelf（期限の読み取り、バーコードのスキャン、商品の撮影）とQRMaker&amp;Scanner（QRコードの読み取り）。カメラの映像はデバイス上で処理され、保存も送信もされません。お客様が撮影した商品写真のみがデバイスに保存されます。</li>
+          <li><strong>写真：</strong>ShotSilo（スクリーンショットの検索・表示と、確認後の削除）、TimeFlow（カードの背景に選んだ写真）、ザック、ShotSilo、QRMaker&amp;Scanner（作成した画像を写真に保存）。</li>
+          <li><strong>カレンダー：</strong>TimeFlow（カレンダーからのイベントの読み込みと、カレンダーへのイベントの追加）。</li>
+          <li><strong>位置情報：</strong>RandomJourney（ランダムな座標の生成と近くの地点の検索。アプリの使用中のみ）。</li>
+          <li><strong>Face IDまたはTouch ID：</strong>One Line、ShotSilo、Veltrim（任意のアプリロック）。生体認証はAppleがデバイス上で行い、生体データが当社に届くことはありません。</li>
+          <li><strong>クリップボード：</strong>Veltrimは、コピーした内容を履歴に追加するためにクリップボードを読み取ります。ザック、Rolliva、ShotSiloは、お客様が指示したテキストをコピーするだけです。</li>
+          <li><strong>トラッキング（ATT）：</strong>4.4で説明した、広告を表示するアプリ。</li>
+          <li><strong>Game Center：</strong>図形合体（ランキング）。</li>
+        </ul>
+
+        <h2 id="ja-apps">5. アプリ別の詳細</h2>
+
+        <h3>ザック：登山・キャンプ装備の重量管理（Pack）</h3>
+        <ul>
+          <li>装備のクローゼット、山行、重量、価格、リンク、メモはデバイス内にのみ保存されます。アカウント、ログイン、分析、広告はありません。オフラインでも使えます。</li>
+          <li>重量カードを保存するため、写真への「追加のみ」のアクセスだけを求めます。Markdown表はクリップボードにコピーされます。</li>
+          <li>CSVの書き出しとJSONのバックアップは、お客様が選んだ場所に保存されます。読み込んだCSVファイルはデバイス上で処理されます。</li>
+          <li>装備に追加したリンクは、タップしたときにのみブラウザで開きます。</li>
+        </ul>
+
+        <h3>Bloom: コーヒー抽出タイマー</h3>
+        <ul>
+          <li>レシピ、豆のセラー、抽出記録（挽き目、湯温、評価、テイスティングノート）はデバイスに保存されます。Bloom ProではiCloud同期をオンにできます。</li>
+          <li>抽出タイマーは、ロック画面とDynamic Islandのライブアクティビティ、およびウィジェットとしてデバイス上で動作します。アラートはローカル通知です。</li>
+          <li>Firebase Analyticsを使用します（4.3）。広告はありません。</li>
+        </ul>
+
+        <h3>Medlyra: お薬管理・服薬記録</h3>
+        <ul>
+          <li>薬、服用スケジュール、服用記録、メモ、追加した家族の情報は健康データです。これらはデバイス内と、iCloud同期をオンにした場合はお客様の非公開iCloudデータベースにのみ保存されます。Krenix Studiosはこれらのデータにアクセスできず、処理もしません。</li>
+          <li>Firebase Analyticsが記録するのは、「服用を記録した」「画面を開いた」といった操作の種類だけです。薬の名前、服用量、メモ、家族の名前が分析に送信されることはありません。</li>
+          <li>リマインダーと「服用済み」「15分後に再通知」の操作は、ローカル通知で動作します。</li>
+          <li>広告はありません。</li>
+        </ul>
+
+        <h3>Shelf: 賞味期限・消費期限管理</h3>
+        <ul>
+          <li>商品、期限、カテゴリ、価格、商品写真はデバイスに保存されます。iCloud同期をオンにできます。</li>
+          <li>期限の読み取りとバーコードのスキャンは、AppleのVisionKitとVisionの技術により、すべてデバイス上で行われます。</li>
+          <li>バーコードを読み取ると、商品名とカテゴリを調べるため、バーコード番号のみがオープンデータベース（Open Food Facts、Open Beauty Facts、Open Pet Food Facts、Open Products Facts）に送信されます。これらのサービスは、リクエスト元のIPアドレスを知ることができます。それ以外の情報は送信されません。</li>
+          <li>Firebase Analyticsを使用します。Proのステータス、アプリの言語、テーマ、通貨、有効な商品数がユーザープロパティとして記録されます。広告はありません。</li>
+        </ul>
+
+        <h3>図形合体: シェイプマージパズル（Shape Merge）</h3>
+        <ul>
+          <li>スコア、進行状況、解放したテーマはデバイスに保存されます。</li>
+          <li>Game Centerにサインインしている場合、スコアはApple Game Centerのランキングに送信され、Game Centerのニックネームがほかのプレイヤーに表示されます。これらのデータはAppleが処理します。</li>
+          <li>ハイスコアを抜かれたときのお知らせは、ローカル通知です。</li>
+          <li>Firebase AnalyticsとGoogle AdMobを使用します（4.3、4.4）。</li>
+        </ul>
+
+        <h3>Clearin：メール整理・一括削除</h3>
+        <ul>
+          <li>Gmail、Outlook、iCloud、またはその他のIMAPアカウントに、プロバイダから取得したアプリ用パスワードで接続します。アプリ用パスワードは、デバイスのキーチェーンに暗号化して保存されます。メールアドレスとサーバー情報はデバイスに保存されます。</li>
+          <li>メールは、デバイスからメールプロバイダのサーバーへ直接つながる暗号化された（TLS）IMAP接続で読み取り、管理されます。メールの内容が、Krenix Studiosやその他の第三者のサーバーに送信されることはありません。削除などの操作は、お客様のメールアカウント上で直接行われます。</li>
+          <li>配信停止を選ぶと、デバイスは送信者がメールに記載した配信停止先にリクエストを送るか、配信停止用のメールを作成します。このリクエストにより、お客様のIPアドレスが送信者のサーバーに伝わります。</li>
+          <li>整理の統計（削除・保持したメール数、空いた容量、連続記録、カテゴリ別のサイズ）はデバイスに保存されます。iCloud同期をオンにすると、メールアドレスに関連付けられた形でiCloudキーバリューストアを通じて同期されます。</li>
+          <li>Firebase Analyticsが記録するのは操作の種類と件数だけです。Google AdMobを使用します（4.3、4.4）。</li>
+        </ul>
+
+        <h3>ShotSilo: スクショ整理</h3>
+        <ul>
+          <li>写真へのアクセスは、スクリーンショットの検索と表示、そして確認後の削除に使います。削除はiOSの確認画面を通じて行われます。</li>
+          <li>テキスト認識（OCR）とフォルダへの自動振り分けは、AppleのVision、Core ML、Natural Languageの技術により、すべてデバイス上で行われます。画像や認識したテキストがサーバーに送信されることはありません。</li>
+          <li>フォルダ、自動削除ルール、認識したテキストの索引はデバイスに保存されます。ShotSilo ProではiCloud同期をオンにできます。Face IDロックは任意です。</li>
+          <li>認識したテキストで「Googleで検索」をタップすると、そのテキストがブラウザでGoogle検索として開きます。</li>
+          <li>Firebase AnalyticsとGoogle AdMobを使用します（4.3、4.4）。</li>
+        </ul>
+
+        <h3>TimeFlow: カウントダウン</h3>
+        <ul>
+          <li>イベント、日付、カテゴリ、リマインダー、カードのデザインはデバイスに保存されます。iCloud同期をオンにできます。ウィジェットとライブアクティビティはデバイス上で動作します。</li>
+          <li>カレンダーへのアクセスは、カレンダーからイベントを読み込むときや、カレンダーにイベントを追加するときにのみ求めます。</li>
+          <li>カードの背景に選んだ写真はアプリ内にコピーされ、デバイスに保存されます。</li>
+          <li>Firebase AnalyticsとGoogle AdMobを使用します（4.3、4.4）。</li>
+        </ul>
+
+        <h3>One Line: マイクロ日記</h3>
+        <ul>
+          <li>日記と気分の記録はデバイスに保存されます。PremiumではiCloud同期をオンにできます。Face IDまたはTouch IDによるロックは任意です。</li>
+          <li>レポートと分析は、すべてデバイス上で計算されます。書いた内容がAIサービスやサーバーに送信されることはありません。</li>
+          <li>PDFブックの書き出しと共有用の画像はデバイス上で作成され、お客様が選んだ場所にのみ送られます。</li>
+          <li>分析も広告もありません。</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>アプリを開いたとき、または共有メニューからコンテンツを送ったときに、コピーしたテキスト、リンク、画像がクリップボード履歴に追加されます。履歴、フォルダ、タグはデバイスに保存されます。iCloud同期をオンにできます。</li>
+          <li>画像内のテキストは、AppleのVision技術によりデバイス上で認識されます。</li>
+          <li>Face IDまたはTouch IDによるロックは任意です。</li>
+          <li>Google AdMobを使用します。欧州経済領域、英国、スイスではGoogleの同意画面が表示され、そこでの選択に応じてFirebase Analyticsがオンまたはオフになります（4.3、4.4）。</li>
+        </ul>
+
+        <h3>Rolliva: ダイス＆ルーレット</h3>
+        <ul>
+          <li>ルーレット、ダイスやコインの設定、プレイヤーのグループ、カスタムの質問はデバイスに保存されます。</li>
+          <li>Firebase AnalyticsとGoogle AdMobを使用します（4.3、4.4）。</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>ゲームの進行状況、スコア、ヒント、報酬はデバイスに保存されます。</li>
+          <li>アプリ内課金はApp Storeを通じて行われます（4.5）。</li>
+          <li>Google AdMobを使用します（4.4）。分析はありません。</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>見つけたルート、旅行履歴、進行状況は、Google Firebaseのクラウドデータベースに保存されます。</li>
+          <li>位置情報へのアクセスは、近くの地点を見つけ、選んだ地域でランダムな座標を生成するため、アプリの使用中にのみ求めます。位置座標はFirebaseのデータベースに暗号化して保存されます。</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>アカウント：</strong>メールアドレスとパスワード、Appleでサインイン、またはGoogleでログインを使ってアカウントを作成できます。認証はGoogle Firebase Authenticationが行います。Appleでサインインを使う場合は、メールアドレスを非公開にできます。</li>
+          <li><strong>プロフィール：</strong>ユーザーID、メールアドレス、姓名、選んだアバター、言語、最後に読み取った日時と最後に作成した日時が、Google Cloud Firestoreに保存されます。</li>
+          <li><strong>QR履歴：</strong>作成・読み取りしたコードの内容はFirestoreに、QR画像はFirebase Storageに保存され、複数のデバイスからコードにアクセスしたりバックアップしたりできます。</li>
+          <li><strong>アップロードしたファイル：</strong>QRコードに添付するために選んだ書類や画像は、Firebase Storageにアップロードされます。生成されたリンクはQRコードに書き込まれ、コードを読み取った人は誰でもそのファイルを開けます。個人的なファイルや機密ファイルをこの方法で共有する際はご注意ください。</li>
+          <li><strong>カメラとWi-Fi：</strong>QRの読み取りはデバイス上で行われ、カメラの映像は保存されません。Wi-FiのQRコードを読み取った場合、ネットワーク名とパスワードは、そのネットワークにデバイスを接続するためだけに使われます。</li>
+          <li><strong>アカウントの削除：</strong>アカウントはアプリ内から削除できます。削除すると、QRデータとアップロードしたファイル、プロフィール、認証アカウントが削除されます。削除リクエストが実行されたことを記録するため、メールアドレスと入力した削除理由は別の記録として保存されます。</li>
+          <li>Google AdMobを使用します（4.4）。分析はありません。</li>
+        </ul>
+
+        <h2 id="ja-website">6. ウェブサイト</h2>
+        <ul>
+          <li>krenixstudios.comは、Cookie、分析ツール、トラッキングツールを使用しません。</li>
+          <li>言語の設定はブラウザのローカルストレージ（localStorage）に保存され、サーバーには送信されません。</li>
+          <li>フォントはGoogle Fontsから読み込まれ、その際にIPアドレスとブラウザの情報がGoogleに送信されます。</li>
+          <li>お問い合わせフォームに入力した名前、メールアドレス、メッセージは、FormSubmit（formsubmit.co）サービスを通じて当社の受信箱に届きます。これらはご返信のためにのみ使い、マーケティングには使いません。</li>
+          <li>当社のホスティング事業者は、セキュリティと運用のため、IPアドレス、ブラウザの種類、アクセス日時などの標準的なサーバーログを保存する場合があります。</li>
+        </ul>
+
+        <h2 id="ja-legal">7. 法的根拠</h2>
+        <p>当社は、KVKK第5条およびGDPR第6条に基づき、次の法的根拠により個人データを処理します。</p>
+        <ul>
+          <li><strong>契約の履行：</strong>QRMaker&amp;ScannerとRandomJourneyのアカウント、購入、iCloud同期、お客様が使う機能の動作。</li>
+          <li><strong>正当な利益：</strong>アプリの改善と不具合の発見のための分析、セキュリティ、ウェブサイトのサーバーログ。</li>
+          <li><strong>同意：</strong>広告識別子へのアクセスとトラッキング（ATTの許可）、Veltrimの同意画面での選択。同意はいつでも撤回できます。</li>
+          <li><strong>お問い合わせへの対応：</strong>お問い合わせフォームと当社に送られたメール。</li>
+          <li><strong>法的義務：</strong>法律によりデータの保存や開示が求められる場合。</li>
+        </ul>
+        <p>Medlyraの健康データのような要配慮個人データを、当社が処理することはありません。これらのデータは、お客様の管理のもと、デバイスとiCloudアカウントにのみ保存されます。</p>
+
+        <h2 id="ja-third">8. 第三者と国外への移転</h2>
+        <p>当社のアプリとウェブサイトは、次のサービス提供者を利用しています。それぞれに独自のプライバシーポリシーが適用されます。</p>
+        <ul>
+          <li><strong>Apple：</strong>App Store、アプリ内課金、iCloudとCloudKit、Game Center、Appleでサインイン、トラッキングの許可。<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleのプライバシーポリシー</a></li>
+          <li><strong>Google Firebase：</strong>Analytics、Authentication、Cloud Firestore、Storage。<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseのプライバシー情報</a></li>
+          <li><strong>Google AdMob：</strong>アプリ内広告。<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Googleの広告ポリシー</a></li>
+          <li><strong>Google：</strong>GoogleでログインとGoogle Fonts。<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleのプライバシーポリシー</a></li>
+          <li><strong>Open Food Factsと関連するオープンデータベース：</strong>Shelfのバーコード検索。<a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Open Food Factsのプライバシーポリシー</a></li>
+          <li><strong>FormSubmit：</strong>当社ウェブサイトのお問い合わせフォーム。<a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>お客様のメールプロバイダ：</strong>Clearinで接続するGmail、Outlook、iCloud、その他のプロバイダは、それぞれのポリシーに従って運用されます。</li>
+        </ul>
+        <p>これらのサービス提供者のサーバーは、主に米国と欧州連合を中心に、トルコ国外にある場合があります。そのため、お客様のデータが国外に移転されることがあります。こうした移転は、KVKK第9条およびGDPRが定める保護措置（標準契約条項など）に基づいて行われます。法律で求められる場合は、権限のある公的機関にデータを開示することがあります。</p>
+
+        <h2 id="ja-retention">9. 保存期間</h2>
+        <ul>
+          <li><strong>デバイス上のデータ：</strong>お客様が削除するか、アプリを削除するまで。</li>
+          <li><strong>iCloudのデータ：</strong>お客様が削除するまでApple Accountに保存されます。「設定」&gt;［ユーザ名］&gt;「iCloud」で管理できます。</li>
+          <li><strong>分析データ：</strong>Firebase Analyticsの保存期間の設定に基づく一定期間。その後はGoogleが自動的に削除します。</li>
+          <li><strong>QRMaker&amp;ScannerとRandomJourneyのアカウントデータ：</strong>アカウントが存在する間。アカウントを削除すると削除されます。削除リクエストの記録は、実行されたことを示すために保存されます。</li>
+          <li><strong>お問い合わせのやり取り：</strong>お問い合わせへの対応が完了するまで、および法的義務により必要な期間。</li>
+        </ul>
+
+        <h2 id="ja-security">10. セキュリティ</h2>
+        <p>データは送信時にTLSで暗号化されます。パスワードはキーチェーンに保存され、デバイス上のデータはAppleのデータ保護機能で守られます。対応アプリでは、Face IDまたはTouch IDによるロックを使えます。Firebaseに保存されるアカウントデータは、Firebaseの認証とアクセス制御の仕組みで保護されています。完全に安全な送信・保存の方法は存在しません。情報漏えいが発生した場合は、法律に従ってお客様と関係当局に通知します。</p>
+
+        <h2 id="ja-rights">11. お客様の権利と選択</h2>
+        <p>KVKK第11条に基づき、お客様には次の権利があります：個人データが処理されているかを知る権利、処理されている場合にその情報を求める権利、処理の目的と目的に沿った利用であるかを知る権利、国内外でデータが移転される第三者を知る権利、不完全または不正確なデータの訂正を求める権利、データの削除または破棄を求める権利、これらの措置を移転先の第三者に通知するよう求める権利、自動化された分析のみによって不利益な結果が生じた場合に異議を申し立てる権利、違法な処理によって損害を受けた場合に賠償を求める権利。</p>
+        <p>GDPRが適用される場合は、アクセス、訂正、消去、処理の制限、データポータビリティ、異議申し立ての権利もあります。同意はいつでも撤回できます。</p>
+        <p>これらの権利を行使するには、<a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>までご連絡ください。遅くとも30日以内に回答します。当社の回答にご満足いただけない場合は、トルコ個人データ保護機関、またはお住まいの国のデータ保護機関に苦情を申し立てることができます。</p>
+        <p>具体的な設定方法：</p>
+        <ul>
+          <li><strong>トラッキングの許可：</strong>「設定」&gt;「プライバシーとセキュリティ」&gt;「トラッキング」。</li>
+          <li><strong>カメラ、写真、カレンダー、位置情報、通知：</strong>「設定」&gt;各アプリ。</li>
+          <li><strong>iCloudのデータ：</strong>「設定」&gt;［ユーザ名］&gt;「iCloud」。</li>
+          <li><strong>デバイス上のデータの削除：</strong>アプリをデバイスから削除してください。</li>
+          <li><strong>分析IDのリセット：</strong>アプリを削除して再インストールすると、新しいアプリインスタンスIDが作成されます。</li>
+          <li><strong>QRMaker&amp;Scannerのアカウント：</strong>アプリ内のアカウント削除機能。</li>
+          <li><strong>RandomJourneyのデータ：</strong>削除をご希望の場合は、メールでご連絡ください。</li>
+        </ul>
+
+        <h2 id="ja-children">12. 子どものプライバシー</h2>
+        <p>当社のアプリは13歳未満の子どもを対象としておらず、その年齢の子どもから故意に個人データを収集することはありません。お子様が当社に個人データを提供したことに気づいた場合はご連絡ください。速やかに削除します。</p>
+
+        <h2 id="ja-changes">13. 変更</h2>
+        <p>アプリや法律の変更に応じて、このポリシーを更新することがあります。最新版は常にこのページで公開し、冒頭の日付を更新します。重要な変更は、ウェブサイトまたはアプリでお知らせします。</p>
+
+        <h2 id="ja-contact">14. お問い合わせ</h2>
+        <p>Krenix Studios（トルコ、イスタンブール）<br>メール：<a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
+      <article data-lang="ko" lang="ko" hidden>
+        <h1>개인정보 처리방침</h1>
+        <span class="last-updated">최종 업데이트: 2026년 10월 25일</span>
+
+        <p class="policy-lede">이 방침은 Krenix Studios가 App Store에 출시한 앱과 웹사이트 krenixstudios.com이 어떤 데이터를, 왜, 어떻게 처리하는지 설명합니다. 저희 앱 대부분은 데이터를 사용자의 기기에만 저장합니다. 데이터가 기기 밖으로 나가는 모든 경우를 아래에 하나씩 적어 두었습니다.</p>
+
+        <nav class="policy-toc" aria-label="목차">
+          <p>목차</p>
+          <ol>
+            <li><a href="#ko-summary">요약</a></li>
+            <li><a href="#ko-controller">개인정보처리자와 적용 범위</a></li>
+            <li><a href="#ko-overview">앱 한눈에 보기</a></li>
+            <li><a href="#ko-common">모든 앱에 공통되는 사항</a></li>
+            <li><a href="#ko-apps">앱별 세부 내용</a></li>
+            <li><a href="#ko-website">웹사이트</a></li>
+            <li><a href="#ko-legal">법적 근거</a></li>
+            <li><a href="#ko-third">제3자 및 국외 이전</a></li>
+            <li><a href="#ko-retention">보관 기간</a></li>
+            <li><a href="#ko-security">보안</a></li>
+            <li><a href="#ko-rights">이용자의 권리와 선택</a></li>
+            <li><a href="#ko-children">아동의 개인정보</a></li>
+            <li><a href="#ko-changes">변경 사항</a></li>
+            <li><a href="#ko-contact">문의</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="ko-summary">1. 요약</h2>
+        <ul>
+          <li>저희는 이용자의 개인정보를 판매하거나 대여하지 않으며, 마케팅 목적으로 누구와도 공유하지 않습니다.</li>
+          <li>앱에 입력한 내용(일기, 약, 장비, 제품, 스크린샷, 클립보드 기록 등)은 이용자의 기기에 남습니다. iCloud 동기화를 켜면 이용자 Apple 계정의 비공개 iCloud 공간에 저장됩니다. Krenix Studios는 이 공간에 접근할 수 없습니다.</li>
+          <li>계정 생성을 요청하거나 저희가 관리하는 서버 인프라(Google Firebase)에 데이터를 저장하는 앱은 QRMaker&amp;Scanner와 RandomJourney뿐입니다.</li>
+          <li>일부 앱은 사용 방식을 파악하기 위해 Google Firebase Analytics로 사용 데이터를 수집하고, 일부 앱은 Google AdMob으로 광고를 표시합니다. 각 앱이 무엇을 사용하는지는 3항의 표에 정리되어 있습니다.</li>
+          <li>광고 식별자(IDFA)는 Apple의 추적 허용 요청에서 허용한 경우에만 접근합니다.</li>
+          <li>Medlyra의 약, 복용량, 메모, 가족 정보와 같은 건강 데이터는 분석 서비스나 광고 서비스로 절대 전송되지 않습니다.</li>
+          <li>리포트, 분석, 텍스트 인식, 자동 분류 기능은 기기에서 실행됩니다. 이용자의 콘텐츠는 AI 서비스로 전송되지 않습니다.</li>
+        </ul>
+
+        <h2 id="ko-controller">2. 개인정보처리자와 적용 범위</h2>
+        <p>이 방침에서 "Krenix Studios", "저희"는 아래 앱을 개발하고 출시하는 Krenix Studios(튀르키예, 이스탄불)를 말합니다. Krenix Studios는 튀르키예 개인정보보호법(제6698호, KVKK) 및 적용되는 경우 EU 일반 개인정보 보호법(GDPR)에 따른 개인정보처리자입니다. 문의는 <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>으로 보내 주세요.</p>
+        <p>이 방침은 튀르키예어, 영어, 독일어, 프랑스어, 스페인어, 러시아어, 일본어, 한국어로 게시됩니다. 각 언어본의 내용이 다를 경우 튀르키예어본이 우선합니다.</p>
+        <p>이 방침은 저희 웹사이트와 다음 앱에 적용됩니다: 배낭: 백패킹 캠핑 장비 무게 관리(Pack), Bloom: 커피 추출 타이머, Medlyra: 복약 관리 트래커, Shelf: 소비기한 및 유통기한 관리, 도형 합치기: 블록 퍼즐 게임(Shape Merge), Clearin: 메일 정리 &amp; 일괄 삭제, ShotSilo: 스크린샷 정리, TimeFlow: 디데이 카운트다운, One Line: 마이크로 일기장, Veltrim: Smart Clipboard, Rolliva: 주사위와 룰렛, Piramit Bulmaca, RandomJourney, QRMaker&amp;Scanner.</p>
+
+        <h2 id="ko-overview">3. 앱 한눈에 보기</h2>
+        <p>아래 표는 각 앱의 데이터가 어디에 보관되고 어떤 외부 서비스를 사용하는지 정리한 것입니다. 자세한 내용은 4항과 5항에 있습니다.</p>
+        <div class="table-wrap" role="region" aria-label="앱 한눈에 보기 표" tabindex="0">
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th scope="col">앱</th>
+                <th scope="col">데이터 보관 위치</th>
+                <th scope="col">분석</th>
+                <th scope="col">광고</th>
+                <th scope="col">기기 밖으로 나가는 기타 데이터</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>배낭(Pack)</td><td>기기</td><td>없음</td><td>없음</td><td>없음</td></tr>
+              <tr><td>Bloom</td><td>기기, iCloud(선택)</td><td>Firebase</td><td>없음</td><td>없음</td></tr>
+              <tr><td>Medlyra</td><td>기기, iCloud(선택)</td><td>Firebase(건강 데이터 제외)</td><td>없음</td><td>없음</td></tr>
+              <tr><td>Shelf</td><td>기기, iCloud(선택)</td><td>Firebase</td><td>없음</td><td>스캔한 바코드 번호(공개 제품 데이터베이스)</td></tr>
+              <tr><td>도형 합치기</td><td>기기</td><td>Firebase</td><td>AdMob</td><td>Game Center 점수(Apple)</td></tr>
+              <tr><td>Clearin</td><td>기기, 키체인, iCloud(선택)</td><td>Firebase</td><td>AdMob</td><td>이메일은 기기와 이용자의 메일 제공업체 사이에서만 직접 오갑니다</td></tr>
+              <tr><td>ShotSilo</td><td>기기, iCloud(선택)</td><td>Firebase</td><td>AdMob</td><td>없음</td></tr>
+              <tr><td>TimeFlow</td><td>기기, iCloud(선택)</td><td>Firebase</td><td>AdMob</td><td>없음</td></tr>
+              <tr><td>One Line</td><td>기기, iCloud(선택)</td><td>없음</td><td>없음</td><td>없음</td></tr>
+              <tr><td>Veltrim</td><td>기기, iCloud(선택)</td><td>Firebase(동의에 따라)</td><td>AdMob</td><td>없음</td></tr>
+              <tr><td>Rolliva</td><td>기기</td><td>Firebase</td><td>AdMob</td><td>없음</td></tr>
+              <tr><td>Piramit Bulmaca</td><td>기기</td><td>없음</td><td>AdMob</td><td>없음</td></tr>
+              <tr><td>RandomJourney</td><td>Google Firebase</td><td>없음</td><td>없음</td><td>경로, 여행 기록, 위치 좌표</td></tr>
+              <tr><td>QRMaker&amp;Scanner</td><td>기기 및 Google Firebase</td><td>없음</td><td>AdMob</td><td>계정 정보, QR 기록, 업로드한 파일</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ko-common">4. 모든 앱에 공통되는 사항</h2>
+
+        <h3>4.1 기기에 보관되는 데이터</h3>
+        <p>앱에 입력한 내용은 Apple의 로컬 저장 기술(SwiftData, UserDefaults, 키체인 등)을 사용해 기기의 앱 영역에 저장됩니다. 저희는 이 데이터에 접근할 수 없습니다. 앱을 삭제하면 이 데이터도 기기에서 삭제됩니다. 내보낸 파일(PDF, CSV, JSON, 이미지)은 이용자가 선택한 위치에만 저장되거나 선택한 앱과 공유됩니다.</p>
+
+        <h3>4.2 iCloud 동기화</h3>
+        <p>지원하는 앱에서 동기화를 켜면 데이터는 Apple의 CloudKit 서비스를 통해 이용자 Apple 계정의 비공개 iCloud 데이터베이스 또는 iCloud 키-값 저장소에 저장되고 기기 간에 동기화됩니다. 이 공간에는 이용자의 Apple 계정만 접근할 수 있으며, Krenix Studios는 내용을 볼 수 없습니다. 동기화 과정에서 Apple은 변경 사항을 기기에 알리기 위해 내용이 없는 무음 알림을 사용할 수 있습니다. iCloud 데이터에는 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 개인정보 처리방침</a>이 적용됩니다.</p>
+
+        <h3>4.3 분석: Google Firebase Analytics</h3>
+        <p>Bloom, Medlyra, Shelf, 도형 합치기, Clearin, ShotSilo, TimeFlow, Veltrim, Rolliva는 앱 사용 방식을 파악하기 위해 Google Firebase Analytics를 사용합니다. 수집되는 데이터는 다음과 같습니다.</p>
+        <ul>
+          <li>앱 인스턴스 ID(기기에 설치된 앱에 무작위로 부여되는 식별자)</li>
+          <li>기기 모델, 운영체제 버전, 앱 버전, 언어, IP 주소로 추정한 대략적인 위치(국가 및 도시 수준)</li>
+          <li>세션 횟수와 길이, 본 화면, "항목 추가", "Pro 화면 열기" 같은 동작 이벤트</li>
+          <li>구매 이벤트(선택한 요금제와 가격)</li>
+          <li>일부 앱에서는 Pro 상태, 앱 언어, 테마, 통화, 저장한 항목 수 같은 사용자 속성</li>
+          <li>추적을 허용한 경우 광고 식별자(IDFA)</li>
+        </ul>
+        <p>분석 데이터에는 이용자의 이름, 이메일 주소, 입력한 내용(메모, 약 이름, 이메일, 스크린샷, 복사한 텍스트)이 포함되지 않습니다. 저희는 이 데이터로 오류와 문제가 있는 흐름을 찾고, 어떤 기능이 쓰이는지 파악하고, 앱을 개선합니다. Veltrim에서는 앱의 동의 화면에서 선택한 내용에 따라 분석 수집이 켜지거나 꺼집니다. 배낭, One Line, Piramit Bulmaca, RandomJourney, QRMaker&amp;Scanner는 분석 서비스를 사용하지 않습니다.</p>
+
+        <h3>4.4 광고: Google AdMob과 추적 허용</h3>
+        <p>TimeFlow, Veltrim, Rolliva, Clearin, ShotSilo, 도형 합치기, Piramit Bulmaca, QRMaker&amp;Scanner의 무료 버전에서는 Google AdMob을 통해 배너, 전면, 보상형 광고가 표시될 수 있습니다. 광고 게재, 노출 빈도 제한, 성과 측정, 부정 사용 방지를 위해 Google은 기기 정보, IP 주소, 앱 내 광고 상호작용, 그리고 허용한 경우 광고 식별자와 같은 데이터를 처리합니다.</p>
+        <ul>
+          <li>이 앱들은 광고 식별자에 접근하기 전에 Apple의 앱 추적 투명성(ATT) 허용 요청을 표시합니다. 허용하지 않으면 IDFA는 공유되지 않으며, 광고는 IDFA 없이 표시됩니다.</li>
+          <li>선택은 언제든지 설정 &gt; 개인정보 보호 및 보안 &gt; 추적에서 변경할 수 있습니다.</li>
+          <li>Veltrim은 유럽경제지역, 영국, 스위스의 이용자에게 Google의 동의 관리 플랫폼을 통한 동의 화면도 표시합니다.</li>
+          <li>일부 앱(예: Rolliva PRO, ShotSilo Pro)에서는 유료 버전으로 업그레이드하면 광고가 제거됩니다.</li>
+        </ul>
+        <p>Google이 광고 데이터를 어떻게 사용하는지는 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google 광고 정책</a>에서 확인할 수 있습니다. 배낭, Bloom, Medlyra, Shelf, One Line, RandomJourney는 광고를 표시하지 않습니다.</p>
+
+        <h3>4.5 구매</h3>
+        <p>구독과 일회성 구매는 Apple의 App Store를 통해 이루어집니다. 결제 정보는 Apple이 처리하며, 저희는 카드 정보를 보거나 저장하지 않습니다. Pro 기능을 활성화하기 위해 앱은 Apple로부터 검증된 거래 기록(상품, 날짜, 상태)을 받습니다. 분석을 사용하는 앱에서는 구매 이벤트(요금제와 가격)도 Firebase Analytics에 기록됩니다. 구독은 Apple 계정 설정에서 관리하거나 해지할 수 있습니다.</p>
+
+        <h3>4.6 알림</h3>
+        <p>리마인더, 알림, 연속 기록 알림은 기기에서 예약되는 로컬 알림입니다. 알림 내용은 서버로 전송되지 않습니다. 알림은 언제든지 설정 &gt; 알림에서 끌 수 있습니다.</p>
+
+        <h3>4.7 기기 권한</h3>
+        <p>각 권한은 관련 기능을 사용할 때만 요청됩니다. 권한을 허용하지 않아도 앱의 나머지 기능은 계속 사용할 수 있습니다.</p>
+        <ul>
+          <li><strong>카메라:</strong> Shelf(기한 읽기, 바코드 스캔, 제품 사진 촬영)와 QRMaker&amp;Scanner(QR 코드 스캔). 카메라 영상은 기기에서 처리되며 저장되거나 전송되지 않습니다. 이용자가 촬영한 제품 사진만 기기에 저장됩니다.</li>
+          <li><strong>사진:</strong> ShotSilo(스크린샷 찾기, 보기, 확인 후 삭제), TimeFlow(카드 배경으로 선택한 사진), 배낭, ShotSilo, QRMaker&amp;Scanner(만든 이미지를 사진 앱에 저장).</li>
+          <li><strong>캘린더:</strong> TimeFlow(캘린더에서 이벤트 가져오기 및 캘린더에 이벤트 추가).</li>
+          <li><strong>위치:</strong> RandomJourney(무작위 좌표 생성 및 주변 지점 찾기, 앱 사용 중에만).</li>
+          <li><strong>Face ID 또는 Touch ID:</strong> One Line, ShotSilo, Veltrim(선택 사항인 앱 잠금). 생체 인증은 Apple이 기기에서 수행하며, 생체 정보는 저희에게 전달되지 않습니다.</li>
+          <li><strong>클립보드:</strong> Veltrim은 복사한 내용을 기록에 추가하기 위해 클립보드를 읽습니다. 배낭, Rolliva, ShotSilo는 이용자가 요청한 텍스트만 복사합니다.</li>
+          <li><strong>추적(ATT):</strong> 4.4에서 설명한 광고를 표시하는 앱.</li>
+          <li><strong>Game Center:</strong> 도형 합치기(순위표).</li>
+        </ul>
+
+        <h2 id="ko-apps">5. 앱별 세부 내용</h2>
+
+        <h3>배낭: 백패킹 캠핑 장비 무게 관리(Pack)</h3>
+        <ul>
+          <li>장비 옷장, 여정, 무게, 가격, 링크, 메모는 기기에만 저장됩니다. 계정, 로그인, 분석, 광고가 없으며 오프라인에서도 작동합니다.</li>
+          <li>무게 카드를 저장하기 위해 사진 앱에 대한 "추가 전용" 접근만 요청합니다. Markdown 표는 클립보드에 복사됩니다.</li>
+          <li>CSV 내보내기와 JSON 백업은 이용자가 선택한 위치에 저장됩니다. 가져온 CSV 파일은 기기에서 처리됩니다.</li>
+          <li>장비에 추가한 링크는 이용자가 탭할 때만 브라우저에서 열립니다.</li>
+        </ul>
+
+        <h3>Bloom: 커피 추출 타이머</h3>
+        <ul>
+          <li>레시피, 원두 저장고, 추출 기록(분쇄도, 온도, 평점, 테이스팅 노트)은 기기에 저장됩니다. Bloom Pro에서는 iCloud 동기화를 켤 수 있습니다.</li>
+          <li>추출 타이머는 잠금 화면과 Dynamic Island의 실시간 현황, 그리고 위젯으로 기기에서 작동합니다. 알림은 로컬 알림입니다.</li>
+          <li>Firebase Analytics를 사용합니다(4.3). 광고는 없습니다.</li>
+        </ul>
+
+        <h3>Medlyra: 복약 관리 트래커</h3>
+        <ul>
+          <li>약, 복용 일정, 복용 기록, 메모, 추가한 가족 정보는 건강 데이터입니다. 이 데이터는 기기에만, 그리고 iCloud 동기화를 켠 경우 이용자의 비공개 iCloud 데이터베이스에만 보관됩니다. Krenix Studios는 이 데이터에 접근하거나 처리할 수 없습니다.</li>
+          <li>Firebase Analytics는 "복용을 기록함", "화면을 엶"과 같은 동작의 종류만 기록합니다. 약 이름, 복용량, 메모, 가족 이름은 분석으로 전송되지 않습니다.</li>
+          <li>리마인더와 "복용함", "15분 후 다시 알림" 동작은 로컬 알림으로 작동합니다.</li>
+          <li>광고는 없습니다.</li>
+        </ul>
+
+        <h3>Shelf: 소비기한 및 유통기한 관리</h3>
+        <ul>
+          <li>제품, 기한, 카테고리, 가격, 제품 사진은 기기에 저장됩니다. iCloud 동기화를 켤 수 있습니다.</li>
+          <li>기한 읽기와 바코드 스캔은 Apple의 VisionKit과 Vision 기술로 모두 기기에서 이루어집니다.</li>
+          <li>바코드를 스캔하면 제품명과 카테고리를 찾기 위해 바코드 번호만 공개 데이터베이스(Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts)로 전송됩니다. 이 서비스들은 요청이 온 IP 주소를 볼 수 있습니다. 그 밖의 정보는 전송되지 않습니다.</li>
+          <li>Firebase Analytics를 사용합니다. Pro 상태, 앱 언어, 테마, 통화, 활성 제품 수가 사용자 속성으로 기록됩니다. 광고는 없습니다.</li>
+        </ul>
+
+        <h3>도형 합치기: 블록 퍼즐 게임(Shape Merge)</h3>
+        <ul>
+          <li>점수, 진행 상황, 잠금 해제한 테마는 기기에 저장됩니다.</li>
+          <li>Game Center에 로그인한 경우 점수가 Apple Game Center 순위표로 전송되며, Game Center 닉네임이 다른 플레이어에게 표시됩니다. 이 데이터는 Apple이 처리합니다.</li>
+          <li>최고 점수를 추월당했을 때의 알림은 로컬 알림입니다.</li>
+          <li>Firebase Analytics와 Google AdMob을 사용합니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>Clearin: 메일 정리 &amp; 일괄 삭제</h3>
+        <ul>
+          <li>Gmail, Outlook, iCloud 또는 기타 IMAP 계정에 제공업체에서 발급한 앱 비밀번호로 연결합니다. 앱 비밀번호는 기기의 키체인에 암호화되어 저장됩니다. 이메일 주소와 서버 정보는 기기에 보관됩니다.</li>
+          <li>이메일은 기기에서 메일 제공업체의 서버로 직접 연결되는 암호화된(TLS) IMAP 연결을 통해 읽고 관리됩니다. 이메일 내용은 Krenix Studios나 다른 제3자의 서버로 전송되지 않습니다. 삭제 등의 작업은 이용자의 이메일 계정에서 직접 이루어집니다.</li>
+          <li>구독 취소를 선택하면 기기가 발신자가 이메일에 적어 둔 구독 취소 주소로 요청을 보내거나 구독 취소 이메일을 준비합니다. 이 요청을 통해 이용자의 IP 주소가 발신자의 서버에 전달됩니다.</li>
+          <li>정리 통계(삭제하고 보관한 이메일 수, 확보한 공간, 연속 기록, 카테고리별 크기)는 기기에 저장됩니다. iCloud 동기화를 켜면 이메일 주소와 연결된 형태로 iCloud 키-값 저장소를 통해 동기화됩니다.</li>
+          <li>Firebase Analytics는 동작의 종류와 건수만 기록합니다. Google AdMob을 사용합니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>ShotSilo: 스크린샷 정리</h3>
+        <ul>
+          <li>사진 접근 권한은 스크린샷을 찾아 보여 주고, 확인 후 삭제하는 데 사용됩니다. 삭제는 iOS의 확인 창을 거쳐 이루어집니다.</li>
+          <li>텍스트 인식(OCR)과 폴더 자동 분류는 Apple의 Vision, Core ML, Natural Language 기술로 모두 기기에서 이루어집니다. 이미지와 인식된 텍스트는 서버로 전송되지 않습니다.</li>
+          <li>폴더, 자동 삭제 규칙, 인식된 텍스트의 색인은 기기에 저장됩니다. ShotSilo Pro에서는 iCloud 동기화를 켤 수 있습니다. Face ID 잠금은 선택 사항입니다.</li>
+          <li>인식된 텍스트에서 "Google에서 검색"을 탭하면 해당 텍스트가 브라우저에서 Google 검색으로 열립니다.</li>
+          <li>Firebase Analytics와 Google AdMob을 사용합니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>TimeFlow: 디데이 카운트다운</h3>
+        <ul>
+          <li>이벤트, 날짜, 카테고리, 리마인더, 카드 디자인은 기기에 저장됩니다. iCloud 동기화를 켤 수 있습니다. 위젯과 실시간 현황은 기기에서 작동합니다.</li>
+          <li>캘린더 접근 권한은 캘린더에서 이벤트를 가져오거나 캘린더에 이벤트를 추가하려는 경우에만 요청됩니다.</li>
+          <li>카드 배경으로 선택한 사진은 앱 안으로 복사되어 기기에 보관됩니다.</li>
+          <li>Firebase Analytics와 Google AdMob을 사용합니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>One Line: 마이크로 일기장</h3>
+        <ul>
+          <li>일기와 기분 기록은 기기에 저장됩니다. Premium에서는 iCloud 동기화를 켤 수 있습니다. Face ID 또는 Touch ID 잠금은 선택 사항입니다.</li>
+          <li>리포트와 분석은 모두 기기에서 계산됩니다. 이용자가 쓴 내용은 AI 서비스나 서버로 전송되지 않습니다.</li>
+          <li>PDF 책 내보내기와 공유 이미지는 기기에서 만들어지며, 이용자가 선택한 곳으로만 보내집니다.</li>
+          <li>분석과 광고가 없습니다.</li>
+        </ul>
+
+        <h3>Veltrim: Smart Clipboard</h3>
+        <ul>
+          <li>앱을 열거나 공유 메뉴에서 콘텐츠를 보내면, 복사한 텍스트, 링크, 이미지가 클립보드 기록에 추가됩니다. 기록, 폴더, 태그는 기기에 저장됩니다. iCloud 동기화를 켤 수 있습니다.</li>
+          <li>이미지 속 텍스트는 Apple의 Vision 기술로 기기에서 인식됩니다.</li>
+          <li>Face ID 또는 Touch ID 잠금은 선택 사항입니다.</li>
+          <li>Google AdMob을 사용합니다. 유럽경제지역, 영국, 스위스에서는 Google의 동의 화면이 표시되며, 그 화면에서의 선택에 따라 Firebase Analytics가 켜지거나 꺼집니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>Rolliva: 주사위와 룰렛</h3>
+        <ul>
+          <li>룰렛, 주사위와 동전 설정, 플레이어 그룹, 직접 만든 질문은 기기에 저장됩니다.</li>
+          <li>Firebase Analytics와 Google AdMob을 사용합니다(4.3, 4.4).</li>
+        </ul>
+
+        <h3>Piramit Bulmaca</h3>
+        <ul>
+          <li>게임 진행 상황, 점수, 힌트, 보상은 기기에 저장됩니다.</li>
+          <li>앱 내 구입은 App Store를 통해 이루어집니다(4.5).</li>
+          <li>Google AdMob을 사용합니다(4.4). 분석은 없습니다.</li>
+        </ul>
+
+        <h3>RandomJourney</h3>
+        <ul>
+          <li>발견한 경로, 여행 기록, 진행 상황은 Google Firebase 클라우드 데이터베이스에 저장됩니다.</li>
+          <li>위치 접근 권한은 주변 지점을 찾고 선택한 지역에서 무작위 좌표를 생성하기 위해 앱을 사용하는 동안에만 요청됩니다. 위치 좌표는 Firebase 데이터베이스에 암호화되어 저장됩니다.</li>
+        </ul>
+
+        <h3>QRMaker&amp;Scanner</h3>
+        <ul>
+          <li><strong>계정:</strong> 이메일과 비밀번호, Apple로 로그인, Google로 로그인을 사용해 계정을 만들 수 있습니다. 인증은 Google Firebase Authentication이 담당합니다. Apple로 로그인을 사용하면 이메일 주소를 가릴 수 있습니다.</li>
+          <li><strong>프로필:</strong> 사용자 ID, 이메일 주소, 이름과 성, 선택한 아바타, 언어, 마지막 스캔 시각과 마지막 생성 시각이 Google Cloud Firestore에 저장됩니다.</li>
+          <li><strong>QR 기록:</strong> 만들고 스캔한 코드의 내용은 Firestore에, QR 이미지는 Firebase Storage에 저장되어 여러 기기에서 코드에 접근하고 백업할 수 있습니다.</li>
+          <li><strong>업로드한 파일:</strong> QR 코드에 첨부하려고 선택한 문서와 이미지는 Firebase Storage에 업로드됩니다. 생성된 링크는 QR 코드에 기록되며, 코드를 스캔한 사람은 누구나 그 파일을 열 수 있습니다. 개인적이거나 기밀인 파일을 이렇게 공유할 때는 주의하세요.</li>
+          <li><strong>카메라와 Wi-Fi:</strong> QR 스캔은 기기에서 이루어지며 카메라 영상은 저장되지 않습니다. Wi-Fi QR 코드를 스캔하면 네트워크 이름과 비밀번호는 기기를 해당 네트워크에 연결하는 데만 사용됩니다.</li>
+          <li><strong>계정 삭제:</strong> 앱 안에서 계정을 삭제할 수 있습니다. 삭제하면 QR 데이터와 업로드한 파일, 프로필, 인증 계정이 삭제됩니다. 삭제 요청이 처리되었음을 기록하기 위해 이메일 주소와 입력한 삭제 사유는 별도의 기록으로 보관됩니다.</li>
+          <li>Google AdMob을 사용합니다(4.4). 분석은 없습니다.</li>
+        </ul>
+
+        <h2 id="ko-website">6. 웹사이트</h2>
+        <ul>
+          <li>krenixstudios.com은 쿠키, 분석 도구, 추적 도구를 사용하지 않습니다.</li>
+          <li>언어 설정은 브라우저의 로컬 저장소(localStorage)에 저장되며 서버로 전송되지 않습니다.</li>
+          <li>글꼴은 Google Fonts에서 불러오며, 이때 IP 주소와 브라우저 정보가 Google에 전달됩니다.</li>
+          <li>문의 양식에 입력한 이름, 이메일 주소, 메시지는 FormSubmit(formsubmit.co) 서비스를 통해 저희 메일함으로 전달됩니다. 이 정보는 답변을 위해서만 사용하며 마케팅에는 사용하지 않습니다.</li>
+          <li>저희 호스팅 업체는 보안과 운영을 위해 IP 주소, 브라우저 종류, 방문 시각과 같은 표준 서버 로그를 보관할 수 있습니다.</li>
+        </ul>
+
+        <h2 id="ko-legal">7. 법적 근거</h2>
+        <p>저희는 KVKK 제5조 및 GDPR 제6조에 따라 다음 법적 근거로 개인정보를 처리합니다.</p>
+        <ul>
+          <li><strong>계약의 이행:</strong> QRMaker&amp;Scanner와 RandomJourney 계정, 구매, iCloud 동기화, 이용자가 사용하는 기능의 작동.</li>
+          <li><strong>정당한 이익:</strong> 앱 개선과 오류 발견을 위한 분석, 보안, 웹사이트 서버 로그.</li>
+          <li><strong>동의:</strong> 광고 식별자 접근과 추적(ATT 허용), Veltrim 동의 화면에서의 선택. 동의는 언제든지 철회할 수 있습니다.</li>
+          <li><strong>문의 응대:</strong> 문의 양식과 저희에게 보낸 이메일.</li>
+          <li><strong>법적 의무:</strong> 법률에 따라 데이터를 보관하거나 공개해야 하는 경우.</li>
+        </ul>
+        <p>Medlyra의 건강 데이터와 같은 민감정보는 저희가 처리하지 않습니다. 이 데이터는 이용자의 관리 아래 기기와 iCloud 계정에만 보관됩니다.</p>
+
+        <h2 id="ko-third">8. 제3자 및 국외 이전</h2>
+        <p>저희 앱과 웹사이트는 다음 서비스 제공업체와 함께 작동합니다. 각 업체에는 자체 개인정보 처리방침이 적용됩니다.</p>
+        <ul>
+          <li><strong>Apple:</strong> App Store, 앱 내 구입, iCloud와 CloudKit, Game Center, Apple로 로그인, 추적 허용. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 개인정보 처리방침</a></li>
+          <li><strong>Google Firebase:</strong> Analytics, Authentication, Cloud Firestore, Storage. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 개인정보 보호 안내</a></li>
+          <li><strong>Google AdMob:</strong> 앱 내 광고. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google 광고 정책</a></li>
+          <li><strong>Google:</strong> Google로 로그인과 Google Fonts. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
+          <li><strong>Open Food Facts 및 관련 공개 데이터베이스:</strong> Shelf의 바코드 조회. <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener noreferrer">Open Food Facts 개인정보 처리방침</a></li>
+          <li><strong>FormSubmit:</strong> 저희 웹사이트의 문의 양식. <a href="https://formsubmit.co" target="_blank" rel="noopener noreferrer">formsubmit.co</a></li>
+          <li><strong>이용자의 메일 제공업체:</strong> Clearin에서 연결하는 Gmail, Outlook, iCloud 또는 기타 제공업체는 각자의 정책에 따라 운영됩니다.</li>
+        </ul>
+        <p>이 업체들의 서버는 주로 미국과 유럽연합 등 튀르키예 밖에 있을 수 있으므로, 이용자의 데이터가 국외로 이전될 수 있습니다. 이러한 이전은 KVKK 제9조와 GDPR이 정한 보호 조치(예: 표준계약조항)에 근거합니다. 법률이 요구하는 경우 권한 있는 공공기관에 데이터를 제공할 수 있습니다.</p>
+
+        <h2 id="ko-retention">9. 보관 기간</h2>
+        <ul>
+          <li><strong>기기의 데이터:</strong> 이용자가 삭제하거나 앱을 삭제할 때까지.</li>
+          <li><strong>iCloud 데이터:</strong> 이용자가 삭제할 때까지 Apple 계정에 보관됩니다. 설정 &gt; [사용자 이름] &gt; iCloud에서 관리할 수 있습니다.</li>
+          <li><strong>분석 데이터:</strong> Firebase Analytics의 보관 기간 설정에 따른 일정 기간 동안 보관되며, 이후 Google이 자동으로 삭제합니다.</li>
+          <li><strong>QRMaker&amp;Scanner와 RandomJourney의 계정 데이터:</strong> 계정이 유지되는 동안. 계정을 삭제하면 함께 삭제됩니다. 삭제 요청 기록은 처리되었음을 증명하기 위해 보관됩니다.</li>
+          <li><strong>문의 내역:</strong> 문의가 해결될 때까지, 그리고 법적 의무가 요구하는 기간 동안.</li>
+        </ul>
+
+        <h2 id="ko-security">10. 보안</h2>
+        <p>데이터는 전송 중 TLS로 암호화됩니다. 비밀번호는 키체인에 저장되며, 기기의 데이터는 Apple의 데이터 보호 기능으로 보호됩니다. 지원하는 앱에서는 Face ID 또는 Touch ID 잠금을 사용할 수 있습니다. Firebase에 보관되는 계정 데이터는 Firebase의 인증 및 접근 제어 인프라로 보호됩니다. 완벽하게 안전한 전송 또는 저장 방법은 없습니다. 유출 사고가 발생하면 법률에 따라 이용자와 관계 당국에 알립니다.</p>
+
+        <h2 id="ko-rights">11. 이용자의 권리와 선택</h2>
+        <p>KVKK 제11조에 따라 이용자는 다음 권리를 가집니다: 개인정보 처리 여부를 알 권리, 처리된 경우 그에 관한 정보를 요구할 권리, 처리 목적과 목적에 맞게 사용되는지 알 권리, 국내외에서 데이터를 이전받는 제3자를 알 권리, 불완전하거나 부정확한 데이터의 정정을 요구할 권리, 데이터의 삭제 또는 파기를 요구할 권리, 이러한 조치를 데이터를 이전받은 제3자에게 통지하도록 요구할 권리, 자동화된 분석만으로 불리한 결과가 발생한 경우 이의를 제기할 권리, 위법한 처리로 손해를 입은 경우 배상을 요구할 권리.</p>
+        <p>GDPR이 적용되는 경우에는 열람, 정정, 삭제, 처리 제한, 데이터 이동, 반대의 권리도 가집니다. 동의는 언제든지 철회할 수 있습니다.</p>
+        <p>이 권리를 행사하려면 <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a>으로 연락해 주세요. 늦어도 30일 이내에 답변드립니다. 저희 답변에 만족하지 않으시면 튀르키예 개인정보보호청 또는 거주 국가의 개인정보 보호 기관에 민원을 제기할 수 있습니다.</p>
+        <p>실제 설정 방법:</p>
+        <ul>
+          <li><strong>추적 허용:</strong> 설정 &gt; 개인정보 보호 및 보안 &gt; 추적.</li>
+          <li><strong>카메라, 사진, 캘린더, 위치, 알림:</strong> 설정 &gt; 해당 앱.</li>
+          <li><strong>iCloud 데이터:</strong> 설정 &gt; [사용자 이름] &gt; iCloud.</li>
+          <li><strong>기기의 데이터 삭제:</strong> 기기에서 앱을 삭제하세요.</li>
+          <li><strong>분석 ID 재설정:</strong> 앱을 삭제하고 다시 설치하면 새 앱 인스턴스 ID가 만들어집니다.</li>
+          <li><strong>QRMaker&amp;Scanner 계정:</strong> 앱 안의 계정 삭제 기능.</li>
+          <li><strong>RandomJourney 데이터:</strong> 삭제를 원하시면 이메일로 연락해 주세요.</li>
+        </ul>
+
+        <h2 id="ko-children">12. 아동의 개인정보</h2>
+        <p>저희 앱은 13세 미만 아동을 대상으로 하지 않으며, 이 연령의 아동으로부터 고의로 개인정보를 수집하지 않습니다. 자녀가 저희에게 개인정보를 제공한 사실을 알게 되면 연락해 주세요. 즉시 삭제하겠습니다.</p>
+
+        <h2 id="ko-changes">13. 변경 사항</h2>
+        <p>앱이나 법률이 바뀌면 이 방침을 업데이트할 수 있습니다. 최신 버전은 항상 이 페이지에 게시되며, 상단의 날짜가 변경됩니다. 중요한 변경 사항은 웹사이트나 앱에서 알려 드립니다.</p>
+
+        <h2 id="ko-contact">14. 문의</h2>
+        <p>Krenix Studios(튀르키예, 이스탄불)<br>이메일: <a href="mailto:support@krenixstudios.com">support@krenixstudios.com</a></p>
+      </article>
+
     </div>
   </main>
 
@@ -655,29 +2495,7 @@
     </div>
   </footer>
 
-  <script>
-    const btnTr = document.getElementById('btn-tr');
-    const btnEn = document.getElementById('btn-en');
-    const contentTr = document.getElementById('content-tr');
-    const contentEn = document.getElementById('content-en');
-
-    function setLang(lang) {
-      const isEn = lang === 'en';
-      btnEn.classList.toggle('active', isEn);
-      btnTr.classList.toggle('active', !isEn);
-      btnEn.setAttribute('aria-pressed', isEn);
-      btnTr.setAttribute('aria-pressed', !isEn);
-      contentEn.style.display = isEn ? 'block' : 'none';
-      contentTr.style.display = isEn ? 'none' : 'block';
-      document.documentElement.lang = lang;
-    }
-
-    btnTr.addEventListener('click', () => { setLang('tr'); localStorage.setItem('preferredLang', 'tr'); });
-    btnEn.addEventListener('click', () => { setLang('en'); localStorage.setItem('preferredLang', 'en'); });
-
-    // Auto-detect browser language or localStorage preference
-    setLang(localStorage.getItem('preferredLang') || (navigator.language.startsWith('en') ? 'en' : 'tr'));
-  </script>
+  <script type="module" src="/src/privacy.js"></script>
 </body>
 
 </html>

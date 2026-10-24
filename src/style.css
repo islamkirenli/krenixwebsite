@@ -47,6 +47,8 @@
   --text-xl: 1.5rem;
   --text-display-sm: clamp(2.5rem, 5vw, 3.75rem);
   --text-display: clamp(3.25rem, 9vw, 7.5rem);
+  --text-display-long: clamp(2.75rem, 7vw, 6rem);
+  --text-display-cjk: clamp(2.25rem, 5.5vw, 4.5rem);
 
   /* Space (4px base) */
   --space-1: 4px;
@@ -111,6 +113,52 @@
   --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
+/* Instrument Serif and Geist have no CJK glyphs: Latin stays in the brand fonts, kana/hangul fall through to system faces */
+:root:lang(ja) {
+  --font-display: 'Instrument Serif', 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
+  --font-body: 'Geist', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+}
+
+:root:lang(ko) {
+  --font-display: 'Instrument Serif', 'AppleMyungjo', 'Noto Serif KR', serif;
+  --font-body: 'Geist', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+}
+
+/* Italic and negative tracking only suit Latin display type */
+:lang(ja) .hero-title em,
+:lang(ko) .hero-title em {
+  font-style: normal;
+}
+
+:lang(ja) .hero-title,
+:lang(ko) .hero-title,
+:lang(ja) .section-title,
+:lang(ko) .section-title {
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+/* Full-width CJK glyphs and long Cyrillic words would push the headline past three lines */
+:lang(ja) .hero-title,
+:lang(ko) .hero-title {
+  font-size: var(--text-display-cjk);
+  max-width: none;
+}
+
+/* ch is measured on the Latin face, while Cyrillic falls back to a wider serif, so no ch cap here */
+:lang(ru) .hero-title {
+  font-size: var(--text-display-long);
+  max-width: none;
+}
+
+:lang(ja) {
+  line-break: strict;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+}
+
 /* Base */
 *,
 *::before,
@@ -138,6 +186,17 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
 button {
@@ -218,39 +277,49 @@ header.scrolled {
   color: var(--text-primary);
 }
 
+/* Native select for the eight languages; the two icons sit on top of it and ignore clicks */
 .lang-selector {
+  position: relative;
   display: flex;
-  gap: var(--space-1);
+  align-items: center;
+  color: var(--text-secondary);
 }
 
-.lang-btn {
-  background: none;
-  border: none;
-  color: var(--text-muted);
+.lang-selector .icon {
+  position: absolute;
+  left: var(--space-3);
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+  pointer-events: none;
+}
+
+.lang-selector .lang-chevron {
+  left: auto;
+  right: var(--space-2);
+}
+
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  min-height: var(--target-min);
+  padding: 0 var(--space-6) 0 calc(var(--space-3) + var(--icon-sm) + var(--space-2));
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 500;
-  letter-spacing: 0.04em;
-  min-width: var(--target-sm);
-  min-height: var(--target-sm);
-  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
 }
 
-.lang-btn:hover {
-  color: var(--text-primary);
+.lang-select:hover {
+  border-color: var(--line-strong);
 }
 
-.lang-btn:active {
+.lang-select:active {
   background: var(--paper-tint);
-}
-
-.lang-btn.active {
-  color: var(--text-primary);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-underline-offset: var(--underline-offset);
-  text-decoration-thickness: var(--underline-thick);
 }
 
 .nav-toggle {

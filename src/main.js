@@ -1,16 +1,25 @@
 import './style.css'
-import { translations, appsTranslations } from './translations.js'
+import { LANGS, initialLang, setupLangPicker } from './i18n/lang.js'
 
-// Every image under assets/apps/<key>/: icon.webp plus tr-N / en-N App Store screenshots
+// One file per language, each { ui, apps } with the same keys
+const messages = import.meta.glob('./i18n/[a-z][a-z].js', { eager: true, import: 'default' });
+const langMessages = lang => messages[`./i18n/${lang}.js`];
+const translations = Object.fromEntries(Object.keys(LANGS).map(lang => [lang, langMessages(lang).ui]));
+
+// Every image under assets/apps/<key>/: icon.webp plus <lang>-N App Store screenshots
 const appImages = import.meta.glob('./assets/apps/*/*.webp', { eager: true, import: 'default' });
 
 function imagesFor(key) {
   const dir = `./assets/apps/${key}/`;
   const shots = lang => Object.keys(appImages).filter(p => p.startsWith(`${dir}${lang}-`)).sort().map(p => appImages[p]);
-  const tr = shots('tr');
   const en = shots('en');
-  // Older listings have one screenshot set for every language
-  return { icon: appImages[`${dir}icon.webp`], screenshots: { tr, en: en.length ? en : tr } };
+  const tr = shots('tr');
+  // Store listings without localized screenshots fall back to English, then Turkish
+  const screenshots = Object.fromEntries(Object.keys(LANGS).map(lang => {
+    const own = shots(lang);
+    return [lang, own.length ? own : en.length ? en : tr];
+  }));
+  return { icon: appImages[`${dir}icon.webp`], screenshots };
 }
 
 const iconAttrs = 'class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
@@ -18,12 +27,12 @@ const arrowRightIcon = `<svg ${iconAttrs}><path d="M5 12h14"/><path d="m12 5 7 7
 const arrowUpRightIcon = `<svg ${iconAttrs}><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`;
 
 // State for Language selection
-let currentLang = localStorage.getItem('preferredLang') || 'tr';
+let currentLang = initialLang();
 
 // Target email address for FormSubmit submissions
 const TARGET_EMAIL = 'support@krenixstudios.com';
 
-// App Store id, release date and tech stack. Texts live in appsTranslations, images in assets/apps/<key>/.
+// App Store id, release date and tech stack. Texts live in i18n/<lang>.js, images in assets/apps/<key>/.
 const appsList = {
   pack: { type: "app", id: 6818205295, releaseDate: "2026-10-09", tags: ["SwiftUI", "SwiftData", "Charts", "StoreKit"] },
   bloom: { type: "app", id: 6809461611, releaseDate: "2026-09-26", tags: ["SwiftUI", "SwiftData", "ActivityKit", "WidgetKit"] },
@@ -49,8 +58,7 @@ const appsData = Object.fromEntries(
       ...app,
       ...imagesFor(key),
       links: { ios: `https://apps.apple.com/app/id${app.id}` },
-      tr: appsTranslations[key].tr,
-      en: appsTranslations[key].en
+      ...Object.fromEntries(Object.keys(LANGS).map(lang => [lang, langMessages(lang).apps[key]]))
     }])
 );
 
@@ -422,19 +430,11 @@ function updateStaticTranslations() {
   // Update document metadata
   document.title = translations[currentLang].doc_title;
   document.documentElement.lang = currentLang;
-
-  // Toggle active class on language selection buttons
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    const isActive = btn.getAttribute('data-lang') === currentLang;
-    btn.classList.toggle('active', isActive);
-    btn.setAttribute('aria-pressed', isActive);
-  });
 }
 
 // Set Language Handler
 function setLanguage(lang) {
   currentLang = lang;
-  localStorage.setItem('preferredLang', lang);
   updateStaticTranslations();
   renderAppCards();
   renderHeroShelf();
@@ -442,13 +442,7 @@ function setLanguage(lang) {
 
 document.getElementById('stat-app-count').textContent = Object.keys(appsData).length;
 
-// Language buttons event listeners
-document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const lang = btn.getAttribute('data-lang');
-    setLanguage(lang);
-  });
-});
+setupLangPicker(document.getElementById('lang-select'), currentLang, setLanguage);
 
 // Initialize Page in Saved Language on Load
 setLanguage(currentLang);
