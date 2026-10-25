@@ -20,11 +20,12 @@
     <div class="nav-container">
       <a href="/" class="logo">Krenix Studios</a>
       <div class="lang-selector">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <select class="lang-select" id="lang-select" aria-label="Dil">
-          <option value="tr">Türkçe</option>
-        </select>
-        <svg class="icon lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        <button type="button" class="lang-select" id="lang-select" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-list" aria-label="Dil">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span class="lang-current">Türkçe</span>
+          <svg class="icon lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="lang-list" id="lang-list" role="listbox" aria-label="Dil" hidden></ul>
       </div>
     </div>
   </header>
