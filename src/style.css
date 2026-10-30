@@ -1460,6 +1460,10 @@ footer {
     padding: var(--space-9) 0;
   }
 
+  .hero-shelf {
+    gap: var(--space-2);
+  }
+
   .nav-container {
     gap: var(--space-3);
   }
@@ -1567,8 +1571,7 @@ footer {
 
   .hero-shelf {
     grid-auto-flow: row;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: var(--space-2);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .modal-carousel {

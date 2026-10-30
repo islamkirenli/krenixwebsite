@@ -46,6 +46,18 @@ export default {
     "carousel_dot_label": "Görsel {n}"
   },
   "apps": {
+    "tint": {
+      "name": "Tint: Minyatür Boya Eşleştirme",
+      "category": "Grafik ve Tasarım",
+      "cardDescription": "21 markadan 5.000'den fazla hobi boyası arasında en yakın rengi bulan boya eşleştirici.",
+      "description": "Tint, minyatür ve maket boyalarını markalar arasında karşılaştırır, elinizde hangi boyaların olduğunu gösterir ve karışım tariflerinizi tek yerde saklar. Her şey cihazınızda çalışır; hesap ya da internet bağlantısı gerekmez.",
+      "features": [
+        "Markalar arası eşleştirme: En yakın karşılıklar, CIEDE2000 formülüyle yüzde olarak sıralanır.",
+        "Boya çantası: Şişe sayısını, doluluk seviyesini ve saklama yerini takip edin, alışveriş listesi tutun.",
+        "Tarif günlüğü: Damla oranları ve tekniklerle adım adım tarifler kaydedin.",
+        "Renk analizi: Bir fotoğrafta herhangi bir noktaya dokunun, rengini alın ve en yakın boyayı bulun."
+      ]
+    },
     "pack": {
       "name": "Çanta: Kamp Malzeme Listesi",
       "category": "Seyahat",

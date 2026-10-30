@@ -46,6 +46,18 @@ export default {
     "carousel_dot_label": "Image {n}"
   },
   "apps": {
+    "tint": {
+      "name": "Tint: Miniature Paint Matcher",
+      "category": "Graphics & Design",
+      "cardDescription": "A paint matcher that finds the closest hobby paint among more than 5,000 colors from 21 brands.",
+      "description": "Tint compares miniature and scale model paints across brands, shows you what you already own and keeps your mixing recipes in one place. Everything runs on your device, with no account and no internet connection needed.",
+      "features": [
+        "Match across brands: Nearest equivalents, ranked by percentage with the CIEDE2000 formula.",
+        "Paint rack: Track bottle count, fill level and storage location, and keep a shopping list.",
+        "Recipe journal: Save step-by-step recipes with drop ratios and techniques.",
+        "Color inspector: Tap any point in a photo to sample its color and find the nearest paint."
+      ]
+    },
     "pack": {
       "name": "Pack: Ultralight Gear List",
       "category": "Travel",

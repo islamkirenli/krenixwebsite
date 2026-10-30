@@ -34,6 +34,7 @@ const TARGET_EMAIL = 'support@krenixstudios.com';
 
 // App Store id, release date and tech stack. Texts live in i18n/<lang>.js, images in assets/apps/<key>/.
 const appsList = {
+  tint: { type: "app", id: 6821441862, releaseDate: "2026-10-28", tags: ["SwiftUI", "SwiftData", "AVFoundation", "CloudKit"] },
   pack: { type: "app", id: 6818205295, releaseDate: "2026-10-09", tags: ["SwiftUI", "SwiftData", "Charts", "StoreKit"] },
   bloom: { type: "app", id: 6809461611, releaseDate: "2026-09-26", tags: ["SwiftUI", "SwiftData", "ActivityKit", "WidgetKit"] },
   medlyra: { type: "app", id: 6808695787, releaseDate: "2026-09-16", tags: ["SwiftUI", "CloudKit", "UserNotifications", "StoreKit"] },

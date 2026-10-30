@@ -46,6 +46,18 @@ export default {
     "carousel_dot_label": "Bild {n}"
   },
   "apps": {
+    "tint": {
+      "name": "Tint: Farbkonverter Modellbau",
+      "category": "Grafik und Design",
+      "cardDescription": "Ein Farbabgleich, der unter über 5.000 Hobbyfarben von 21 Marken die passendste Alternative findet.",
+      "description": "Tint vergleicht Farben für Miniaturen und Modellbau über Marken hinweg, zeigt dir, was du schon besitzt, und bewahrt deine Mischrezepte an einem Ort auf. Alles läuft auf deinem Gerät, ganz ohne Konto und ohne Internetverbindung.",
+      "features": [
+        "Abgleich über Marken: Die nächsten Entsprechungen, mit CIEDE2000 prozentual sortiert.",
+        "Farbregal: Behalte Anzahl, Füllstand und Lagerort im Blick und führe eine Einkaufsliste.",
+        "Rezeptbuch: Speichere Rezepte Schritt für Schritt mit Tropfenverhältnissen und Techniken.",
+        "Farbpipette: Tippe auf eine Stelle in einem Foto, nimm die Farbe auf und finde die passende Farbe."
+      ]
+    },
     "pack": {
       "name": "Rucksack: Packliste & Gewicht",
       "category": "Reisen",

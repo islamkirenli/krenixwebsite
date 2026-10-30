@@ -46,6 +46,18 @@ export default {
     "carousel_dot_label": "Image {n}"
   },
   "apps": {
+    "tint": {
+      "name": "Tint : Convertisseur peinture",
+      "category": "Graphisme et design",
+      "cardDescription": "Un convertisseur qui trouve la peinture la plus proche parmi plus de 5 000 références de 21 marques.",
+      "description": "Tint compare les peintures pour figurines et maquettes d'une marque à l'autre, vous montre ce que vous possédez déjà et garde vos recettes de mélange au même endroit. Tout fonctionne sur votre appareil, sans compte ni connexion Internet.",
+      "features": [
+        "Équivalences entre marques : les correspondances les plus proches, classées en pourcentage avec CIEDE2000.",
+        "Étagère de peintures : suivez le nombre de flacons, le remplissage et l'emplacement, et tenez une liste de courses.",
+        "Journal de recettes : enregistrez vos recettes étape par étape avec les proportions en gouttes et les techniques.",
+        "Pipette : touchez un point d'une photo pour prélever sa couleur et trouver la peinture la plus proche."
+      ]
+    },
     "pack": {
       "name": "Sac à dos : Randonnée, Bivouac",
       "category": "Voyages",

@@ -46,6 +46,18 @@ export default {
     "carousel_dot_label": "Imagen {n}"
   },
   "apps": {
+    "tint": {
+      "name": "Tint: Pintura de miniaturas",
+      "category": "Gráficos y diseño",
+      "cardDescription": "Un conversor que encuentra la pintura más cercana entre más de 5.000 referencias de 21 marcas.",
+      "description": "Tint compara pinturas para miniaturas y modelismo entre marcas, te muestra lo que ya tienes y guarda tus recetas de mezcla en un solo lugar. Todo funciona en tu dispositivo, sin cuenta y sin conexión a internet.",
+      "features": [
+        "Equivalencias entre marcas: los equivalentes más cercanos, ordenados en porcentaje con CIEDE2000.",
+        "Estante de pinturas: controla los botes, el nivel de llenado y dónde los guardas, y lleva una lista de compras.",
+        "Diario de recetas: guarda recetas paso a paso con proporciones en gotas y técnicas.",
+        "Cuentagotas: toca un punto de una foto para tomar su color y encontrar la pintura más cercana."
+      ]
+    },
     "pack": {
       "name": "Mochila: Senderismo y Trekking",
       "category": "Viajes",
